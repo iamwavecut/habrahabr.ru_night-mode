@@ -220,6 +220,15 @@ body, .sidebar_right .block
   color: #A9B7C6;
 }
 
+/* karma vote icons fix */
+.user_header .karma .score .vote_minus,
+.user_header .karma .score .vote_plus
+{
+  -moz-filter: invert(0.9) brightness(2);
+  -webkit-filter: invert(0.9) brightness(2);
+  filter: invert(0.9) brightness(2);
+}
+
 code .subst, code .title
 {
   font-weight: normal;
@@ -311,4 +320,3 @@ code .diff .change
 {
   background: #385570
 }
-
