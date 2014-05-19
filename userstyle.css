@@ -146,6 +146,17 @@ body .buttons a.button, .buttons input
   text-shadow: none;
 }
 
+body .buttons a.button:disabled, .buttons input:disabled
+{
+  box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
+  text-shadow: none;
+  border: none !important;
+}
+
+body .buttons a.button:disabled:hover, .buttons input:disabled:hover {
+  background: #fafcfa !important;
+}
+
 body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .buttons input:hover
 {
   background: #666 !important;
