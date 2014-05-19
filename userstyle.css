@@ -125,6 +125,11 @@
   color: #d3e2f0;
 }
 
+.conversation_page .messages .message .info .login a:hover
+{
+  color: #aaa;
+}
+
 .sidebar_right .block.new_vacanies .title
 {
   -moz-filter: invert(1);
