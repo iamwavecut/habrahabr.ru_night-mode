@@ -218,11 +218,6 @@ body, .sidebar_right .block
   background: #ccc;
 }
 
-.html_format code
-{
-  color: #bbb;
-}
-
 .notes table tr td, .tracker_page table.tracker_folowers tr td, .tracker_page table.tracker_mentions tr td,
 .conversations .conversation
 {
@@ -237,15 +232,6 @@ body, .sidebar_right .block
 .conversation_page > .title
 {
   color: #ccc;
-}
-
-.html_format pre code
-{
-  font-size: 12px;
-  padding: 0.5em;
-  background: #2b2b2b;
-  display: block;
-  color: #A9B7C6;
 }
 
 /* embedded video */
@@ -273,6 +259,22 @@ iframe:hover
   -moz-filter: invert(0.9) brightness(2);
   -webkit-filter: invert(0.9) brightness(2);
   filter: invert(0.9) brightness(2);
+}
+
+/* разметка кода */
+
+.html_format code
+{
+  color: #A9B7C6;
+}
+
+.html_format pre code
+{
+  font-size: 12px;
+  padding: 0.5em;
+  background: #2b2b2b;
+  display: block;
+  color: #A9B7C6;
 }
 
 code .subst, code .title
