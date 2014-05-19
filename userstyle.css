@@ -286,18 +286,24 @@ code .variable, code .envvar, code .apache .sqbracket, code .nginx .built_in
   color: #D0D0FF
 }
 
+code .addition, code .deletion, code .diff .change
+{
+  display: block;
+  margin-bottom: -1.6em;
+}
+
 code .addition
 {
-  background: #baeeba
+  background: #294436
 }
 
 code .deletion
 {
-  background: #ffc8bd
+  background: #484A4A
 }
 
 code .diff .change
 {
-  background: #bccff9
+  background: #385570
 }
 
