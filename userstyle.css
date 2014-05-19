@@ -10,17 +10,18 @@
   filter: grayscale(100%) contrast(130%);
 }
 
-#navbar .nav_panel .tab.open,#navbar .nav_panel .tab:hover,#navbar .nav_tabs_content.open .nav_tab
+#navbar .nav_panel .tab.open, #navbar .nav_panel .tab:hover, #navbar .nav_tabs_content.open .nav_tab
 {
   background: #000;
 }
 
-#navbar .nav_panel .tab.tab_settings,#navbar .nav_panel .tab
+#navbar .nav_panel .tab.tab_settings, #navbar .nav_panel .tab
 {
   border: none;
 }
 
-#navbar .nav_panel .tab.tab_user img,.comments_list .comment_item .info a.avatar img, .conversation_page .messages .message .info a.avatar img
+#navbar .nav_panel .tab.tab_user img, .comments_list .comment_item .info a.avatar img,
+.conversation_page .messages .message .info a.avatar img
 {
   -moz-filter: grayscale(0.5);
   -webkit-filter: grayscale(0.5);
@@ -28,7 +29,10 @@
   opacity: 0.5;
 }
 
-#navbar .nav_panel,#navbar .nav_tabs_content .nav_tab,.comments_list .comment_item .message.bad1,.comments_list .comment_item .message.bad2,.comments_list .comment_item .message.bad3,.comments_list .comment_item .message.bad4,.comments_list .comment_item .message.bad5,.comments_list .comment_item .message.bad6,.comments_list .comment_item .message.bad7
+#navbar .nav_panel, #navbar .nav_tabs_content .nav_tab, .comments_list .comment_item .message.bad1,
+.comments_list .comment_item .message.bad2, .comments_list .comment_item .message.bad3,
+.comments_list .comment_item .message.bad4, .comments_list .comment_item .message.bad5,
+.comments_list .comment_item .message.bad6, .comments_list .comment_item .message.bad7
 {
   background: transparent;
 }
@@ -58,36 +62,39 @@
   background: #454;
 }
 
-.content_left table.menu tr td a,.content_left .submenu
+.content_left table.menu tr td a, .content_left .submenu
 {
   background: #555;
   border: none;
   color: #fff;
 }
 
-.content_left table.menu tr td span.count_new,.sidebar_right .block.habralenta_settings .category-list .category .new,.post .hubs a.subscribed,.comments_list .comment_item .info .voting .mark.positive span
+.content_left table.menu tr td span.count_new, .sidebar_right .block.habralenta_settings .category-list .category .new,
+.post .hubs a.subscribed, .comments_list .comment_item .info .voting .mark.positive span
 {
   color: #7d7;
 }
 
-.content_left table.menu tr td,.content_left table.menu tr td.active
+.content_left table.menu tr td, .content_left table.menu tr td.active
 {
   border-color: transparent;
 }
 
-.content_left table.menu tr td.active a,.content_left .submenu .item.active
+.content_left table.menu tr td.active a, .content_left .submenu .item.active
 {
   background: #444;
   border: none;
   color: #d3e2f0;
 }
 
-.html_format h1,.html_format h2,.html_format h3,.html_format h4,.html_format h5,.html_format h6,.comments_list .comment_item .info a.username,#navbar .nav_tabs_content .nav_tab .title, .conversation_page .messages .message .info .login a
+.html_format h1, .html_format h2, .html_format h3, .html_format h4, .html_format h5, .html_format h6,
+.comments_list .comment_item .info a.username, #navbar .nav_tabs_content .nav_tab .title,
+.conversation_page .messages .message .info .login a
 {
   color: #fff;
 }
 
-.post .content img,.comments_list .html_format.message img
+.post .content img, .comments_list .html_format.message img
 {
   -moz-filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
@@ -96,7 +103,7 @@
   opacity: 0.6;
 }
 
-.post .content img:hover,.comments_list .html_format.message img:hover
+.post .content img:hover, .comments_list .html_format.message img:hover
 {
   -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
@@ -110,19 +117,33 @@
   border: none;
 }
 
-.post .infopanel .author a,.post .infopanel .comments a,.sidebar_right .block .posts_list .post_item .count,.comments_list .comment_item_plain .post_info .count,.comments_list .comment_item .info .voting .mark.negative span
+.post .infopanel .author a, .post .infopanel .comments a, .sidebar_right .block .posts_list .post_item .count,
+.comments_list .comment_item_plain .post_info .count, .comments_list .comment_item .info .voting .mark.negative span
 {
   color: #f77;
 }
 
-.post h1.title a.post_title:visited,.sidebar_right .block .posts_list .post_item a:visited.post_name,.post ul.tags li a:visited,.sidebar_right .block.best_company .company_info p a:visited,.sidebar_right .block.new_vacanies .vacancies .job_item a:visited,.sidebar_right .block.freelansim .tasks .task a:visited,.grey a,a.grey,.html_format.message a:visited,.content_left .submenu .item.active a, .post .content a:visited, .html_format a:visited
+.post h1.title a.post_title:visited, .sidebar_right .block .posts_list .post_item a:visited.post_name,
+.post ul.tags li a:visited, .sidebar_right .block.best_company .company_info p a:visited,
+.sidebar_right .block.new_vacanies .vacancies .job_item a:visited,
+.sidebar_right .block.freelansim .tasks .task a:visited, .grey a, a.grey, .html_format.message a:visited,
+.content_left .submenu .item.active a, .post .content a:visited, .html_format a:visited
 {
   color: #8392a0;
 }
 
-.posts .post h1.title,.post h1.title a.post_title,.sidebar_right .block .posts_list .post_item a.post_name,.post ul.tags li a,.sidebar_right .block.best_company .company_info p a,.sidebar_right .block.new_vacanies .vacancies .job_item a,.sidebar_right .block.freelansim .tasks .task a,.html_format.message a,.content_left .submenu .item a, .post h1.title, .user_header h2.username a, .post .content a, .conversations .conversation a.conversation_link, .html_format a
+.posts .post h1.title, .post h1.title a.post_title, .sidebar_right .block .posts_list .post_item a.post_name,
+.post ul.tags li a, .sidebar_right .block.best_company .company_info p a,
+.sidebar_right .block.new_vacanies .vacancies .job_item a, .sidebar_right .block.freelansim .tasks .task a,
+.html_format.message a, .content_left .submenu .item a, .post h1.title, .user_header h2.username a,
+.post .content a, .conversations .conversation a.conversation_link, .html_format a
 {
   color: #d3e2f0;
+}
+
+.conversation_page .messages .message .info .login a:hover
+{
+  color: #aaa;
 }
 
 .sidebar_right .block.new_vacanies .title
@@ -134,19 +155,30 @@
 
 body .buttons a.button, .buttons input
 {
-  background: #444!important;
-  border: none!important;
+  background: #444 !important;
+  border: none !important;
   box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
-  color: #fff!important;
+  color: #fff !important;
   text-shadow: none;
+}
+
+body .buttons a.button:disabled, .buttons input:disabled
+{
+  box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
+  text-shadow: none;
+  border: none !important;
+}
+
+body .buttons a.button:disabled:hover, .buttons input:disabled:hover {
+  background: #fafcfa !important;
 }
 
 body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .buttons input:hover
 {
-  background: #666!important;
+  background: #666 !important;
 }
 
-body,.sidebar_right .block
+body, .sidebar_right .block
 {
   background: #222;
   color: #ddd;
@@ -191,94 +223,148 @@ body,.sidebar_right .block
   color: #bbb;
 }
 
-.notes table tr td, .tracker_page table.tracker_folowers tr td, .tracker_page table.tracker_mentions tr td, .conversations .conversation
+.notes table tr td, .tracker_page table.tracker_folowers tr td, .tracker_page table.tracker_mentions tr td,
+.conversations .conversation
 {
   border-bottom: 1px solid #555;
 }
 
- .conversation_page .messages .message
+.conversation_page .messages .message
 {
   border-top: 1px solid #555;
 }
 
-.conversation_page>.title
+.conversation_page > .title
 {
   color: #ccc;
 }
 
-.html_format pre code {
-    font-size: 12px;
-    padding: 0.5em;
-    background: #2b2b2b;
-    display: block;
-    color: #A9B7C6;
+.html_format pre code
+{
+  font-size: 12px;
+  padding: 0.5em;
+  background: #2b2b2b;
+  display: block;
+  color: #A9B7C6;
 }
 
-code .subst,code .title {
-    font-weight: normal;
-    color: #FFC66D;
+/* embedded video */
+iframe
+{
+  -moz-filter: grayscale(0.8);
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.8);
+  transition: all 300ms;
+  opacity: 0.6;
 }
 
-code .comment,code .template_comment,code .javadoc,code .diff .header {
-    color: gray;
+iframe:hover
+{
+  -moz-filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
 }
 
-code .annotation,code .decorator,code .preprocessor,code .doctype,code .pi,code .chunk,code .shebang,code .apache .cbracket {
-    color: olive;
+/* karma vote icons fix */
+.user_header .karma .score .vote_minus,
+.user_header .karma .score .vote_plus
+{
+  -moz-filter: invert(0.9) brightness(2);
+  -webkit-filter: invert(0.9) brightness(2);
+  filter: invert(0.9) brightness(2);
 }
 
-code .tag {
-    color: #E8BF6A;
+code .subst, code .title
+{
+  font-weight: normal;
+  color: #FFC66D;
 }
 
-code .tag .title {
-    color: #93C763;
+code .comment, code .template_comment, code .javadoc, code .diff .header
+{
+  color: gray;
 }
 
-code .pi code .id,code .attr_selector,code .pseudo,code .literal,code .keyword,code .hexcolor,code .css .function,code .ini .title,code .css .class,code .list .title,code .tex .command {
-    color: #CC7833;
+code .annotation, code .decorator, code .preprocessor, code .doctype, code .pi, code .chunk, code .shebang,
+code .apache .cbracket
+{
+  color: olive;
 }
 
-code .attribute,code .rules .keyword,code .number,code .date,code .regexp,code .tex .special {
-    color: #9876AA;
+code .tag
+{
+  color: #E8BF6A;
 }
 
-code .number,code .regexp {
-    font-weight: normal;
+code .tag .title
+{
+  color: #93C763;
 }
 
-code .string,code .value,code .filter .argument,code .css .function .params,code .apache .tag {
-    color: #390;
+code .pi code .id, code .attr_selector, code .pseudo, code .literal, code .keyword, code .hexcolor,
+code .css .function, code .ini .title, code .css .class, code .list .title, code .tex .command
+{
+  color: #CC7833;
 }
 
-code .symbol {
-    color: #6E9CBE;
+code .attribute, code .rules .keyword, code .number, code .date, code .regexp, code .tex .special
+{
+  color: #9876AA;
 }
 
-code .ruby .symbol .string,code .ruby .symbol .keyword,code .ruby .symbol .keymethods {
-    color: #A5C25C;
+code .number, code .regexp
+{
+  font-weight: normal;
 }
 
-code .char,code .tex .formula {
-    color: #968e5b
+code .string, code .value, code .filter .argument, code .css .function .params, code .apache .tag
+{
+  color: #390;
 }
 
-code .phpdoc,code .yardoctag,code .javadoctag {
-    text-decoration: underline
+code .symbol
+{
+  color: #6E9CBE;
 }
 
-code .variable,code .envvar,code .apache .sqbracket,code .nginx .built_in {
-    color: #D0D0FF
+code .ruby .symbol .string, code .ruby .symbol .keyword, code .ruby .symbol .keymethods
+{
+  color: #A5C25C;
 }
 
-code .addition {
-    background: #baeeba
+code .char, code .tex .formula
+{
+  color: #968e5b
 }
 
-code .deletion {
-    background: #ffc8bd
+code .phpdoc, code .yardoctag, code .javadoctag
+{
+  text-decoration: underline
 }
 
-code .diff .change {
-    background: #bccff9
+code .variable, code .envvar, code .apache .sqbracket, code .nginx .built_in
+{
+  color: #D0D0FF
+}
+
+code .addition, code .deletion, code .diff .change
+{
+  display: block;
+  margin-bottom: -1.6em;
+}
+
+code .addition
+{
+  background: #294436
+}
+
+code .deletion
+{
+  background: #484A4A
+}
+
+code .diff .change
+{
+  background: #385570
 }
