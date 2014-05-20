@@ -101,6 +101,11 @@
   color: #fff;
 }
 
+.comments_list .comment_item .info a:hover.username
+{
+  color: #aaa;
+}
+
 .post .content img, .comments_list .html_format.message img
 {
   -moz-filter: grayscale(0.8);
