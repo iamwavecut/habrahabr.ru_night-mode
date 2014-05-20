@@ -235,6 +235,11 @@ body, .sidebar_right .block
   color: #ccc;
 }
 
+.post .content .poll .poll_title
+{
+  color: #999;
+}
+
 /* embedded video */
 iframe
 {
