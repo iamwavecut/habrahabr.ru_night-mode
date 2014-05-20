@@ -225,6 +225,11 @@ body, .sidebar_right .block
   border-bottom: 1px solid #555;
 }
 
+.tracker_page table.tracker_comments tr td.comment_count a
+{
+  color: #CF5555;
+}
+
 .conversation_page .messages .message
 {
   border-top: 1px solid #555;
