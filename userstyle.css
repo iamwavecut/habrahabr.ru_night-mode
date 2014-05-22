@@ -146,6 +146,11 @@
   color: #d3e2f0;
 }
 
+.company_info, .company_links, .corporate_news, .corporate_blog
+{
+  padding: 5px;
+}
+
 .conversation_page .messages .message .info .login a:hover
 {
   color: #aaa;
