@@ -41,9 +41,9 @@ body:after
 
 #navbar .nav_panel .logo
 {
-  -moz-filter: grayscale(100%) contrast(130%);
+  -moz-filter: grayscale(100%) contrast(130%) invert(1);
   -webkit-filter: grayscale(100%) contrast(130%) invert(1);
-  filter: grayscale(100%) contrast(130%);
+  filter: grayscale(100%) contrast(130%) invert(1);
 }
 
 #navbar .nav_panel .tab.open, #navbar .nav_panel .tab:hover, #navbar .nav_tabs_content.open .nav_tab
@@ -124,7 +124,7 @@ body:after
 }
 
 .comments_list .comment_item .info a.username, #navbar .nav_tabs_content .nav_tab .title,
-.conversation_page .messages .message .info .login
+.conversation_page .messages .message .info .login a
 {
   color: #fff;
 }
