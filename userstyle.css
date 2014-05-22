@@ -1,3 +1,32 @@
+body
+{
+  position: relative;
+  z-index: -1;
+}
+
+body:after
+{
+  display: block;
+  position: absolute;
+  z-index: 0;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+#layout, #xpanel, .to_top
+{
+  z-index: 1;
+}
+
+#layout
+{
+  position: relative;
+}
+
 #layout #navbar, #layout .inner
 {
   background: #333 !important;
@@ -95,7 +124,7 @@
 }
 
 .comments_list .comment_item .info a.username, #navbar .nav_tabs_content .nav_tab .title,
-.conversation_page .messages .message .info .login a
+.conversation_page .messages .message .info .login
 {
   color: #fff;
 }
@@ -105,7 +134,8 @@
   color: #aaa;
 }
 
-.post .content img, .comments_list .html_format.message img
+.post .content img, .comments_list .html_format.message img,
+.top_banner img, .announce img, .mobile_applications img /* страницы компаний */
 {
   -moz-filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
@@ -114,7 +144,8 @@
   opacity: 0.6;
 }
 
-.post .content img:hover, .comments_list .html_format.message img:hover
+.post .content img:hover, .comments_list .html_format.message img:hover,
+.top_banner img:hover, .announce img:hover, .mobile_applications img:hover /* страницы компаний */
 {
   -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
@@ -144,11 +175,6 @@
 .post .content a, .conversations .conversation a.conversation_link, .html_format a
 {
   color: #d3e2f0;
-}
-
-.company_info, .company_links, .corporate_news, .corporate_blog
-{
-  padding: 5px;
 }
 
 .conversation_page .messages .message .info .login a:hover
@@ -515,4 +541,53 @@ code .diff .change
 {
   height: 15px;
   margin-top: 3px;
+}
+
+/* стили для корпоративных блогов */
+#header_mouse_activity #header
+{
+  background: #333;
+}
+
+#header_mouse_activity .main_menu a.active
+{
+  color: #949494;
+}
+
+#header_mouse_activity .user_panel a.username
+{
+  color: #ccc;
+}
+
+#header_mouse_activity .user_panel a
+{
+  color: #8D8D8D;
+}
+
+#header_mouse_activity .search_panel form input[type="text"]
+{
+  background: #444;
+  border-color: #555;
+}
+
+#header_mouse_activity .search_panel form input[type="submit"]
+{
+  -webkit-filter: invert(0.74);
+     -moz-filter: invert(0.74);
+          filter: invert(0.74);
+}
+
+.company_info, .company_links, .corporate_news, .corporate_blog, .mobile_applications, .hantim_vacanies
+{
+  padding: 5px;
+}
+
+.sidebar_right .block.mobile_applications .app_widget .app_title
+{
+  color: #5f5f5f;
+}
+
+.sidebar_right .block.mobile_applications .app_widget .description
+{
+  color: #6c6362;
 }
