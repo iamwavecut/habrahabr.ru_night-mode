@@ -249,7 +249,8 @@ body, .sidebar_right .block
 }
 
 .editor .text-holder textarea, input[type="text"],
-.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop
+.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop,
+#header .search_panel form input[type="text"] /* корп блоги */
 {
   background: #444;
   color: #fff;
@@ -631,7 +632,8 @@ code .diff .change
   color: #888888;
 }
 
-.company_info, .company_links, .corporate_news, .corporate_blog, .mobile_applications, .hantim_vacanies
+.company_info, .company_links, .corporate_news, .corporate_blog, .mobile_applications, .hantim_vacanies,
+.twitter_stream
 {
   padding: 5px;
 }
