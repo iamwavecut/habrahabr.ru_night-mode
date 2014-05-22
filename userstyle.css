@@ -172,7 +172,9 @@ body .buttons a.button, .buttons input
   text-shadow: none;
 }
 
-body .buttons a.button:disabled, .buttons input:disabled
+body .buttons a.button:disabled, .buttons input:disabled,
+.buttons button.blue, .buttons a.button.blue, .buttons input.blue,
+.buttons button.blue:hover, .buttons a.button.blue:hover, .buttons input.blue:hover
 {
   box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
   text-shadow: none;
