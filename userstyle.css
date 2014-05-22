@@ -1,13 +1,13 @@
-#layout
+#layout #navbar, #layout .inner
 {
-  background: #333;
+  background: #333 !important;
 }
-/* TODO распределить по внутренним элементам, т.к. устанавливает фот хидеру для компаний
-(в некоторых компаниях хидер прозрачный для просмотра главного фона)*/
 
-#layout .wrapper .inner
+#layout > .inner
 {
-  background: #333;
+  padding: 12px 24px 310px 25px !important;
+  margin-right: 0;
+  margin-left: 71px;
 }
 
 #navbar .nav_panel .logo
