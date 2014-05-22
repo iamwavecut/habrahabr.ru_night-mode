@@ -249,7 +249,8 @@ body, .sidebar_right .block
 }
 
 .editor .text-holder textarea, input[type="text"],
-.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop
+.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop,
+#header .search_panel form input[type="text"] /* корп блоги */
 {
   background: #444;
   color: #fff;
