@@ -199,8 +199,8 @@ body .buttons a.button, .buttons input
 }
 
 body .buttons a.button:disabled, .buttons input:disabled,
-.buttons button.blue, .buttons a.button.blue, .buttons input.blue,
-.buttons button.blue:hover, .buttons a.button.blue:hover, .buttons input.blue:hover
+.buttons button.blue, .buttons a.button.blue, .buttons input.blue, .buttons input.green
+.buttons button.blue:hover, .buttons a.button.blue:hover, .buttons input.blue:hover, .buttons input.green:hover
 {
   box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
   text-shadow: none;
@@ -214,6 +214,15 @@ body .buttons a.button:disabled:hover, .buttons input:disabled:hover {
 body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .buttons input:hover
 {
   background: #666 !important;
+}
+
+.buttons input.green
+{
+  -webkit-filter: grayscale(0.6);
+     -moz-filter: grayscale(0.6);
+          filter: grayscale(0.6);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 body, .sidebar_right .block
@@ -239,10 +248,42 @@ body, .sidebar_right .block
   background: #554;
 }
 
-.editor .text-holder textarea
+.editor .text-holder textarea, input[type="text"],
+.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop
 {
   background: #444;
   color: #fff;
+  border-color: #555;
+}
+
+.chzn-container-multi .chzn-choices .search-choice, .chzn-container .chzn-results .highlighted
+{
+  -webkit-filter: invert(0.7);
+  color: #000;
+}
+
+.chzn-container .chzn-results .highlighted .subscribers
+{
+  color: #000;
+}
+
+form .item label
+{
+  color: #838383;
+}
+
+.blue_buttons_panel
+{
+  background: #6C747A;
+}
+
+.sidebar_right .block>.line-r
+{
+  background: #504E4E;
+}
+.sidebar_right .block>.line-r:after
+{
+  border-color: #646464;
 }
 
 .editor .text-holder, .conversations .conversation:hover, .editor .text-holder, .conversations .conversation.new
@@ -562,12 +603,6 @@ code .diff .change
 #header_mouse_activity .user_panel a
 {
   color: #8D8D8D;
-}
-
-#header_mouse_activity .search_panel form input[type="text"]
-{
-  background: #444;
-  border-color: #555;
 }
 
 #header_mouse_activity .search_panel form input[type="submit"]
