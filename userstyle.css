@@ -234,6 +234,10 @@ body, .sidebar_right .block
   color: #CF5555;
 }
 
+.tracker_page table.tracker_comments tr.new {
+  background: #beccce;
+}
+
 .conversation_page .messages .message
 {
   border-top: 1px solid #555;
