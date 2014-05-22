@@ -252,13 +252,11 @@ body, .sidebar_right .block
 }
 
 .editor .text-holder textarea, input[type="text"],
-.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop,
-#header .search_panel form input[type="text"], /* корп блоги */
-#navbar .nav_tabs_content .nav_tab .global_search_form input[type="text"]
+.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop
 {
-  background: #444;
-  color: #fff;
-  border-color: #555;
+  background: #444 !important;
+  color: #fff !important;
+  border-color: #555 !important;
 }
 
 .chzn-container-multi .chzn-choices .search-choice, .chzn-container .chzn-results .highlighted
