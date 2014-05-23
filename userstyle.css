@@ -2,12 +2,14 @@ body
 {
   position: relative;
   z-index: -1;
+  background: #555;
+  color: #ddd;
 }
 
 body:after
 {
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 0;
   content: '';
   top: 0;
@@ -37,6 +39,31 @@ body:after
   padding: 12px 24px 310px 25px !important;
   margin-right: 0;
   margin-left: 71px;
+}
+
+.company_header, .user_header, .content_left, .sidebar_right, .rotated_posts
+{
+  z-index: 1;
+  position: relative;
+}
+
+div.footer_panel:before
+{
+  display: block;
+  content: '';
+  left: -25px;
+  right: -24px;
+  background: #333;
+  top: -1000px;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+#footer
+{
+  position: relative;
+  z-index: 1;
 }
 
 #navbar .nav_panel .logo
@@ -153,6 +180,11 @@ body:after
   opacity: 1;
 }
 
+.sidebar_right .block
+{
+  background: #222;
+}
+
 .post .infopanel .author a, .post .infopanel .comments a, .sidebar_right .block .posts_list .post_item .count,
 .comments_list .comment_item_plain .post_info .count, .comments_list .comment_item .info .voting .mark.negative span
 {
@@ -182,25 +214,28 @@ body:after
   color: #aaa;
 }
 
-.sidebar_right .block.new_vacanies .title
+.sidebar_right .block.new_vacanies .title, .sidebar_right .block.freelansim .title
 {
   -moz-filter: invert(1);
   -webkit-filter: invert(1);
   filter: invert(1);
 }
 
-body .buttons a.button, .buttons input
+.buttons button,  a.button, .buttons input
 {
   background: #444 !important;
-  border: none !important;
-  box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
   color: #fff !important;
-  text-shadow: none;
 }
 
-body .buttons a.button:disabled, .buttons input:disabled,
-.buttons button.blue, .buttons a.button.blue, .buttons input.blue, .buttons input.green
-.buttons button.blue:hover, .buttons a.button.blue:hover, .buttons input.blue:hover, .buttons input.green:hover
+.buttons button,                 .buttons a.button,                 .buttons input,
+.buttons button.blue,            .buttons a.button.blue,            .buttons input.blue,        .buttons input.green,
+.buttons button.blue:hover,      .buttons a.button.blue:hover,      .buttons input.blue:hover,  .buttons input.green:hover,
+.buttons button.blue:active,     .buttons a.button.blue:active,     .buttons input.blue:active, .buttons input.green:active,
+.buttons button.loading,         .buttons a.button.loading,         .buttons input.loading,
+.buttons button:active,          .buttons a.button:active,          .buttons input:active,
+.buttons button:disabled,        .buttons a.button:disabled,        .buttons input:disabled,
+.buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active,
+.sidebar_right .block.user_info .join button
 {
   box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
   text-shadow: none;
@@ -225,12 +260,6 @@ body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .b
   padding-right: 15px;
 }
 
-body, .sidebar_right .block
-{
-  background: #222;
-  color: #ddd;
-}
-
 .html_format pre code
 {
   background: #bbb;
@@ -249,12 +278,11 @@ body, .sidebar_right .block
 }
 
 .editor .text-holder textarea, input[type="text"],
-.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop,
-#header .search_panel form input[type="text"] /* корп блоги */
+.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop
 {
-  background: #444;
-  color: #fff;
-  border-color: #555;
+  background: #444 !important;
+  color: #fff !important;
+  border-color: #555 !important;
 }
 
 .chzn-container-multi .chzn-choices .search-choice, .chzn-container .chzn-results .highlighted
@@ -318,7 +346,7 @@ form .item label
   border-top: 1px solid #555;
 }
 
-.conversation_page > .title
+.conversation_page > .title, .conversation_page .all_dialogs
 {
   color: #ccc;
 }
@@ -329,7 +357,7 @@ form .item label
 }
 
 /* embedded video */
-iframe
+iframe, object
 {
   -moz-filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
@@ -338,7 +366,7 @@ iframe
   opacity: 0.6;
 }
 
-iframe:hover
+iframe:hover, object:hover
 {
   -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
