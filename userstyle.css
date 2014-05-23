@@ -68,18 +68,17 @@ div.footer_panel:before
 
 #navbar .nav_panel .logo
 {
-  -moz-filter: grayscale(100%) contrast(130%) invert(1);
-  -webkit-filter: grayscale(100%) contrast(130%) invert(1);
-  filter: grayscale(100%) contrast(130%) invert(1);
+  background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEcAAABHCAYAAABVsFofAAAA+klEQVR42u3awQ3DMAwEQRep/ltJXvkmlsRYd8fdCsyBAcOUrouIiIiIiIiIiIiITjTGeKHwBWcXKBb4g7MzYAWwPM7qgBXAFjgrA1YA2+DMDlgBbIUzM2AFsB3O3QErgC1x7gxYAWyL82vACuDWOJZAT+LYAT2N0+5fbhanFdAKThugVZwWQDs48UC7ONFAFTiSQCc+5TZAajhSQIo4MkCqOBJAyjjHgdRxjgKBAw444IADjgbOvx/e/s0BJxTIbvcSieMIZLu9i8RxArLf/7ZfW7TEUQeKOmJpv3BviaMIFHuKGXtUDI4BUIuLArE3MMARBbpcAkcM6A0wVjJjdelaVQAAAABJRU5ErkJggg==') no-repeat left top transparent;
 }
 
 #navbar .nav_panel .tab.open, #navbar .nav_panel .tab:hover, #navbar .nav_tabs_content.open .nav_tab
 {
-  background: #000;
+  background: #444;
 }
 
 #navbar .nav_panel .tab.tab_settings, #navbar .nav_panel .tab
 {
+  transition: all 200ms;
   border: none;
 }
 
