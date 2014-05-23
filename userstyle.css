@@ -2,13 +2,12 @@ body
 {
   position: relative;
   z-index: -1;
-  height: auto !important;
 }
 
 body:after
 {
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 0;
   content: '';
   top: 0;
