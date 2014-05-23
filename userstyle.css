@@ -224,7 +224,7 @@ div.footer_panel:before
   filter: invert(1);
 }
 
-.buttons button,  a.button, .buttons input
+.buttons button, .buttons a.button, .buttons input
 {
   background: #444 !important;
   color: #fff !important;
