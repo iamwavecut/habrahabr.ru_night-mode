@@ -331,7 +331,7 @@ form .item label
 }
 
 /* embedded video */
-iframe
+iframe, object
 {
   -moz-filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
@@ -340,7 +340,7 @@ iframe
   opacity: 0.6;
 }
 
-iframe:hover
+iframe:hover, object:hover
 {
   -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
