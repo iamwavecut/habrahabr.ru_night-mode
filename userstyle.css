@@ -321,7 +321,7 @@ form .item label
   border-top: 1px solid #555;
 }
 
-.conversation_page > .title
+.conversation_page > .title, .conversation_page .all_dialogs
 {
   color: #ccc;
 }
