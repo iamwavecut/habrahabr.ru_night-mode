@@ -22,6 +22,7 @@ body:after
 #layout, #xpanel, .to_top
 {
   z-index: 1;
+  position: relative;
 }
 
 #layout
@@ -39,6 +40,30 @@ body:after
   padding: 12px 24px 310px 25px !important;
   margin-right: 0;
   margin-left: 71px;
+}
+
+.company_header, .user_header, .content_left, .sidebar_right
+{
+  z-index: 1;
+}
+
+div.footer_panel:before
+{
+  display: block;
+  content: '';
+  left: -25px;
+  right: -24px;
+  background: #333;
+  top: -1000px;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+#footer
+{
+  position: relative;
+  z-index: 1;
 }
 
 #navbar .nav_panel .logo
