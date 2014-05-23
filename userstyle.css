@@ -22,7 +22,6 @@ body:after
 #layout, #xpanel, .to_top
 {
   z-index: 1;
-  position: relative;
 }
 
 #layout
@@ -42,9 +41,10 @@ body:after
   margin-left: 71px;
 }
 
-.company_header, .user_header, .content_left, .sidebar_right
+.company_header, .user_header, .content_left, .sidebar_right, .rotated_posts
 {
   z-index: 1;
+  position: relative;
 }
 
 div.footer_panel:before
