@@ -2,6 +2,8 @@ body
 {
   position: relative;
   z-index: -1;
+  background: #555;
+  color: #ddd;
 }
 
 body:after
@@ -226,12 +228,6 @@ body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .b
           filter: grayscale(0.6);
   padding-left: 15px;
   padding-right: 15px;
-}
-
-body, .sidebar_right .block
-{
-  background: #222;
-  color: #ddd;
 }
 
 .html_format pre code
