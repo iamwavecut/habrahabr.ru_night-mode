@@ -221,22 +221,21 @@ div.footer_panel:before
   filter: invert(1);
 }
 
-body .buttons a.button, .buttons input
+.buttons button,  a.button, .buttons input
 {
   background: #444 !important;
-  border: none !important;
-  box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
   color: #fff !important;
-  text-shadow: none;
 }
 
+.buttons button,                 .buttons a.button,                 .buttons input,
 .buttons button.blue,            .buttons a.button.blue,            .buttons input.blue,        .buttons input.green,
 .buttons button.blue:hover,      .buttons a.button.blue:hover,      .buttons input.blue:hover,  .buttons input.green:hover,
 .buttons button.blue:active,     .buttons a.button.blue:active,     .buttons input.blue:active, .buttons input.green:active,
 .buttons button.loading,         .buttons a.button.loading,         .buttons input.loading,
 .buttons button:active,          .buttons a.button:active,          .buttons input:active,
 .buttons button:disabled,        .buttons a.button:disabled,        .buttons input:disabled,
-.buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active
+.buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active,
+.sidebar_right .block.user_info .join button
 {
   box-shadow: inset 1px 1px 0 #666, inset -1px -1px 0 #000;
   text-shadow: none;
