@@ -29,7 +29,7 @@ body:after
   position: relative;
 }
 
-#logo, #rew-wrapper /* Доступ к публикации закрыт */
+#logo, #reg-wrapper /* Доступ к публикации закрыт */
 {
   z-index: 1;
   position: relative;
@@ -41,6 +41,11 @@ body:after
   -webkit-filter: invert(0.87);
      -moz-filter: invert(0.87);
           filter: invert(0.87);
+}
+
+#reg-wrapper
+{
+  border-color: transparent;
 }
 
 #layout #navbar, #layout .inner
