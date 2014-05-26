@@ -576,7 +576,7 @@ code .diff .change
   height: 15px;
   margin-top: 0;
 }
-.post .infopanel .favorite a.add, .comments_list .comment_item .info a.favorite.remove
+.post .infopanel .favorite a.remove, .comments_list .comment_item .info a.favorite.remove
 {
   background-position-y: 0;
 }
