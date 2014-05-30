@@ -194,6 +194,11 @@ div.footer_panel:before
   color: #f77;
 }
 
+.posts .post h1.title, .post h1.title a.post_title
+{
+  color: #d3e2f0;
+}
+
 .post h1.title a.post_title:visited, .sidebar_right .block .posts_list .post_item a:visited.post_name,
 .post ul.tags li a:visited, .sidebar_right .block.best_company .company_info p a:visited,
 .sidebar_right .block.new_vacanies .vacancies .job_item a:visited,
@@ -203,13 +208,13 @@ div.footer_panel:before
   color: #8392a0;
 }
 
-.posts .post h1.title, .post h1.title a.post_title, .sidebar_right .block .posts_list .post_item a.post_name,
+.sidebar_right .block .posts_list .post_item a.post_name,
 .post ul.tags li a, .sidebar_right .block.best_company .company_info p a,
 .sidebar_right .block.new_vacanies .vacancies .job_item a, .sidebar_right .block.freelansim .tasks .task a,
 .html_format.message a, .content_left .submenu .item a, .post h1.title, .user_header h2.username a,
 .post .content a, .conversations .conversation a.conversation_link, .html_format a
 {
-  color: #d3e2f0;
+  color: #b3d2f0;
 }
 
 .conversation_page .messages .message .info .login a:hover
