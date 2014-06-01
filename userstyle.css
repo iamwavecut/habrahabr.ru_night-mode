@@ -29,6 +29,25 @@ body:after
   position: relative;
 }
 
+#logo, #reg-wrapper /* Доступ к публикации закрыт */
+{
+  z-index: 1;
+  position: relative;
+
+}
+
+#logo
+{
+  -webkit-filter: invert(0.87);
+     -moz-filter: invert(0.87);
+          filter: invert(0.87);
+}
+
+#reg-wrapper
+{
+  border-color: transparent;
+}
+
 #layout #navbar, #layout .inner
 {
   background: #333 !important;
@@ -571,7 +590,7 @@ code .diff .change
   height: 15px;
   margin-top: 0;
 }
-.post .infopanel .favorite a.add, .comments_list .comment_item .info a.favorite.remove
+.post .infopanel .favorite a.remove, .comments_list .comment_item .info a.favorite.remove
 {
   background-position-y: 0;
 }
