@@ -387,18 +387,24 @@ iframe:hover, object:hover
 
 /* разметка кода */
 
-.html_format code
+.html_format code, .html_format pre code
 {
   color: #A9B7C6;
+  background: #2b2b2b;
+}
+
+.html_format code
+{
+  display: inline-block;
+  padding: 0 3px;
+
 }
 
 .html_format pre code
 {
   font-size: 12px;
   padding: 0.5em;
-  background: #2b2b2b;
   display: block;
-  color: #A9B7C6;
 }
 
 code .subst, code .title
