@@ -374,10 +374,15 @@ form .item label
   background: #ccc;
 }
 
-.notes table tr td, .tracker_page table.tracker_folowers tr td, .tracker_page table.tracker_mentions tr td,
-.conversations .conversation
+.tracker_page table.tracker_comments tr th
 {
-  border-bottom: 1px solid #555;
+  border-bottom-color: #777;
+}
+
+.notes table tr td, .conversations .conversation, .tracker_page table.tracker_folowers tr td,
+.tracker_page table.tracker_mentions tr td, .tracker_page table.tracker_comments tr td
+{
+  border-bottom-color: #555;
 }
 
 .tracker_page table.tracker_comments tr td.comment_count a
