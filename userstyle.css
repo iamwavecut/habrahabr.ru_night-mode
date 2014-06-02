@@ -120,10 +120,7 @@ div.footer_panel:before
   opacity: 0.5;
 }
 
-#navbar .nav_panel, #navbar .nav_tabs_content .nav_tab, .comments_list .comment_item .message.bad1,
-.comments_list .comment_item .message.bad2, .comments_list .comment_item .message.bad3,
-.comments_list .comment_item .message.bad4, .comments_list .comment_item .message.bad5,
-.comments_list .comment_item .message.bad6, .comments_list .comment_item .message.bad7
+#navbar .nav_panel, #navbar .nav_tabs_content .nav_tab, .comments_list .comment_item .message[class*=bad]
 {
   background: transparent;
 }
@@ -363,7 +360,7 @@ form .item label
   border-color: #646464;
 }
 
-.editor .text-holder, .conversations .conversation:hover, .editor .text-holder, .conversations .conversation.new
+.editor .text-holder, .conversations .conversation:hover, .conversations .conversation.new
 {
   background: #444;
   border-color: #444;
@@ -374,13 +371,13 @@ form .item label
   background: #ccc;
 }
 
-.tracker_page table.tracker_comments tr th
+.tracker_page table[class^=tracker] tr th
 {
   border-bottom-color: #777;
 }
 
-.notes table tr td, .conversations .conversation, .tracker_page table.tracker_folowers tr td,
-.tracker_page table.tracker_mentions tr td, .tracker_page table.tracker_comments tr td
+.notes table tr td, .conversations .conversation,
+.tracker_page  table[class^=tracker] tr td
 {
   border-bottom-color: #555;
 }
@@ -390,9 +387,11 @@ form .item label
   color: #CF5555;
 }
 
-.tracker_page table.tracker_comments tr.new {
-  background: #beccce;
+.tracker_page table[class^=tracker] tr.new
+{
+  background: #444;
 }
+
 
 .conversation_page .messages .message
 {
@@ -746,9 +745,4 @@ code .diff .change
 .sidebar_right .block.mobile_applications .app_widget .description
 {
   color: #6c6362;
-}
-
-.tracker_page table[class^=tracker] tr.new 
-{
-  background: #444;
 }
