@@ -737,3 +737,8 @@ code .diff .change
 {
   color: #6c6362;
 }
+
+.tracker_page table[class^=tracker] tr.new 
+{
+  background: #444;
+}
