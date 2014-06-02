@@ -210,13 +210,13 @@ div.footer_panel:before
 .sidebar_right .block
 {
   background: #222;
-  opacity: .5;
+  opacity: .5 !important;
   transition: all 300ms;
 }
 
 .sidebar_right .block:hover
 {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 .post .infopanel .author a, .post .infopanel .comments a, .sidebar_right .block .posts_list .post_item .count,
