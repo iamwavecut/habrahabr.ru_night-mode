@@ -220,6 +220,11 @@ div.footer_panel:before
   opacity: 1 !important;
 }
 
+.sidebar_right .block>.show_more
+{
+  background: #383838;
+}
+
 .post .infopanel .author a, .post .infopanel .comments a, .sidebar_right .block .posts_list .post_item .count,
 .comments_list .comment_item_plain .post_info .count, .comments_list .comment_item .info .voting .mark.negative span
 {
