@@ -2,7 +2,7 @@ body
 {
   position: relative;
   z-index: -1;
-  background: #555;
+  background-color: #555 !important;
   color: #ddd;
 }
 
@@ -27,6 +27,7 @@ body:after
 #layout
 {
   position: relative;
+  background-color: transparent;
 }
 
 #logo, #reg-wrapper /* Доступ к публикации закрыт */
