@@ -638,9 +638,9 @@ code .diff .change
   filter: invert(0.9) brightness(2);
 }
 
-.post .infopanel .voting span.minus, .voting a.minus, .comments_list .comment_item .info .voting span.minus,
-.post .infopanel .voting a.plus,    .post .infopanel .voting a.minus,
-.comments_list .comment_item .info .voting a.plus,    .comments_list .comment_item .info .voting a.minus
+.post .infopanel .voting span.minus, .comments_list .comment_item .info .voting span.minus,
+.post .infopanel .voting a.plus, .post .infopanel .voting a.minus,
+.comments_list .comment_item .info .voting a.plus, .comments_list .comment_item .info .voting a.minus
 {
   background-position-y: -17px;
 }
