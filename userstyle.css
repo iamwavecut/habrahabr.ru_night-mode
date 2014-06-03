@@ -403,6 +403,13 @@ form .item label
   color: #ccc;
 }
 
+.conversations .conversation:hover a.delete
+{
+  -webkit-filter: invert(.7);
+     -moz-filter: invert(.7);
+          filter: invert(.7);
+}
+
 .post .content .poll .poll_title
 {
   color: #999;
