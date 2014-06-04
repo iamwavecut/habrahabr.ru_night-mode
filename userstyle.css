@@ -209,12 +209,13 @@ div.footer_panel:before
 {
   background: #222;
   opacity: .5 !important;
-  transition: all 300ms;
 }
+
 
 .sidebar_right .block:hover
 {
   opacity: 1 !important;
+  transition: all 300ms;
 }
 
 .sidebar_right .block>.show_more
