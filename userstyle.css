@@ -473,14 +473,9 @@ code .apache .cbracket
   color: olive;
 }
 
-code .tag
+code .tag, code .tag .title
 {
   color: #E8BF6A;
-}
-
-code .tag .title
-{
-  color: #93C763;
 }
 
 code .pi code .id, code .attr_selector, code .pseudo, code .literal, code .keyword, code .hexcolor,
