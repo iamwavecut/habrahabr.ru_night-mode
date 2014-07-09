@@ -98,8 +98,12 @@ div.footer_panel:before
 
 #navbar .nav_panel .tab.tab_settings, #navbar .nav_panel .tab
 {
-  transition: all 200ms;
   border: none;
+}
+
+#navbar .nav_panel .tab.tab_settings:hover, #navbar .nav_panel .tab:hover
+{
+  transition: all 300ms;
 }
 
 #navbar .nav_panel .tab.tab_settings:after
