@@ -127,7 +127,17 @@ div.footer_panel:before
 
 #navbar .nav_tabs_content .nav_tab .menu a, .conversation_page .messages .message .info .time
 {
-  color: #ddd;
+  color: #fff;
+}
+  
+#navbar .nav_tabs_content .nav_tab .title a, #navbar .nav_tabs_content .nav_tab .title
+{
+  color: #bbb;
+}
+  
+#navbar .nav_tabs_content .nav_tab .line
+{
+  background: #333;
 }
 
 .comments_list .comment_item .info .folding-dot
