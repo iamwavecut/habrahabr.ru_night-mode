@@ -95,11 +95,6 @@ div.footer_panel:before
   background: #444;
 }
 
-#navbar .nav_panel .tab.tab_settings, #navbar .nav_panel .tab
-{
-  border: none;
-}
-
 #navbar .nav_panel .tab.tab_settings:hover, #navbar .nav_panel .tab:hover
 {
   transition: all 300ms;
