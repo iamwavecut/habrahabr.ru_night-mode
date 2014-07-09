@@ -40,8 +40,7 @@ body:after
 #logo
 {
   -webkit-filter: invert(0.87);
-     -moz-filter: invert(0.87);
-          filter: invert(0.87);
+  filter: invert(0.87);
 }
 
 #reg-wrapper
@@ -108,7 +107,7 @@ div.footer_panel:before
 
 #navbar .nav_panel .tab.tab_settings:after
 {
-  background-position-y: -3px;
+  background-position: 0 -3px;
 }
 
 #navbar .nav_panel .tab[class^=tab]:after {
@@ -118,7 +117,6 @@ div.footer_panel:before
 #navbar .nav_panel .tab.tab_user img, .comments_list .comment_item .info a.avatar img,
 .conversation_page .messages .message .info a.avatar img
 {
-  -moz-filter: grayscale(0.5);
   -webkit-filter: grayscale(0.5);
   filter: grayscale(0.5);
   opacity: 0.5;
@@ -203,7 +201,6 @@ div.footer_panel:before
 .post .content img, .comments_list .html_format.message img,
 .top_banner img, .announce img, .mobile_applications img /* страницы компаний */
 {
-  -moz-filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
   transition: all 300ms;
@@ -213,7 +210,6 @@ div.footer_panel:before
 .post .content img:hover, .comments_list .html_format.message img:hover,
 .top_banner img:hover, .announce img:hover, .mobile_applications img:hover /* страницы компаний */
 {
-  -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   opacity: 1;
@@ -276,7 +272,6 @@ div.footer_panel:before
 
 .sidebar_right .block.new_vacanies .title, .sidebar_right .block.freelansim .title
 {
-  -moz-filter: invert(1);
   -webkit-filter: invert(1);
   filter: invert(1);
 }
@@ -314,7 +309,6 @@ body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .b
 .buttons input.green
 {
   -webkit-filter: grayscale(0.6);
-     -moz-filter: grayscale(0.6);
           filter: grayscale(0.6);
   padding-left: 15px;
   padding-right: 15px;
@@ -421,7 +415,6 @@ form .item label
 .conversations .conversation:hover a.delete
 {
   -webkit-filter: invert(.7);
-     -moz-filter: invert(.7);
           filter: invert(.7);
 }
 
@@ -433,7 +426,6 @@ form .item label
 /* embedded video */
 iframe, object
 {
-  -moz-filter: grayscale(0.8);
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
   transition: all 300ms;
@@ -442,7 +434,6 @@ iframe, object
 
 iframe:hover, object:hover
 {
-  -moz-filter: grayscale(0);
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   opacity: 1;
@@ -574,35 +565,35 @@ code .diff .change
 }
 
 .wysiwyg_wrapper a[title="Курсив"] {
-  background-position-y: -30px;
+  background-position: 0 -30px;
 }
 .wysiwyg_wrapper a[title="Подчёркнутый"] {
-  background-position-y: -60px;
+  background-position: 0 -60px;
 }
 .wysiwyg_wrapper a[title="Зачёркнутый"] {
-  background-position-y: -90px;
+  background-position: 0 -90px;
 }
 .wysiwyg_wrapper a[title="Цитата"] {
-  background-position-y: -180px;
+  background-position: 0 -180px;
 }
 .wysiwyg_wrapper a[title="Код - Используйте этот тег для строчных элементов"] {
-  background-position-y: -120px;
+  background-position: 0 -120px;
   width: 30px;
 }
 .wysiwyg_wrapper a[title="Хабраюзер"] {
-  background-position-y: -240px;
+  background-position: 0 -240px;
 }
 .wysiwyg_wrapper a[title="Вставить ссылку"] {
-  background-position-y: -150px;
+  background-position: 0 -150px;
 }
 .wysiwyg_wrapper a[title="Вставить изображение"] {
-  background-position-y: -210px;
+  background-position: 0 -210px;
 }
 .wysiwyg_wrapper a[title="Вставить видео"] {
-  background-position-y: -270px;
+  background-position: 0 -270px;
 }
 .wysiwyg_wrapper a[title="Хабракат"] {
-  background-position-y: -300px;
+  background-position: 0 -300px;
 }
 
 /* infopanel styles */
@@ -622,7 +613,7 @@ code .diff .change
 
 .post .infopanel .pageviews
 {
-  background-position-y: -90px;
+  background-position: 0 -90px;
 }
 .post .infopanel .favorite a
 {
@@ -631,19 +622,19 @@ code .diff .change
 }
 .post .infopanel .favorite a.remove, .comments_list .comment_item .info a.favorite.remove
 {
-  background-position-y: 0;
+  background-position: 0 0;
 }
 .post .infopanel .favorite a.add, .comments_list .comment_item .info a.favorite.add
 {
-  background-position-y: -16px;
+  background-position: 0 -16px;
 }
 .post .infopanel .author
 {
-  background-position-y: -34px;
+  background-position: 0 -34px;
 }
 .post .infopanel .comments
 {
-  background-position-y: -62px;
+  background-position: 0 -62px;
 }
 
 /* voting arrows styles */
@@ -659,7 +650,6 @@ code .diff .change
 .user_header .karma .score .vote_minus,
 .user_header .karma .score .vote_plus
 {
-  -moz-filter: invert(0.9) brightness(2);
   -webkit-filter: invert(0.9) brightness(2);
   filter: invert(0.9) brightness(2);
 }
@@ -668,7 +658,7 @@ code .diff .change
 .post .infopanel .voting a.plus, .post .infopanel .voting a.minus,
 .comments_list .comment_item .info .voting a.plus, .comments_list .comment_item .info .voting a.minus
 {
-  background-position-y: -17px;
+  background-position: 0 -17px;
 }
 /* other icons */
 
@@ -739,7 +729,6 @@ code .diff .change
 #header_mouse_activity .search_panel form input[type="submit"]
 {
   -webkit-filter: invert(0.74);
-     -moz-filter: invert(0.74);
           filter: invert(0.74);
 }
 
