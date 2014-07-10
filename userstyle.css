@@ -142,6 +142,10 @@ div.footer_panel:before
   background: #333;
 }
 
+#navbar .nav_panel .tab.tab_login {
+  border: none;
+}
+
 .comments_list .comment_item .info .folding-dot
 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAAI0lEQVR42mNgoBX4//+/579//2aBaKoYCDXsP4genC6kFgAADpcfZeDmclMAAAAASUVORK5CYII=);
