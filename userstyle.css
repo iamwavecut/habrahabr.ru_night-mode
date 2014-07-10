@@ -795,3 +795,8 @@ code .diff .change
 {
   color: #6c6362;
 }
+
+/* более темный цвет текста поста */
+.post .content {
+  color: #999999;
+}
