@@ -145,6 +145,10 @@ only screen and (min-device-pixel-ratio: 1.5) {
   background: transparent;
 }
 
+#navbar .nav_panel .tab.tab_login {
+  border: none;
+}
+  
 #navbar .nav_tabs_content .nav_tab .menu a, .conversation_page .messages .message .info .time
 {
   color: #fff;
