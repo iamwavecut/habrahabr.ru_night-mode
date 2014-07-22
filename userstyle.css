@@ -334,6 +334,12 @@ border-top: 1px solid #333;
   border: none !important;
 }
 
+.buttons button:disabled,        .buttons a.button:disabled,        .buttons input:disabled,
+.buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active
+{
+  text-shadow: none;
+}
+
 body .buttons a.button:disabled:hover, .buttons input:disabled:hover {
   background: #fafcfa !important;
 }
