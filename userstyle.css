@@ -92,13 +92,13 @@ only screen and (min-device-pixel-ratio: 1.5) {
 #navbar .nav_panel .logo
 	{
     	background-size: 71px 71px !important;
-    	background-image: url(//habrastorage.org/files/da0/a28/a54/da0a28a5472e4a6b9c3c1c207c32c37d.png) !important;
+    	background-image: url(http://habrastorage.org/files/da0/a28/a54/da0a28a5472e4a6b9c3c1c207c32c37d.png) !important;
 	}
 }
 
 #navbar .nav_panel .logo
 {
-  background:url(//habrastorage.org/files/d73/41a/ac0/d7341aac0a6547a894e842f3f0fe1149.png) no-repeat left top transparent;
+  background:url(http://habrastorage.org/files/d73/41a/ac0/d7341aac0a6547a894e842f3f0fe1149.png) no-repeat left top transparent;
 }
 
 #navbar .nav_panel .tab.open, #navbar .nav_panel .tab:hover, #navbar .nav_tabs_content.open .nav_tab
@@ -123,13 +123,13 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
 	#navbar .nav_panel .tab[class^=tab]:after, #navbar .nav_panel .scroll_to_up:after
 	{
-		background-image: url(//habrastorage.org/files/969/5e2/691/9695e269143449038c9512c8e60397c5.png) !important;
+		background-image: url(http://habrastorage.org/files/969/5e2/691/9695e269143449038c9512c8e60397c5.png) !important;
 	}
 }
 
 #navbar .nav_panel .tab[class^=tab]:after, #navbar .nav_panel .scroll_to_up:after
 {
-	background-image: url(//habrastorage.org/files/7c2/de3/add/7c2de3addefa43138f5dda16158b667e.png);
+	background-image: url(http://habrastorage.org/files/7c2/de3/add/7c2de3addefa43138f5dda16158b667e.png);
 }
 
 #navbar .nav_panel .tab.tab_user img, .comments_list .comment_item .info a.avatar img,
@@ -170,7 +170,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 .comments_list .comment_item .info .folding-dot
 {
-  background-image: url(//habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png);
+  background-image: url(http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png);
 }
 
 .comments_list .comment_item .info time
@@ -247,7 +247,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
   
 .sidebar_right .block.for_authors_help .row[class^=row] {
-  background-image: url(//habrastorage.org/files/eac/54e/c02/eac54ec02b1a4fdda418ceef7e63c614.png);
+  background-image: url(http://habrastorage.org/files/eac/54e/c02/eac54ec02b1a4fdda418ceef7e63c614.png);
 }
           
 .sidebar_right .block
@@ -603,7 +603,7 @@ code .diff .change
 
 .wysiwyg_wrapper > a {
   background: no-repeat 0 0;
-  background-image: url(//habrastorage.org/files/0db/09d/939/0db09d93976e45d0be30cffe7dae1f91.png) !important;
+  background-image: url(http://habrastorage.org/files/0db/09d/939/0db09d93976e45d0be30cffe7dae1f91.png) !important;
   height: 23px;
   width: 20px;
 }
@@ -656,7 +656,7 @@ code .diff .change
 .comments_list .comment_item .info a.favorite
 {
   background: no-repeat 0 0;
-  background-image: url(//habrastorage.org/files/062/acf/d21/062acfd2165b4b30b9d3cd5853a2823d.png) !important;
+  background-image: url(http://habrastorage.org/files/062/acf/d21/062acfd2165b4b30b9d3cd5853a2823d.png) !important;
 }
 
 .post .infopanel .pageviews
@@ -692,7 +692,7 @@ code .diff .change
 .comments_list .comment_item .info .voting a.plus,    .comments_list .comment_item .info .voting a.minus,
 .comments_list .comment_item .info .voting span.plus, .comments_list .comment_item .info .voting span.minus
 {
-  background-image: url(//habrastorage.org/files/8c5/404/fdc/8c5404fdc42442a982ad098b04b7757e.png) !important;
+  background-image: url(http://habrastorage.org/files/8c5/404/fdc/8c5404fdc42442a982ad098b04b7757e.png) !important;
 }
 
 .user_header .karma .score .vote_minus,
@@ -710,27 +710,27 @@ code .diff .change
 
 .post ul.tags
 {
-  background-image: url(//habrastorage.org/files/499/ef6/0f2/499ef60f257b4800981a9340bd5e4b77.png) !important;
+  background-image: url(http://habrastorage.org/files/499/ef6/0f2/499ef60f257b4800981a9340bd5e4b77.png) !important;
 }
 
 .comments_list h2.title
 {
-  background-image: url(//habrastorage.org/files/baf/f70/329/baff703291f643e0bf32ef478ca9922d.png) !important;
+  background-image: url(http://habrastorage.org/files/baf/f70/329/baff703291f643e0bf32ef478ca9922d.png) !important;
 }
 
 .comments_form h2.title
 {
-  background-image:url(//habrastorage.org/files/764/cef/1a2/764cef1a2e2c48318dfa14d0143bff62.png);
+  background-image:url(http://habrastorage.org/files/764/cef/1a2/764cef1a2e2c48318dfa14d0143bff62.png);
 }
 
 .post.translation h1.title .post_title
 {
-  background-image:url(//habrastorage.org/files/037/94a/2eb/03794a2eb4474566ba01c391365d43c1.gif)!important;
+  background-image:url(http://habrastorage.org/files/037/94a/2eb/03794a2eb4474566ba01c391365d43c1.gif)!important;
 }
 
 .post .hubs
 {
-  background-image: url(//habrastorage.org/files/51e/ac0/f4f/51eac0f4fa5e415997500ab0002d4b2e.png) !important;
+  background-image: url(http://habrastorage.org/files/51e/ac0/f4f/51eac0f4fa5e415997500ab0002d4b2e.png) !important;
 }
 
 .posts .post h1.title .edit
@@ -738,7 +738,7 @@ code .diff .change
   width: 17px;
   height: 17px;
   display: inline-block;
-  background: url(//habrastorage.org/files/05d/716/e76/05d716e767d648a4bd56895f4261f782.png) no-repeat !important;
+  background: url(http://habrastorage.org/files/05d/716/e76/05d716e767d648a4bd56895f4261f782.png) no-repeat !important;
 }
 .posts .post h1.title .edit img
 {
