@@ -1,4 +1,4 @@
-body
+﻿body
 {
   position: relative;
   z-index: -1;
@@ -324,7 +324,7 @@ div.footer_panel:before
 .content_left .submenu .item a, .post .content a, .html_format a,
 .user_header h2.username a, .conversations .conversation a.conversation_link
 {
-  color: #b3d2f0;
+  color: #93b2d0;
 }
 
 .post h1.title a.post_title:visited,
@@ -335,7 +335,7 @@ div.footer_panel:before
 .content_left .submenu .item.active a, .post .content a:visited, .html_format a:visited,
 .grey a, a.grey
 {
-  color: #8392a0;
+  color: #738290;
 }
 
 .conversation_page .messages .message .info .login a:hover
