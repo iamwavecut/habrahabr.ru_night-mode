@@ -1,4 +1,4 @@
-﻿body
+body
 {
   position: relative;
   z-index: -1;
@@ -322,7 +322,8 @@ div.footer_panel:before
 .sidebar_right .block.new_vacanies .vacancies .job_item a,
 .sidebar_right .block.freelansim .tasks .task a, .html_format.message a,
 .content_left .submenu .item a, .post .content a, .html_format a,
-.user_header h2.username a, .conversations .conversation a.conversation_link
+.user_header h2.username a, .conversations .conversation a.conversation_link,
+.page_head h2.title
 {
   color: #93b2d0;
 }
