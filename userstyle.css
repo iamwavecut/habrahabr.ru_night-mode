@@ -312,7 +312,9 @@ div.footer_panel:before
   color: #a44;
 }
 
-.posts .post h1.title, .post h1.title a.post_title, .post h1.title
+.posts .post h1.title, .post h1.title a.post_title, .post h1.title,
+.html_format h1, .html_format h2, .html_format h3,
+.html_format h4, .html_format h5, .html_format h6
 {
   color: #B9C5CF;
 }
