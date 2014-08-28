@@ -37,6 +37,10 @@ body:after
 
 }
 
+.page404 {
+  z-index: 1;
+}
+
 #logo
 {
   -webkit-filter: invert(0.87);
