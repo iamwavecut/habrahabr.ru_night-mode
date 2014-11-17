@@ -1,5 +1,6 @@
 habrahabr.ru_night-mode
 =======================
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/WaveCutz/habrahabr.ru_night-mode?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Ночной режим для нового habrahabr. Пулл реквесты всячески приветствуются!
 
