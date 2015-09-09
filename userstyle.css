@@ -243,15 +243,10 @@ body
   background: #383838;
 }
 
-.post .infopanel .author a, .post .infopanel .comments a, .sidebar_right .block .posts_list .post_item .count,
+.sidebar_right .block .posts_list .post_item .count,
 .comments_list .comment_item_plain .post_info .count, .comments_list .comment_item .info .voting .mark.negative span
 {
   color: #a44 !important;
-}
-
-.post .infopanel .author a:hover, .post .infopanel .comments a:hover
-{
-  color: #f17d7d !important;
 }
 
 .posts .post h1.title, .post h1.title a.post_title, .post h1.title,
@@ -573,96 +568,20 @@ code .diff .change
   border: none;
 }
 
-/*.wysiwyg_wrapper > a {
-  background: no-repeat 0 0;
-  background-image: url(http://habrastorage.org/files/0db/09d/939/0db09d93976e45d0be30cffe7dae1f91.png) !important;
-  height: 23px;
-  width: 20px;
-}
-
-.wysiwyg_wrapper > a > img {
-  display: none;
-}
-
-.wysiwyg_wrapper a[title="Курсив"] {
-  background-position: 0 -30px;
-}
-.wysiwyg_wrapper a[title="Подчёркнутый"] {
-  background-position: 0 -60px;
-}
-.wysiwyg_wrapper a[title="Зачёркнутый"] {
-  background-position: 0 -90px;
-}
-.wysiwyg_wrapper a[title="Цитата"] {
-  background-position: 0 -180px;
-}
-.wysiwyg_wrapper a[title="Код - Используйте этот тег для строчных элементов"] {
-  background-position: 0 -120px;
-  width: 30px;
-}
-.wysiwyg_wrapper a[title="Хабраюзер"] {
-  background-position: 0 -240px;
-}
-.wysiwyg_wrapper a[title="Вставить ссылку"] {
-  background-position: 0 -150px;
-}
-.wysiwyg_wrapper a[title="Вставить изображение"] {
-  background-position: 0 -210px;
-}
-.wysiwyg_wrapper a[title="Вставить видео"] {
-  background-position: 0 -270px;
-}
-.wysiwyg_wrapper a[title="Хабракат"] {
-  background-position: 0 -300px;
-}
-*/
 /* infopanel styles */
-.post .infopanel
-{
-  background: #303030;
-  border: none;
+.postinfo-panel, .post-type, .author-info {
+  background-color: transparent;
 }
 
-.post .infopanel .pageviews, .post .infopanel .favorite a, .post .infopanel .author, .post .infopanel .comments,
-.comments_list .comment_item .info a.favorite
-{
-  background: url(http://habrastorage.org/files/062/acf/d21/062acfd2165b4b30b9d3cd5853a2823d.png) no-repeat scroll 0 0 !important;
+.postinfo-panel, .voting-wjt, .post-comments, .post-type {
+  border-color: #757474;
 }
 
-.post .infopanel .pageviews
-{
-  background-position: 0 -90px !important;
-}
-
-.post .infopanel .favorite a
-{
-  height: 15px;
-  margin-top: 0;
-}
-
-.post .infopanel .favorite a.remove, .comments_list .comment_item .info a.favorite.remove
-{
-  background-position: 0 0 !important;
-}
-
-.post .infopanel .favorite a.add, .comments_list .comment_item .info a.favorite.add
-{
-  background-position: 0 -16px !important;
-}
-
-.post .infopanel .author
-{
-  background-position: 0 -34px !important;
-}
-
-.post .infopanel .comments
-{
-  background-position: 0 -62px !important;
+.author-info__name, .author-info__nickname {
+  color: #6a6a6a;
 }
 
 /* voting arrows styles */
-.post .infopanel .voting a.plus, .post .infopanel .voting a.minus,
-.post .infopanel .voting span.plus, .post .infopanel .voting span.minus,
 .comments_list .comment_item .info .voting a.plus, .comments_list .comment_item .info .voting a.minus,
 .comments_list .comment_item .info .voting span.plus, .comments_list .comment_item .info .voting span.minus
 {
@@ -686,8 +605,7 @@ code .diff .change
   background-image: url(http://habrastorage.org/files/e97/b37/862/e97b378624ea4d0a8ab1154304249ae4.png);
 }
 
-/* .comments_list .comment_item .info .voting a.minus .post .infopanel .voting a.minus .post .infopanel .voting span.minus .comments_list .comment_item .info .voting span.minus */
-.post .infopanel .voting a.plus, .comments_list .comment_item .info .voting a.plus
+.comments_list .comment_item .info .voting a.plus
 {
   background-position: 0 -17px;
 }
