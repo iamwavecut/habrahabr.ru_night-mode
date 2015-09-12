@@ -211,9 +211,8 @@ body
   opacity: 1;
 }
 
-.sidebar_right .block.for_authors_help .row[class^=row]
-{
-  background-image: url(http://habrastorage.org/files/eac/54e/c02/eac54ec02b1a4fdda418ceef7e63c614.png);
+.sidebar_right .block.for_authors_help .row .g-icon, .sidebar_right .block.about_exchange .row .g-icon {
+  color: rgba(255, 255, 255, .2);
 }
 
 .sidebar_right .block
@@ -582,7 +581,7 @@ code .diff .change
 }
 
 /* voting arrows styles */
-.comments_list .comment_item .info .voting a.plus, .comments_list .comment_item .info .voting a.minus,
+.comments_list .comment_item .info .voting a.plus,    .comments_list .comment_item .info .voting a.minus,
 .comments_list .comment_item .info .voting span.plus, .comments_list .comment_item .info .voting span.minus
 {
   background-image: url(http://habrastorage.org/files/8c5/404/fdc/8c5404fdc42442a982ad098b04b7757e.png) !important;
