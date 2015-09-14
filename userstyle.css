@@ -1,4 +1,3 @@
-@-moz-document regexp("https?:\\/\\/(?:habrahabr|geektimes|megamozg|tmfeed)\\.ru\\/[^i]?.*") {
 @media screen {
     #TMpanel {
         z-index: 2;
@@ -630,6 +629,4 @@
     .bottom_promo_blocks .block, .block_after_post .block {
         background: #444;
     }
-}
-
 }
