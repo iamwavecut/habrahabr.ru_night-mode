@@ -1,3 +1,4 @@
+@-moz-document regexp("https?:\\/\\/(?:habrahabr|geektimes|megamozg|tmfeed)\\.ru\\/[^i]?.*") {
 @media screen {
     #TMpanel {
         z-index: 2;
@@ -67,7 +68,10 @@
     }
 
     #navbar .nav_panel .tab.tab_user img, .comments_list .comment_item .info a.avatar img,
-    .conversation_page .messages .message .info a.avatar img, .author-info__image-pic {
+    .conversation_page .messages .message .info a.avatar img, .author-info__image-pic, .user_header .avatar img,
+    .post h1.title .flag_sandbox, .post h1.title .flag_recovery,
+    .postinfo-panel__item + .postinfo-panel__item .post-author__pic, .company_top_banner img,
+    .company_header .company_icon img {
         opacity: 0.5;
         -webkit-filter: grayscale(0.8);
         -moz-filter: grayscale(0.8);
@@ -78,7 +82,9 @@
     }
 
     #navbar .nav_panel .tab.tab_user img:hover, .comments_list .comment_item .info a.avatar img:hover,
-    .conversation_page .messages .message .info a.avatar img:hover, .author-info__image-pic:hover {
+    .conversation_page .messages .message .info a.avatar img:hover, .author-info__image-pic:hover,
+    .user_header .avatar img:hover, .postinfo-panel__item + .postinfo-panel__item:hover .post-author__pic,
+    .company_top_banner img:hover, .company_header .company_icon img:hover {
         opacity: 1;
         -webkit-filter: grayscale(0);
         -moz-filter: grayscale(0);
@@ -624,4 +630,6 @@
     .bottom_promo_blocks .block, .block_after_post .block {
         background: #444;
     }
+}
+
 }
