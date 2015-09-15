@@ -1,719 +1,644 @@
-#TMpanel
-{
-  z-index: 2;
-  background: #111;
-  border: none;
-  /*position: fixed;
-  top: 0;*/
-}
-
-body
-{
-  background-color: #111 !important;
-  color: #bbb;
-}
-
-#layout, #xpanel, .to_top
-{
-  z-index: 1;
-}
-
-/* Доступ к публикации закрыт */
-#logo, #reg-wrapper
-{
-  z-index: 1;
-  position: relative;
-}
-
-#reg-wrapper
-{
-  border-color: transparent;
-}
-
-#layout #navbar, #layout .inner
-{
-  background: #333 !important;
-}
-
-.company_header, .user_header, .content_left, .sidebar_right, .rotated_posts
-{
-  z-index: 1;
-  position: relative;
-}
-
-#footer
-{
-  position: relative;
-  z-index: 1;
-}
-
-#navbar
-{
-  /*top: 29px !important;
-  position: fixed !important;
-  bottom: 0 !important;*/
-}
-
-#navbar .nav_panel .logo
-{
-  opacity: 0.3;
-}
-
-#navbar .nav_panel .tab.open, #navbar .nav_panel .tab:hover, #navbar .nav_tabs_content.open .nav_tab
-{
-  background: #444;
-}
-
-#navbar .nav_panel .tab.tab_settings, #navbar .nav_panel .tab
-{
-  border: none;
-}
-
-#navbar .nav_panel .tab.tab_settings:hover, #navbar .nav_panel .tab:hover
-{
-  background-position: 0 0;
-}
-
-#navbar .nav_panel .tab.tab_login, .rotated_posts
-{
-  border: none;
-}
-
-#navbar .nav_panel .tab.tab_user img, .comments_list .comment_item .info a.avatar img,
-.conversation_page .messages .message .info a.avatar img
-{
-  opacity: 0.5;
-}
-
-#navbar .nav_panel, #navbar .nav_tabs_content .nav_tab, .comments_list .comment_item .message[class*=bad]
-{
-  background: transparent;
-}
-
-#navbar .nav_tabs_content .nav_tab .menu a, .conversation_page .messages .message .info .time
-{
-  color: #fff;
-}
-
-#navbar .nav_tabs_content .nav_tab .title a, #navbar .nav_tabs_content .nav_tab .title
-{
-  color: #bbb;
-}
-
-#navbar .nav_tabs_content .nav_tab .line
-{
-  background: #333;
-}
-
-#navbar .nav_panel .tab.tab_login, #navbar .nav_panel .tab.tab_print
-{
-  border: none;
-}
-
-#navbar .nav_panel .tab .g-icon
-{
-  vertical-align: middle;
-  font-size: 32px;
-}
-
-.editor .panel .wysiwyg_wrapper .btn .g-icon, #navbar .nav_panel .tab .g-icon
-{
-  color: #777;
-}
-
-#navbar .nav_panel .tab .count:not(:empty),
-#navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty)
-{
-  background: #79b;
-  color: #000;
-}
-
-.page_head
-{
-  z-index: 200;
-}
-
-.comments_list .comment_item .info .folding-dot
-{
-  background-image: url(http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png);
-}
-
-.comments_list .comment_item .info time
-{
-  color: #aaa;
-}
-
-.comments_list .comment_item .info.is_new, .conversation_page .messages .message.new .info
-{
-  background: #445;
-}
-
-.comments_list .comment_item .info.is_topic_starter
-{
-  background: #454;
-}
-
-.content_left table.menu tr td a, .content_left .submenu
-{
-  background: #555;
-  border: none;
-  color: #fff;
-}
-
-.content_left table.menu tr td span.count_new, .sidebar_right .block.habralenta_settings .category-list .category .new,
-.post .hubs a.subscribed, .comments_list .comment_item .info .voting .mark.positive span
-{
-  color: #4a4;
-}
-
-.content_left table.menu tr td, .content_left table.menu tr td.active
-{
-  border-color: transparent;
-}
-
-.content_left table.menu tr td.active a, .content_left .submenu .item.active
-{
-  background: #444;
-  border: none;
-  color: #d3e2f0;
-}
-
-.comments_list .comment_item .info a.username, #navbar .nav_tabs_content .navtab .title,
-.conversation_page .messages .message .info .login a
-{
-  color: #ddd;
-}
-
-.page-nav #nav-pages li em
-{
-  background: #6da3bd;
-  color: #333;
-}
-
-.comments_list .comment_item .info a:hover.username
-{
-  color: #aaa;
-}
-
-/* страницы компаний */
-.post .content img, .comments_list .html_format.message img,
-.top_banner img, .announce img, .mobile_applications img
-
-{
-  opacity: 0.6;
-}
-
-/* страницы компаний */
-.post .content img:hover, .comments_list .html_format.message img:hover,
-.top_banner img:hover, .announce img:hover, .mobile_applications img:hover
-
-{
-  opacity: 1;
-}
-
-.sidebar_right .block.for_authors_help .row .g-icon, .sidebar_right .block.about_exchange .row .g-icon {
-  color: rgba(255, 255, 255, .2);
-}
-
-.sidebar_right .block
-{
-  background: #222;
-  opacity: .5 !important;
-}
-
-.sidebar_right .block:hover
-{
-  opacity: 1 !important;
-}
-
-.sidebar_right .block.for_authors_help .row .text
-{
-  color: #858585;
-}
-
-.sidebar_right .block.for_authors_help .line
-{
-  background: #555 !important;
-  border-top: 1px solid #333;
-}
-
-.sidebar_right .block > .show_more
-{
-  background: #383838;
-}
-
-.sidebar_right .block .posts_list .post_item .count,
-.comments_list .comment_item_plain .post_info .count, .comments_list .comment_item .info .voting .mark.negative span
-{
-  color: #a44 !important;
-}
-
-.posts .post h1.title, .post h1.title a.post_title, .post h1.title,
-.html_format h1, .html_format h2, .html_format h3,
-.html_format h4, .html_format h5, .html_format h6,
-.page_head h2.title
-{
-  color: #B9C5CF;
-}
-
-.sidebar_right .block .posts_list .post_item a.post_name,
-.post ul.tags li a, .sidebar_right .block.best_company .company_info p a,
-.sidebar_right .block.new_vacanies .vacancies .job_item a,
-.sidebar_right .block.freelansim .tasks .task a, .html_format.message a,
-.content_left .submenu .item a, .post .content a, .html_format a,
-.user_header h2.username a, .conversations .conversation a.conversation_link,
-.page_head h2.title, #TMpanel .container .menu a,
-.bottom_promo_blocks .block.new_vacanies .vacancies .job_item a,
-.bottom_promo_blocks .block.freelansim .tasks .task a,
-.block_after_post .block.similar_posts .posts_list .post_item a.post_name
-{
-  color: #93b2d0;
-}
-
-.post h1.title a.post_title:visited,
-.sidebar_right .block .posts_list .post_item a.post_name:visited,
-.post ul.tags li a:visited, .sidebar_right .block.best_company .company_info p a:visited,
-.sidebar_right .block.new_vacanies .vacancies .job_item a:visited,
-.sidebar_right .block.freelansim .tasks .task a:visited, .html_format.message a:visited,
-.content_left .submenu .item.active a, .post .content a:visited, .html_format a:visited,
-.grey a, a.grey, #TMpanel .container .menu a.current,
-.bottom_promo_blocks .block.new_vacanies .vacancies .job_item a:visited,
-.bottom_promo_blocks .block.freelansim .tasks .task a:visited,
-.block_after_post .block.similar_posts .posts_list .post_item a:visited.post_name
-{
-  color: #738290;
-}
-
-.conversation_page .messages .message .info .login a:hover
-{
-  color: #aaa;
-}
-
-.buttons button, .buttons a.button, .buttons input,
-.buttons button.blue, .buttons a.button.blue, .buttons input.blue, .buttons input.green,
-.buttons button.blue:hover, .buttons a.button.blue:hover, .buttons input.blue:hover, .buttons input.green:hover,
-.buttons button.blue:active, .buttons a.button.blue:active, .buttons input.blue:active, .buttons input.green:active,
-.buttons button.loading, .buttons a.button.loading, .buttons input.loading,
-.buttons button:active, .buttons a.button:active, .buttons input:active,
-.buttons button:disabled, .buttons a.button:disabled, .buttons input:disabled,
-.buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active,
-.sidebar_right .block.user_info .join button
-{
-  box-shadow: inset 0 1px 0 #2a2a2a;
-  text-shadow: 0 1px 0 #2a2a2a;
-  border: none !important;
-  background: #444 !important;
-  color: #fff !important;
-}
-
-.buttons button:disabled, .buttons a.button:disabled, .buttons input:disabled,
-.buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active
-{
-  text-shadow: none;
-}
-
-body .buttons a.button:disabled:hover, .buttons input:disabled:hover
-{
-  background: #fafcfa !important;
-}
-
-body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .buttons input:hover
-{
-  background: #666 !important;
-}
-
-.buttons input.green
-{
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.html_format pre code
-{
-  background: #bbb;
-  border: none;
-}
-
-.html_format .spoiler .spoiler_text
-{
-  background: #444;
-  border: none;
-}
-
-.comments_list .comment_item .info.is_author, .conversation_page .messages .message.my .info
-{
-  background: #554;
-}
-
-.editor .text-holder textarea, input[type="text"],
-.chzn-container-multi .chzn-choices, .chzn-container .chzn-drop
-{
-  background: #444 !important;
-  color: #fff !important;
-  border-color: #555 !important;
-}
-
-.chzn-container-multi .chzn-choices .search-choice, .chzn-container .chzn-results .highlighted
-{
-  color: #000;
-}
-
-.chzn-container .chzn-results .highlighted .subscribers
-{
-  color: #000;
-}
-
-form .item label
-{
-  color: #838383;
-}
-
-.blue_buttons_panel
-{
-  background: #6C747A;
-}
-
-.sidebar_right .block > .line-r
-{
-  background: #504E4E;
-}
-
-.sidebar_right .block > .line-r:after
-{
-  border-color: #646464;
-}
-
-.editor .text-holder, .conversations .conversation:hover, .conversations .conversation.new
-{
-  background: #444;
-  border-color: #444;
-}
-
-.editor .panel
-{
-  background: #ccc;
-}
-
-.tracker_page table[class^=tracker] tr th
-{
-  border-bottom-color: #777;
-}
-
-.notes table tr td, .conversations .conversation,
-.tracker_page table[class^=tracker] tr td
-{
-  border-bottom-color: #555;
-}
-
-.tracker_page table.tracker_comments tr td.comment_count a
-{
-  color: #CF5555;
-}
-
-.tracker_page table[class^=tracker] tr.new
-{
-  background: #444;
-}
-
-.conversation_page .messages .message
-{
-  border-top: 1px solid #555;
-}
-
-.conversation_page > .title, .conversation_page .all_dialogs
-{
-  color: #ccc;
-}
-
-.post .content .poll .poll_title
-{
-  color: #999;
-}
-
-/* embedded video */
-iframe, object
-{
-  opacity: 0.6;
-}
-
-iframe:hover, object:hover
-{
-  opacity: 1;
-}
-
-/* разметка кода */
-.html_format code, .html_format pre code
-{
-  color: #A9B7C6;
-  background: #2b2b2b;
-}
-
-.html_format code
-{
-  display: inline-block;
-  padding: 0 3px;
-}
-
-.html_format pre code
-{
-  font-size: 12px;
-  padding: 0.5em;
-  display: block;
-}
-
-code .subst, code .title
-{
-  font-weight: normal;
-  color: #FFC66D;
-}
-
-code .comment, code .template_comment, code .javadoc, code .diff .header
-{
-  color: gray;
-}
-
-code .annotation, code .decorator, code .preprocessor, code .doctype, code .pi, code .chunk, code .shebang,
-code .apache .cbracket
-{
-  color: olive;
-}
-
-code .tag, code .tag .title, #TMpanel .container .menu.special a
-{
-  color: #E8BF6A;
-}
-
-code .pi code .id, code .attr_selector, code .pseudo, code .literal, code .keyword, code .hexcolor,
-code .css .function, code .ini .title, code .css .class, code .list .title, code .tex .command
-{
-  color: #CC7833;
-}
-
-code .attribute, code .rules .keyword, code .number, code .date, code .regexp, code .tex .special
-{
-  color: #9876AA;
-}
-
-code .number, code .regexp
-{
-  font-weight: normal;
-}
-
-code .string, code .value, code .filter .argument, code .css .function .params, code .apache .tag
-{
-  color: #390;
-}
-
-code .symbol
-{
-  color: #6E9CBE;
-}
-
-code .ruby .symbol .string, code .ruby .symbol .keyword, code .ruby .symbol .keymethods
-{
-  color: #A5C25C;
-}
-
-code .char, code .tex .formula
-{
-  color: #968e5b
-}
-
-code .phpdoc, code .yardoctag, code .javadoctag
-{
-  text-decoration: underline
-}
-
-code .variable, code .envvar, code .apache .sqbracket, code .nginx .built_in
-{
-  color: #D0D0FF
-}
-
-code .addition, code .deletion, code .diff .change
-{
-  display: block;
-  margin-bottom: -1.6em;
-}
-
-code .addition
-{
-  background: #294436
-}
-
-code .deletion
-{
-  background: #484A4A
-}
-
-code .diff .change
-{
-  background: #385570
-}
-
-/* wysiwyg icons */
-.editor .panel
-{
-  background: transparent;
-}
-
-.wysiwyg_wrapper
-{
-  background: transparent;
-}
-
-.editor .panel .wysiwyg_wrapper .can_use_html,
-.editor .panel .wysiwyg_wrapper .btn
-{
-  border: none;
-}
-
-.editor .panel .wysiwyg_wrapper .help_holder h4 {
-  color: #999;
-}
-
-.editor .panel .wysiwyg_wrapper .help_holder dl dt {
-  color: #ccc;
-}
-
-.editor .panel .wysiwyg_wrapper .help_holder dl dd {
-  color: #999;
-}
-
-/* infopanel styles */
-.postinfo-panel, .post-type, .author-info {
-  background-color: transparent;
-}
-
-.postinfo-panel, .voting-wjt, .post-comments, .post-type {
-  border-color: #757474;
-}
-
-.author-info__name, .author-info__nickname {
-  color: #6a6a6a;
-}
-
-/* voting arrows styles */
-.comments_list .comment_item .info .voting a.plus,    .comments_list .comment_item .info .voting a.minus,
-.comments_list .comment_item .info .voting span.plus, .comments_list .comment_item .info .voting span.minus
-{
-  background-image: url(http://habrastorage.org/files/8c5/404/fdc/8c5404fdc42442a982ad098b04b7757e.png) !important;
-}
-
-.user_header .karma .score .vote_minus,
-.user_header .karma .score .vote_plus,
-.user_header .karma .score .vote_plus.voted
-{
-  background-image: url(http://habrastorage.org/files/aa4/a81/2af/aa4a812afe4c4512880645296d83c817.png);
-}
-
-.user_header .send_mail
-{
-  background: url(http://habrastorage.org/files/c95/c7a/b12/c95c7ab1234f4327af496b3332008ee4.png);
-}
-
-.hubs_list ul li
-{
-  background-image: url(http://habrastorage.org/files/e97/b37/862/e97b378624ea4d0a8ab1154304249ae4.png);
-}
-
-.comments_list .comment_item .info .voting a.plus
-{
-  background-position: 0 -17px;
-}
-
-/* other icons */
-.post ul.tags
-{
-  background-image: url(http://habrastorage.org/files/499/ef6/0f2/499ef60f257b4800981a9340bd5e4b77.png) !important;
-}
-
-.comments_form h2.title
-{
-  background-image: url(http://habrastorage.org/files/764/cef/1a2/764cef1a2e2c48318dfa14d0143bff62.png);
-}
-
-.post.translation h1.title .post_title
-{
-  background-image: url(http://habrastorage.org/files/037/94a/2eb/03794a2eb4474566ba01c391365d43c1.gif) !important;
-}
-
-.post .hubs
-{
-  background-image: url(http://habrastorage.org/files/51e/ac0/f4f/51eac0f4fa5e415997500ab0002d4b2e.png) !important;
-}
-
-.posts .post h1.title .edit
-{
-  width: 17px;
-  height: 17px;
-  display: inline-block;
-  background: url(http://habrastorage.org/files/05d/716/e76/05d716e767d648a4bd56895f4261f782.png) no-repeat !important;
-}
-
-.posts .post h1.title .edit img
-{
-  display: none;
-}
-
-.comments_list .comment_item .info a.favorite
-{
-  height: 15px;
-  margin-top: 3px;
-}
-
-/* стили для корпоративных блогов */
-#header_mouse_activity #header
-{
-  background: #333;
-}
-
-#header_mouse_activity .main_menu a.active
-{
-  color: #949494;
-}
-
-#header_mouse_activity .user_panel a.username
-{
-  color: #ccc;
-}
-
-#header_mouse_activity .user_panel a
-{
-  color: #8D8D8D;
-}
-
-.company_header .name a
-{
-  color: #888888;
-}
-
-.company_info, .company_links, .corporate_news, .corporate_blog, .mobile_applications, .hantim_vacanies,
-.twitter_stream
-{
-  padding: 5px;
-}
-
-.sidebar_right .block.twitter_stream .tweets .tweet .text
-{
-  color: #aaa;
-}
-
-.sidebar_right .block a
-{
-  color: #8392a0;
-}
-
-.sidebar_right .block.mobile_applications .app_widget .app_title
-{
-  color: #5f5f5f;
-}
-
-.sidebar_right .block.mobile_applications .app_widget .description
-{
-  color: #6c6362;
-}
-
-.bottom_promo_blocks .block, .block_after_post .block
-{
-  background: #444;
+@media screen {
+    #TMpanel {
+        z-index: 2;
+        background: #111;
+        border: none;
+        /*position: fixed;
+        top: 0;*/
+    }
+
+    body {
+        background-color: #111 !important;
+        color: #bbb;
+    }
+
+    #layout, #xpanel, .to_top {
+        z-index: 1;
+    }
+
+    /* Доступ к публикации закрыт */
+    #logo, #reg-wrapper {
+        z-index: 1;
+        position: relative;
+    }
+
+    #reg-wrapper {
+        border-color: transparent;
+    }
+
+    #layout #navbar, #layout .inner {
+        background: #333 !important;
+    }
+
+    .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts {
+        z-index: 1;
+        position: relative;
+    }
+
+    #footer {
+        position: relative;
+        z-index: 1;
+    }
+
+    #navbar {
+        /*top: 29px !important;
+        position: fixed !important;
+        bottom: 0 !important;*/
+    }
+
+    #navbar .nav_panel .logo {
+        opacity: 0.3;
+    }
+
+    #navbar .nav_panel .tab.open, #navbar .nav_panel .tab:hover, #navbar .nav_tabs_content.open .nav_tab {
+        background: #444;
+    }
+
+    #navbar .nav_panel .tab.tab_settings, #navbar .nav_panel .tab {
+        border: none;
+    }
+
+    #navbar .nav_panel .tab.tab_settings:hover, #navbar .nav_panel .tab:hover {
+        background-position: 0 0;
+    }
+
+    #navbar .nav_panel .tab.tab_login, .rotated_posts {
+        border: none;
+    }
+
+    #navbar .nav_panel .tab.tab_user img, .comments_list .comment_item .info a.avatar img,
+    .conversation_page .messages .message .info a.avatar img, .author-info__image-pic, .user_header .avatar img,
+    .post h1.title .flag_sandbox, .post h1.title .flag_recovery, .post h1.title .flag_translation,
+    .postinfo-panel__item + .postinfo-panel__item .post-author__pic, .company_top_banner img,
+    .company_header .company_icon img {
+        opacity: 0.5;
+        -webkit-filter: grayscale(0.8);
+        -moz-filter: grayscale(0.8);
+        -ms-filter: grayscale(0.8);
+        -o-filter: grayscale(0.8);
+        filter: grayscale(0.8);
+        transition: all .3s;
+    }
+
+    #navbar .nav_panel .tab.tab_user img:hover, .comments_list .comment_item .info a.avatar img:hover,
+    .conversation_page .messages .message .info a.avatar img:hover, .author-info__image-pic:hover,
+    .user_header .avatar img:hover, .postinfo-panel__item + .postinfo-panel__item:hover .post-author__pic,
+    .company_top_banner img:hover, .company_header .company_icon img:hover {
+        opacity: 1;
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        filter: grayscale(0);
+    }
+
+    #navbar .nav_panel, #navbar .nav_tabs_content .nav_tab, .comments_list .comment_item .message[class*=bad] {
+        background: transparent;
+    }
+
+    #navbar .nav_tabs_content .nav_tab .menu a, .conversation_page .messages .message .info .time {
+        color: #fff;
+    }
+
+    #navbar .nav_tabs_content .nav_tab .title a, #navbar .nav_tabs_content .nav_tab .title {
+        color: #bbb;
+    }
+
+    #navbar .nav_tabs_content .nav_tab .line {
+        background: #333;
+    }
+
+    #navbar .nav_panel .tab.tab_login, #navbar .nav_panel .tab.tab_print {
+        border: none;
+    }
+
+    #navbar .nav_panel .tab .g-icon {
+        vertical-align: middle;
+        font-size: 32px;
+    }
+
+    .editor .panel .wysiwyg_wrapper .btn .g-icon, #navbar .nav_panel .tab .g-icon {
+        color: #777;
+    }
+
+    #navbar .nav_panel .tab .count:not(:empty),
+    #navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty) {
+        background: #79b;
+        color: #000;
+    }
+
+    .page_head {
+        z-index: 200;
+    }
+
+    .comments_list .comment_item .info .folding-dot {
+        background-image: url(http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png);
+    }
+
+    .comments_list .comment_item .info time {
+        color: #aaa;
+    }
+
+    .comments_list .comment_item .info.is_new, .conversation_page .messages .message.new .info {
+        background: #445;
+    }
+
+    .comments_list .comment_item .info.is_topic_starter {
+        background: #454;
+    }
+
+    .content_left table.menu tr td a, .content_left .submenu {
+        background: #555;
+        border: none;
+        color: #fff;
+    }
+
+    .content_left table.menu tr td span.count_new, .sidebar_right .block.habralenta_settings .category-list .category .new,
+    .post .hubs a.subscribed, .comments_list .comment_item .info .voting .mark.positive span {
+        color: #4a4;
+    }
+
+    .content_left table.menu tr td, .content_left table.menu tr td.active {
+        border-color: transparent;
+    }
+
+    .content_left table.menu tr td.active a, .content_left .submenu .item.active {
+        background: #444;
+        border: none;
+        color: #d3e2f0;
+    }
+
+    .comments_list .comment_item .info a.username, #navbar .nav_tabs_content .navtab .title,
+    .conversation_page .messages .message .info .login a {
+        color: #ddd;
+    }
+
+    .page-nav #nav-pages li em {
+        background: #6da3bd;
+        color: #333;
+    }
+
+    .comments_list .comment_item .info a:hover.username {
+        color: #aaa;
+    }
+
+    /* страницы компаний */
+    .post .content img, .comments_list .html_format.message img,
+    .top_banner img, .announce img, .mobile_applications img {
+        opacity: 0.6;
+        -webkit-filter: grayscale(0.8);
+        -moz-filter: grayscale(0.8);
+        -ms-filter: grayscale(0.8);
+        -o-filter: grayscale(0.8);
+        filter: grayscale(0.8);
+        transition: all .3s;
+    }
+
+    /* страницы компаний */
+    .post .content img:hover, .comments_list .html_format.message img:hover,
+    .top_banner img:hover, .announce img:hover, .mobile_applications img:hover {
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    .sidebar_right .block.for_authors_help .row .g-icon, .sidebar_right .block.about_exchange .row .g-icon {
+        color: rgba(255, 255, 255, .2);
+    }
+
+    .sidebar_right .block {
+        background: #222;
+        opacity: .5 !important;
+        transition: all .3s;
+    }
+
+    .sidebar_right .block:hover {
+        opacity: 1 !important;
+    }
+
+    .sidebar_right .block.for_authors_help .row .text {
+        color: #858585;
+    }
+
+    .sidebar_right .block.for_authors_help .line {
+        background: #555 !important;
+        border-top: 1px solid #333;
+    }
+
+    .sidebar_right .block > .show_more {
+        background: #383838;
+    }
+
+    .sidebar_right .block .posts_list .post_item .count,
+    .comments_list .comment_item_plain .post_info .count, .comments_list .comment_item .info .voting .mark.negative span {
+        color: #a44 !important;
+    }
+
+    .posts .post h1.title, .post h1.title a.post_title, .post h1.title,
+    .html_format h1, .html_format h2, .html_format h3,
+    .html_format h4, .html_format h5, .html_format h6,
+    .page_head h2.title {
+        color: #B9C5CF;
+    }
+
+    .sidebar_right .block .posts_list .post_item a.post_name,
+    .post ul.tags li a, .sidebar_right .block.best_company .company_info p a,
+    .sidebar_right .block.new_vacanies .vacancies .job_item a,
+    .sidebar_right .block.freelansim .tasks .task a, .html_format.message a,
+    .content_left .submenu .item a, .post .content a, .html_format a,
+    .user_header h2.username a, .conversations .conversation a.conversation_link,
+    .page_head h2.title, #TMpanel .container .menu a,
+    .bottom_promo_blocks .block.new_vacanies .vacancies .job_item a,
+    .bottom_promo_blocks .block.freelansim .tasks .task a,
+    .block_after_post .block.similar_posts .posts_list .post_item a.post_name {
+        color: #93b2d0;
+    }
+
+    .post h1.title a.post_title:visited,
+    .sidebar_right .block .posts_list .post_item a.post_name:visited,
+    .post ul.tags li a:visited, .sidebar_right .block.best_company .company_info p a:visited,
+    .sidebar_right .block.new_vacanies .vacancies .job_item a:visited,
+    .sidebar_right .block.freelansim .tasks .task a:visited, .html_format.message a:visited,
+    .content_left .submenu .item.active a, .post .content a:visited, .html_format a:visited,
+    .grey a, a.grey, #TMpanel .container .menu a.current,
+    .bottom_promo_blocks .block.new_vacanies .vacancies .job_item a:visited,
+    .bottom_promo_blocks .block.freelansim .tasks .task a:visited,
+    .block_after_post .block.similar_posts .posts_list .post_item a:visited.post_name {
+        color: #738290;
+    }
+
+    .conversation_page .messages .message .info .login a:hover {
+        color: #aaa;
+    }
+
+    .buttons button, .buttons a.button, .buttons input,
+    .buttons button.blue, .buttons a.button.blue, .buttons input.blue, .buttons input.green,
+    .buttons button.blue:hover, .buttons a.button.blue:hover, .buttons input.blue:hover, .buttons input.green:hover,
+    .buttons button.blue:active, .buttons a.button.blue:active, .buttons input.blue:active, .buttons input.green:active,
+    .buttons button.loading, .buttons a.button.loading, .buttons input.loading,
+    .buttons button:active, .buttons a.button:active, .buttons input:active,
+    .buttons button:disabled, .buttons a.button:disabled, .buttons input:disabled,
+    .buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active,
+    .sidebar_right .block.user_info .join button {
+        box-shadow: inset 0 1px 0 #2a2a2a;
+        text-shadow: 0 1px 0 #2a2a2a;
+        border: none !important;
+        background: #444 !important;
+        color: #fff !important;
+    }
+
+    .buttons button:disabled, .buttons a.button:disabled, .buttons input:disabled,
+    .buttons button:disabled:active, .buttons a.button:disabled:active, .buttons input:disabled:active {
+        text-shadow: none;
+    }
+
+    body .buttons a.button:disabled:hover, .buttons input:disabled:hover {
+        background: #fafcfa !important;
+    }
+
+    body .buttons a.button:hover, .buttons button:hover, .buttons a.button:hover, .buttons input:hover {
+        background: #666 !important;
+    }
+
+    .buttons input.green {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .html_format pre code {
+        background: #bbb;
+        border: none;
+    }
+
+    .html_format .spoiler .spoiler_text {
+        background: #444;
+        border: none;
+    }
+
+    .comments_list .comment_item .info.is_author, .conversation_page .messages .message.my .info {
+        background: #554;
+    }
+
+    .editor .text-holder textarea, input[type="text"],
+    .chzn-container-multi .chzn-choices, .chzn-container .chzn-drop {
+        background: #444 !important;
+        color: #fff !important;
+        border-color: #555 !important;
+    }
+
+    .chzn-container-multi .chzn-choices .search-choice, .chzn-container .chzn-results .highlighted {
+        color: #000;
+    }
+
+    .chzn-container .chzn-results .highlighted .subscribers {
+        color: #000;
+    }
+
+    form .item label {
+        color: #838383;
+    }
+
+    .blue_buttons_panel {
+        background: #6C747A;
+    }
+
+    .sidebar_right .block > .line-r {
+        background: #504E4E;
+    }
+
+    .sidebar_right .block > .line-r:after {
+        border-color: #646464;
+    }
+
+    .editor .text-holder, .conversations .conversation:hover, .conversations .conversation.new {
+        background: #444;
+        border-color: #444;
+    }
+
+    .editor .panel {
+        background: #ccc;
+    }
+
+    .tracker_page table[class^=tracker] tr th {
+        border-bottom-color: #777;
+    }
+
+    .notes table tr td, .conversations .conversation,
+    .tracker_page table[class^=tracker] tr td {
+        border-bottom-color: #555;
+    }
+
+    .tracker_page table.tracker_comments tr td.comment_count a {
+        color: #CF5555;
+    }
+
+    .tracker_page table[class^=tracker] tr.new {
+        background: #444;
+    }
+
+    .conversation_page .messages .message {
+        border-top: 1px solid #555;
+    }
+
+    .conversation_page > .title, .conversation_page .all_dialogs {
+        color: #ccc;
+    }
+
+    .post .content .poll .poll_title {
+        color: #999;
+    }
+
+    /* embedded video */
+    iframe, object {
+        opacity: 0.6;
+        -webkit-filter: grayscale(0.8);
+        -moz-filter: grayscale(0.8);
+        -ms-filter: grayscale(0.8);
+        -o-filter: grayscale(0.8);
+        filter: grayscale(0.8);
+        transition: all .3s;
+    }
+
+    iframe:hover, object:hover {
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        filter: grayscale(0);
+        opacity: 1;
+    }
+
+    /* разметка кода */
+    .html_format code, .html_format pre code {
+        color: #A9B7C6;
+        background: #2b2b2b;
+    }
+
+    .html_format code {
+        display: inline-block;
+        padding: 0 3px;
+    }
+
+    .html_format pre code {
+        font-size: 12px;
+        padding: 0.5em;
+        display: block;
+    }
+
+    code .subst, code .title {
+        font-weight: normal;
+        color: #FFC66D;
+    }
+
+    code .comment, code .template_comment, code .javadoc, code .diff .header {
+        color: gray;
+    }
+
+    code .annotation, code .decorator, code .preprocessor, code .doctype, code .pi, code .chunk, code .shebang,
+    code .apache .cbracket {
+        color: olive;
+    }
+
+    code .tag, code .tag .title, #TMpanel .container .menu.special a {
+        color: #E8BF6A;
+    }
+
+    code .pi code .id, code .attr_selector, code .pseudo, code .literal, code .keyword, code .hexcolor,
+    code .css .function, code .ini .title, code .css .class, code .list .title, code .tex .command {
+        color: #CC7833;
+    }
+
+    code .attribute, code .rules .keyword, code .number, code .date, code .regexp, code .tex .special {
+        color: #9876AA;
+    }
+
+    code .number, code .regexp {
+        font-weight: normal;
+    }
+
+    code .string, code .value, code .filter .argument, code .css .function .params, code .apache .tag {
+        color: #390;
+    }
+
+    code .symbol {
+        color: #6E9CBE;
+    }
+
+    code .ruby .symbol .string, code .ruby .symbol .keyword, code .ruby .symbol .keymethods {
+        color: #A5C25C;
+    }
+
+    code .char, code .tex .formula {
+        color: #968e5b
+    }
+
+    code .phpdoc, code .yardoctag, code .javadoctag {
+        text-decoration: underline
+    }
+
+    code .variable, code .envvar, code .apache .sqbracket, code .nginx .built_in {
+        color: #D0D0FF
+    }
+
+    code .addition, code .deletion, code .diff .change {
+        display: block;
+        margin-bottom: -1.6em;
+    }
+
+    code .addition {
+        background: #294436
+    }
+
+    code .deletion {
+        background: #484A4A
+    }
+
+    code .diff .change {
+        background: #385570
+    }
+
+    /* wysiwyg icons */
+    .editor .panel {
+        background: transparent;
+    }
+
+    .wysiwyg_wrapper {
+        background: transparent;
+    }
+
+    .editor .panel .wysiwyg_wrapper .can_use_html,
+    .editor .panel .wysiwyg_wrapper .btn {
+        border: none;
+    }
+
+    .editor .panel .wysiwyg_wrapper .help_holder h4 {
+        color: #999;
+    }
+  
+    .editor .panel .wysiwyg_wrapper .help_holder dl dt {
+        color: #ccc;
+    }
+  
+    .editor .panel .wysiwyg_wrapper .help_holder dl dd {
+        color: #999;
+    }
+
+    /* infopanel styles */
+    .postinfo-panel, .post-type, .author-info, .author-info__image {
+        background-color: transparent;
+    }
+
+    .postinfo-panel, .voting-wjt, .post-comments, .post-type {
+        border-color: #444;
+    }
+
+    .author-info__name, .author-info__nickname {
+        color: #6a6a6a;
+    }
+
+    /* voting arrows styles */
+    .comments_list .comment_item .info .voting a.plus, .comments_list .comment_item .info .voting a.minus,
+    .comments_list .comment_item .info .voting span.plus, .comments_list .comment_item .info .voting span.minus {
+        background-image: url(http://habrastorage.org/files/8c5/404/fdc/8c5404fdc42442a982ad098b04b7757e.png) !important;
+    }
+
+    .user_header .karma .score .vote_minus,
+    .user_header .karma .score .vote_plus,
+    .user_header .karma .score .vote_plus.voted {
+        background-image: url(http://habrastorage.org/files/aa4/a81/2af/aa4a812afe4c4512880645296d83c817.png);
+    }
+
+    .user_header .send_mail {
+        background: url(http://habrastorage.org/files/c95/c7a/b12/c95c7ab1234f4327af496b3332008ee4.png);
+    }
+
+    .hubs_list ul li {
+        background-image: url(http://habrastorage.org/files/e97/b37/862/e97b378624ea4d0a8ab1154304249ae4.png);
+    }
+
+    .comments_list .comment_item .info .voting a.plus {
+        background-position: 0 -17px;
+    }
+
+    /* other icons */
+    .post ul.tags {
+        background-image: url(http://habrastorage.org/files/499/ef6/0f2/499ef60f257b4800981a9340bd5e4b77.png) !important;
+    }
+
+    .comments_form h2.title {
+        background-image: url(http://habrastorage.org/files/764/cef/1a2/764cef1a2e2c48318dfa14d0143bff62.png);
+    }
+
+    .post.translation h1.title .post_title {
+        background-image: url(http://habrastorage.org/files/037/94a/2eb/03794a2eb4474566ba01c391365d43c1.gif) !important;
+    }
+
+    .post .hubs {
+        background-image: url(http://habrastorage.org/files/51e/ac0/f4f/51eac0f4fa5e415997500ab0002d4b2e.png) !important;
+    }
+
+    .posts .post h1.title .edit {
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        background: url(http://habrastorage.org/files/05d/716/e76/05d716e767d648a4bd56895f4261f782.png) no-repeat !important;
+    }
+
+    .posts .post h1.title .edit img {
+        display: none;
+    }
+
+    .comments_list .comment_item .info a.favorite {
+        height: 15px;
+        margin-top: 3px;
+    }
+
+    /* стили для корпоративных блогов */
+    #header_mouse_activity #header {
+        background: #333;
+    }
+
+    #header_mouse_activity .main_menu a.active {
+        color: #949494;
+    }
+
+    #header_mouse_activity .user_panel a.username {
+        color: #ccc;
+    }
+
+    #header_mouse_activity .user_panel a {
+        color: #8D8D8D;
+    }
+
+    .company_header .name a {
+        color: #888888;
+    }
+
+    .company_info, .company_links, .corporate_news, .corporate_blog, .mobile_applications, .hantim_vacanies,
+    .twitter_stream {
+        padding: 5px;
+    }
+
+    .sidebar_right .block.twitter_stream .tweets .tweet .text {
+        color: #aaa;
+    }
+
+    .sidebar_right .block a {
+        color: #8392a0;
+    }
+
+    .sidebar_right .block.mobile_applications .app_widget .app_title {
+        color: #5f5f5f;
+    }
+
+    .sidebar_right .block.mobile_applications .app_widget .description {
+        color: #6c6362;
+    }
+
+    .bottom_promo_blocks .block, .block_after_post .block {
+        background: #444;
+    }
 }
