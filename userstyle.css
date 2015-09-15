@@ -567,6 +567,18 @@ code .diff .change
   border: none;
 }
 
+.editor .panel .wysiwyg_wrapper .help_holder h4 {
+  color: #999;
+}
+
+.editor .panel .wysiwyg_wrapper .help_holder dl dt {
+  color: #ccc;
+}
+
+.editor .panel .wysiwyg_wrapper .help_holder dl dd {
+  color: #999;
+}
+
 /* infopanel styles */
 .postinfo-panel, .post-type, .author-info {
   background-color: transparent;
