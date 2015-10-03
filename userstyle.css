@@ -641,4 +641,14 @@
     .bottom_promo_blocks .block, .block_after_post .block {
         background: #444;
     }
+
+    .live-broadcast, .top-materials_geektimes,.top-materials_habrahabr,
+    .top-materials_megamozg, .live-broadcast, .promo-block  {
+        background-color: transparent !important;
+        border-color: transparent !important;
+    }
+
+    .live-broadcast .tabs__menu {
+        background: rgba(0, 0, 0, .1) !important;
+    }
 }
