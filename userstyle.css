@@ -521,44 +521,6 @@
         text-decoration: underline
     }
 
-    /*code .annotation, code .decorator, code .preprocessor, code .doctype, code .pi, code .chunk, code .shebang,
-    code .apache .cbracket {
-        color: olive;
-    }
-
-    code .tag, code .tag .title, #TMpanel .container .menu.special a {
-        color: #E8BF6A;
-    }
-
-    code .pi code .id, code .attr_selector, code .pseudo, code .literal, code .keyword, code .hexcolor,
-    code .css .function, code .ini .title, code .css .class, code .list .title, code .tex .command {
-        color: #CC7833;
-    }
-
-    code .attribute, code .rules .keyword, code .number, code .date, code .regexp, code .tex .special {
-        color: #9876AA;
-    }
-
-    code .number, code .regexp {
-        font-weight: normal;
-    }
-
-    code .symbol {
-        color: #6E9CBE;
-    }
-
-    code .ruby .symbol .string, code .ruby .symbol .keyword, code .ruby .symbol .keymethods {
-        color: #A5C25C;
-    }
-
-    code .char, code .tex .formula {
-        color: #968e5b
-    }
-
-    code .phpdoc, code .yardoctag, code .javadoctag {
-        text-decoration: underline
-    }*/
-
     /* wysiwyg icons */
     .editor .panel {
         background: transparent;
@@ -596,54 +558,6 @@
 
     .author-info__name, .author-info__nickname {
         color: #6a6a6a;
-    }
-
-    /* voting arrows styles */
-    .comments_list .comment_item .info .voting a.plus, .comments_list .comment_item .info .voting a.minus,
-    .comments_list .comment_item .info .voting span.plus, .comments_list .comment_item .info .voting span.minus {
-        background-image: url(http://habrastorage.org/files/8c5/404/fdc/8c5404fdc42442a982ad098b04b7757e.png) !important;
-    }
-
-    .user_header .karma .score .vote_minus,
-    .user_header .karma .score .vote_plus,
-    .user_header .karma .score .vote_plus.voted {
-        background-image: url(http://habrastorage.org/files/aa4/a81/2af/aa4a812afe4c4512880645296d83c817.png);
-    }
-
-    .user_header .send_mail {
-        background: url(http://habrastorage.org/files/c95/c7a/b12/c95c7ab1234f4327af496b3332008ee4.png);
-    }
-
-    .hubs_list ul li {
-        background-image: url(http://habrastorage.org/files/e97/b37/862/e97b378624ea4d0a8ab1154304249ae4.png);
-    }
-
-    .comments_list .comment_item .info .voting a.plus {
-        background-position: 0 -17px;
-    }
-
-    /* other icons */
-    .post ul.tags {
-        background-image: url(http://habrastorage.org/files/499/ef6/0f2/499ef60f257b4800981a9340bd5e4b77.png) !important;
-    }
-
-    .comments_form h2.title {
-        background-image: url(http://habrastorage.org/files/764/cef/1a2/764cef1a2e2c48318dfa14d0143bff62.png);
-    }
-
-    .post.translation h1.title .post_title {
-        background-image: url(http://habrastorage.org/files/037/94a/2eb/03794a2eb4474566ba01c391365d43c1.gif) !important;
-    }
-
-    .post .hubs {
-        background-image: url(http://habrastorage.org/files/51e/ac0/f4f/51eac0f4fa5e415997500ab0002d4b2e.png) !important;
-    }
-
-    .posts .post h1.title .edit {
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        background: url(http://habrastorage.org/files/05d/716/e76/05d716e767d648a4bd56895f4261f782.png) no-repeat !important;
     }
 
     .posts .post h1.title .edit img {
