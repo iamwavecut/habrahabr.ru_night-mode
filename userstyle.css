@@ -429,16 +429,17 @@
         display: block;
     }
 
-    .hljs-comment, .bash .hljs-shebang, .java .hljs-javadoc, .javascript .hljs-javadoc, .rust .hljs-preprocessor {
+    .hljs-comment, .bash .hljs-shebang, .java .hljs-javadoc, .javascript .hljs-javadoc,
+    .rust .hljs-preprocessor, .hljs-quote {
         color: gray
     }
 
-    .hljs-string, .apache .hljs-sqbracket, .coffeescript .hljs-subst, .coffeescript .hljs-regexp,
+    .hljs-string, .hljs-doctag, .apache .hljs-sqbracket, .coffeescript .hljs-subst, .coffeescript .hljs-regexp,
     .cpp .hljs-preprocessor, .c .hljs-preprocessor, .javascript .hljs-regexp, .json .hljs-attribute,
     .makefile .hljs-variable, .markdown .hljs-value, .markdown .hljs-link_label, .markdown .hljs-strong,
     .markdown .hljs-emphasis, .markdown .hljs-blockquote, .nginx .hljs-regexp, .nginx .hljs-number,
     .objectivec .hljs-preprocessor .hljs-title, .perl .hljs-regexp, .php .hljs-regexp, .xml .hljs-value,
-    .less .hljs-built_in, .scss .hljs-built_in {
+    .less .hljs-built_in, .scss .hljs-built_in, .hljs-link, .hljs-regexp {
         color: #390
     }
 
@@ -446,10 +447,11 @@
     .haskell .hljs-type, .java .hljs-javadoctag, .javascript .hljs-tag, .javascript .hljs-javadoctag,
     .nginx .hljs-title, .objectivec .hljs-preprocessor, .php .hljs-phpdoc, .sql .hljs-built_in,
     .less .hljs-tag, .less .hljs-at_rule, .scss .hljs-tag, .scss .hljs-at_rule, .scss .hljs-important,
-    .stylus .hljs-at_rule, .go .hljs-typename, .swift .hljs-preprocessor {
+    .stylus .hljs-at_rule, .go .hljs-typename, .swift .hljs-preprocessor, .hljs-selector-tag, .hljs-subst {
         color: #CC7833
     }
 
+    .hljs-literal, .hljs-number, .hljs-tag .hljs-attr, .hljs-template-variable, .hljs-variable,
     .apache .hljs-common, .apache .hljs-cbracket, .apache .hljs-keyword, .bash .hljs-literal,
     .bash .hljs-built_in, .coffeescript .hljs-literal, .coffeescript .hljs-built_in,
     .coffeescript .hljs-number, .cpp .hljs-number, .cpp .hljs-built_in, .c .hljs-number, .c .hljs-built_in,
@@ -464,7 +466,7 @@
     .less .hljs-attribute, .scss .hljs-preprocessor, .scss .hljs-number, .scss .hljs-hexcolor,
     .scss .hljs-function, .scss .hljs-attribute, .stylus .hljs-number, .stylus .hljs-hexcolor,
     .stylus .hljs-attribute, .stylus .hljs-params, .go .hljs-built_in, .go .hljs-constant,
-    .swift .hljs-built_in, .swift .hljs-number {
+    .swift .hljs-built_in, .swift .hljs-number, .hljs-builtin-name, .hljs-bullet, .hljs-symbol {
         color: #9876AA
     }
 
@@ -475,7 +477,7 @@
     .bash .hljs-variable, .cs .hljs-preprocessor, .cs .hljs-preprocessor .hljs-keyword,
     .css .hljs-attr_selector, .css .hljs-value, .ini .hljs-value, .ini .hljs-keyword,
     .javascript .hljs-tag .hljs-title, .makefile .hljs-constant, .nginx .hljs-variable,
-    .xml .hljs-tag, .scss .hljs-variable {
+    .xml .hljs-tag, .scss .hljs-variable, .hljs-name {
         color: #D0D0FF
     }
 
@@ -486,7 +488,8 @@
     .python .hljs-title, .ruby .hljs-parent, .ruby .hljs-title, .rust .hljs-title, .xml .hljs-attribute,
     .puppet .hljs-title, .less .hljs-id, .less .hljs-pseudo, .less .hljs-class, .scss .hljs-id,
     .scss .hljs-pseudo, .scss .hljs-class, .stylus .hljs-class, .stylus .hljs-id, .stylus .hljs-pseudo,
-    .stylus .hljs-title, .swift .hljs-title, .diff .hljs-chunk {
+    .stylus .hljs-title, .swift .hljs-title, .diff .hljs-chunk, .hljs-section, .hljs-selector-id,
+    .hljs-class .hljs-title {
         color: #FFC66D
     }
 
