@@ -250,7 +250,7 @@
     .sidebar_right .block.freelansim .tasks .task a, .html_format.message a,
     .content_left .submenu .item a, .post .content a, .html_format a,
     .user_header h2.username a, .conversations .conversation a.conversation_link,
-    .page_head h2.title, #TMpanel .container .menu a,
+    .page_head h2.title, #TMpanel .container .menu a, #TMpanel .container .bmenu a,
     .bottom_promo_blocks .block.new_vacanies .vacancies .job_item a,
     .bottom_promo_blocks .block.freelansim .tasks .task a,
     .block_after_post .block.similar_posts .posts_list .post_item a.post_name {
@@ -263,7 +263,7 @@
     .sidebar_right .block.new_vacanies .vacancies .job_item a:visited,
     .sidebar_right .block.freelansim .tasks .task a:visited, .html_format.message a:visited,
     .content_left .submenu .item.active a, .post .content a:visited, .html_format a:visited,
-    .grey a, a.grey, #TMpanel .container .menu a.current,
+    .grey a, a.grey, #TMpanel .container .menu a.current, #TMpanel .container .bmenu a.current,
     .bottom_promo_blocks .block.new_vacanies .vacancies .job_item a:visited,
     .bottom_promo_blocks .block.freelansim .tasks .task a:visited,
     .block_after_post .block.similar_posts .posts_list .post_item a:visited.post_name {
