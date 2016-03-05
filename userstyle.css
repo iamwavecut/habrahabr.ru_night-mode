@@ -178,7 +178,7 @@
         color: #333;
     }
 
-    .comments_list .comment_item .info a:hover.username {
+    .comments_list .comment-item__username:hover {
         color: #aaa;
     }
 
