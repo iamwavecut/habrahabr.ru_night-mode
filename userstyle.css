@@ -439,7 +439,7 @@
     .makefile .hljs-variable, .markdown .hljs-value, .markdown .hljs-link_label, .markdown .hljs-strong,
     .markdown .hljs-emphasis, .markdown .hljs-blockquote, .nginx .hljs-regexp, .nginx .hljs-number,
     .objectivec .hljs-preprocessor .hljs-title, .perl .hljs-regexp, .php .hljs-regexp, .xml .hljs-value,
-    .less .hljs-built_in, .scss .hljs-built_in, .hljs-link, .hljs-regexp {
+    .less .hljs-built_in, .scss .hljs-built_in, .hljs-link, .hljs-regexp, .hljs-attribute {
         color: #390
     }
 
