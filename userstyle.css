@@ -524,6 +524,18 @@
         text-decoration: underline
     }
 
+    font[color="#0000FF"] {
+        color: #49f;
+    }
+
+    font[color="#FF0000"] {
+        color: #f66;
+    }
+
+    font[color="#00FF00"] {
+        color: #0d0;
+    }
+
     /* wysiwyg icons */
     .editor .panel {
         background: transparent;
