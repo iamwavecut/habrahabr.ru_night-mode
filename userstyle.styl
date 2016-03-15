@@ -150,6 +150,9 @@ link(color = link-default)
     .page_head h2.title
         color: link-default
 
+    .hubs_list ul li.hidden
+        display: none
+
     // Navbar
     $count_with_data
         .count:not(:empty)
@@ -455,6 +458,9 @@ link(color = link-default)
 
         a
             link()
+
+            &.unchecked_link
+                color: #b17474;
 
         .spoiler .spoiler_text
             background: sec-bg
