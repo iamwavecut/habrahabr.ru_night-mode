@@ -1389,6 +1389,14 @@
     -o-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .live-broadcast[class*=live-broadcast_] .content-list__item-link,
+  .promo-block .content-list__item-link {
+    color: #b5b5b5;
+  }
+  .live-broadcast[class*=live-broadcast_] .content-list__item-link:visited,
+  .promo-block .content-list__item-link:visited {
+    color: #666;
+  }
   .chzn-container .chzn-results .highlighted {
     color: #000;
   }
