@@ -153,6 +153,9 @@
   .social_accounts a:hover {
     opacity: 1;
   }
+  .author-info {
+    background: transparent;
+  }
   .author-info__name,
   .author-info__nickname {
     color: #6a6a6a;
