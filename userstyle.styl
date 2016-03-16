@@ -171,6 +171,10 @@ link(color = link-default)
         &:hover
             opacity: 1
 
+    .author-info
+        &__name, &__nickname
+            color: #6a6a6a
+
     // Navbar
     $count_with_data
         .count:not(:empty)
@@ -463,12 +467,6 @@ link(color = link-default)
         .post-type
             background-color: transparent
             border-color: sec-bg
-
-        .author-info
-            background-color: transparent
-
-            .author-info__name, .author-info__nickname
-                color: #6a6a6a
 
     // HTML form (post, comment, pm)
     .html_format
@@ -780,20 +778,15 @@ link(color = link-default)
             &.username
                 color: #8d8d8d
 
-    .company // TODO root
-        .company_top_banner img
-            img_grayscale()
-
-        .company_header
-            .company_icon img
-                img_grayscale()
+    .company_top_banner img
+        img_grayscale()
 
             .name a
                 color: #888
 
-        .company_info, .company_links, .corporate_news, .corporate_blog,
-        .mobile_applications, .hantim_vacanies, .twitter_stream
-            padding: 5px
+    .company_info, .company_links, .corporate_news, .corporate_blog,
+    .mobile_applications, .hantim_vacanies, .twitter_stream
+        padding: 5px
 
     .company_widgets
         background: #222

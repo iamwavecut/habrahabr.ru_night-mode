@@ -153,6 +153,10 @@
   .social_accounts a:hover {
     opacity: 1;
   }
+  .author-info__name,
+  .author-info__nickname {
+    color: #6a6a6a;
+  }
   #navbar .nav_panel .tab .count:not(:empty),
   #navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty) {
     background: #79b;
@@ -529,13 +533,6 @@
   .post .post-type {
     background-color: transparent;
     border-color: #444;
-  }
-  .post .author-info {
-    background-color: transparent;
-  }
-  .post .author-info .author-info__name,
-  .post .author-info .author-info__nickname {
-    color: #6a6a6a;
   }
   .html_format h1,
   .html_format h2,
@@ -1304,50 +1301,13 @@
   #header_mouse_activity .user_panel a.username {
     color: #8d8d8d;
   }
-  .company .company_top_banner img {
-    opacity: 0.5;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
-    filter: grayscale(0.8);
-  }
-  .company .company_top_banner img:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-  .company .company_header .company_icon img {
-    opacity: 0.5;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
-    filter: grayscale(0.8);
-  }
-  .company .company_header .company_icon img:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-  .company .company_header .name a {
-    color: #888;
-  }
-  .company .company_info,
-  .company .company_links,
-  .company .corporate_news,
-  .company .corporate_blog,
-  .company .mobile_applications,
-  .company .hantim_vacanies,
-  .company .twitter_stream {
+  .company_info,
+  .company_links,
+  .corporate_news,
+  .corporate_blog,
+  .mobile_applications,
+  .hantim_vacanies,
+  .twitter_stream {
     padding: 5px;
   }
   .company_widgets {
