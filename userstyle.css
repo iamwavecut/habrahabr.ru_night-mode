@@ -1301,6 +1301,23 @@
   #header_mouse_activity .user_panel a.username {
     color: #8d8d8d;
   }
+  .company_top_banner img {
+    opacity: 0.5;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(0.8);
+    -moz-filter: grayscale(0.8);
+    -ms-filter: grayscale(0.8);
+    -o-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  .company_top_banner img:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+  }
   .company_info,
   .company_links,
   .corporate_news,
