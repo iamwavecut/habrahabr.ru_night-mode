@@ -36,7 +36,7 @@ filter(value)
     -o-filter: value
     filter: value
 
-img_grayscale(hover = true) // TODO try to simplify with applying to `img` globally
+img_grayscale(hover = true)
     opacity: 0.5
     transition: all .3s
     filter(grayscale(.8))
@@ -107,7 +107,7 @@ link(color = link-default)
         background-color: third-bg
 
     .checkbox_custom input[type=checkbox]:checked + .checkbox__label::before
-        background third-bg
+        background: third-bg
         color: link-default
 
     .grey a, a.grey
@@ -133,7 +133,7 @@ link(color = link-default)
         color: white
 
     .columns-group__column + .columns-group__column
-        border-color transparent
+        border-color: transparent
 
     // Access denied page TODO
     #logo, #reg-wrapper
@@ -165,11 +165,11 @@ link(color = link-default)
         display: none
 
     .social_accounts a
-        opacity .5
-        transition all .3s ease-in-out
+        opacity: .5
+        transition: all .3s ease-in-out
 
         &:hover
-            opacity 1
+            opacity: 1
 
     // Navbar
     $count_with_data
@@ -237,7 +237,7 @@ link(color = link-default)
 
         .comment_item
             .message[class*=bad]
-                background transparent
+                background: transparent
 
             .info
                 &.is_new
@@ -265,8 +265,8 @@ link(color = link-default)
                         background-color: transparent
 
                 a.favorite
-                    height 15px
-                    margin-top 3px
+                    height: 15px
+                    margin-top: 3px
 
                 .comment-item__username:hover
                     color: #aaa
@@ -331,7 +331,7 @@ link(color = link-default)
                 link()
 
             &:hover
-                opacity 1
+                opacity: 1
 
             &.for_authors_help
                 .row .text
@@ -451,14 +451,14 @@ link(color = link-default)
                         filter(grayscale(0))
 
             .voting-wjt, .post-comments
-                border-color sec-bg
+                border-color: sec-bg
 
             .post-share a
-                opacity .5
-                transition opacity .3s ease-in-out
+                opacity: .5
+                transition: opacity .3s ease-in-out
 
                 &:hover
-                    opacity 1
+                    opacity: 1
 
         .post-type
             background-color: transparent
@@ -503,7 +503,7 @@ link(color = link-default)
 
         font
             &[color="#0000FF"]
-                color font-blue
+                color: font-blue
 
             &[color="#FF0000"]
                 color: font-red
@@ -795,12 +795,12 @@ link(color = link-default)
             padding: 5px
 
     .company_widgets
-        background #222
-        opacity .5
-        transition all .3s
+        background: #222
+        opacity: .5
+        transition: all .3s
 
         :hover
-            opacity 1
+            opacity: 1
 
     // Bottom promo TODO
     .bottom_promo_blocks .block
