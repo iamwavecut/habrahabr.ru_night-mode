@@ -12,6 +12,10 @@
   #TMpanel .container .bmenu a.current {
     color: #738290;
   }
+  #TMpanel .container .menu_inner a[href^="http://bit.ly"],
+  #TMpanel .container .bmenu_inner a[href^="http://bit.ly"] {
+    color: #3d668d !important;
+  }
   body {
     background-color: #111;
     color: #bbb;
@@ -29,13 +33,10 @@
   .user_header,
   .content_left,
   .sidebar_right,
-  .rotated_posts {
-    z-index: 1;
-    position: relative;
-  }
+  .rotated_posts,
   #footer {
-    position: relative;
     z-index: 1;
+    position: relative;
   }
   h1,
   h2,
@@ -48,8 +49,8 @@
   .top_banner img,
   .announce img,
   .author-info__image-pic,
-  .icon_briefcase2:before,
-  .post .hubs:before {
+  .html_banner,
+  .float_yandex_ad {
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
@@ -61,8 +62,8 @@
   .top_banner img:hover,
   .announce img:hover,
   .author-info__image-pic:hover,
-  .icon_briefcase2:before:hover,
-  .post .hubs:before:hover {
+  .html_banner:hover,
+  .float_yandex_ad:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -70,10 +71,20 @@
     -o-filter: grayscale(0);
     filter: grayscale(0);
   }
-  .checkbox__label:before {
+  .icon_briefcase2::before,
+  .post .hubs::before {
+    opacity: 0.5;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(0.8);
+    -moz-filter: grayscale(0.8);
+    -ms-filter: grayscale(0.8);
+    -o-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  .checkbox__label::before {
     background-color: #555;
   }
-  .checkbox_custom input[type=checkbox]:checked+.checkbox__label:before {
+  .checkbox_custom input[type=checkbox]:checked + .checkbox__label::before {
     background: #555;
     color: #93b2d0;
   }
@@ -104,6 +115,9 @@
   #people-tags li a {
     color: #fff;
   }
+  .columns-group__column + .columns-group__column {
+    border-color: transparent;
+  }
   #logo,
   #reg-wrapper {
     z-index: 1;
@@ -132,6 +146,13 @@
   .hubs_list ul li.hidden {
     display: none;
   }
+  .social_accounts a {
+    opacity: 0.5;
+    transition: all 0.3s ease-in-out;
+  }
+  .social_accounts a:hover {
+    opacity: 1;
+  }
   #navbar .nav_panel .tab .count:not(:empty),
   #navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty) {
     background: #79b;
@@ -140,10 +161,6 @@
   #navbar .nav_panel.open .nav_tab,
   #navbar .nav_tabs_content.open .nav_tab {
     background: #444;
-  }
-  #navbar .nav_panel .navtab .title,
-  #navbar .nav_tabs_content .navtab .title {
-    color: #ddd;
   }
   #navbar .nav_panel {
     background-color: transparent;
@@ -199,7 +216,7 @@
     background: #333;
   }
   #navbar .nav_tabs_content .nav_tab .title,
-  #navbar .nav_tabs_content .nav_tab .title.a {
+  #navbar .nav_tabs_content .nav_tab .title a {
     color: #bbb;
   }
   .comments_list .comment_item_plain .post_info .count {
@@ -301,14 +318,14 @@
     color: #bbb;
   }
   .content_left .tabs .tabs-menu .tab-item:hover {
-    color: #ccc;
+    background: rgba(255,255,255,0.1);
   }
   .content_left .tabs .tabs-menu .tab-item_current {
     background: rgba(0,0,0,0.2);
   }
   .sidebar_right .block {
     background: #222;
-    opacity: 0.5 !important;
+    opacity: 0.5;
     transition: all 0.3s;
   }
   .sidebar_right .block .posts_list,
@@ -326,7 +343,7 @@
     color: #738290;
   }
   .sidebar_right .block:hover {
-    opacity: 1 !important;
+    opacity: 1;
   }
   .sidebar_right .block.for_authors_help .row .text {
     color: #858585;
@@ -347,7 +364,7 @@
   .sidebar_right .block > .line-r {
     background: #504e4e;
   }
-  .sidebar_right .block > .line-r:after {
+  .sidebar_right .block > .line-r::after {
     border-color: #646464;
   }
   .sidebar_right .block.twitter_stream .tweets .tweet .text {
@@ -499,35 +516,22 @@
     filter: grayscale(0);
   }
   .post .postinfo-panel .voting-wjt,
-  .post .postinfo-panel .post-comments,
-  .post .postinfo-panel .post-type {
+  .post .postinfo-panel .post-comments {
     border-color: #444;
+  }
+  .post .postinfo-panel .post-share a {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .post .postinfo-panel .post-share a:hover {
+    opacity: 1;
   }
   .post .post-type {
     background-color: transparent;
-  }
-  .post .post-type {
     border-color: #444;
   }
   .post .author-info {
     background-color: transparent;
-  }
-  .post .author-info .author-info__image-pic {
-    opacity: 0.5;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
-    filter: grayscale(0.8);
-  }
-  .post .author-info .author-info__image-pic:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    filter: grayscale(0);
   }
   .post .author-info .author-info__name,
   .post .author-info .author-info__nickname {
@@ -571,7 +575,7 @@
     font-family: Consolas, Menlo, Monaco, 'Courier New', monospace;
     font-size: 13px;
   }
-  .html_format font[color="black0FF"] {
+  .html_format font[color="#0000FF"] {
     color: #49f;
   }
   .html_format font[color="#FF0000"] {
@@ -1344,6 +1348,14 @@
   .company .hantim_vacanies,
   .company .twitter_stream {
     padding: 5px;
+  }
+  .company_widgets {
+    background: #222;
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+  .company_widgets :hover {
+    opacity: 1;
   }
   .bottom_promo_blocks .block {
     background: #444;

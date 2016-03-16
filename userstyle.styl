@@ -36,7 +36,7 @@ filter(value)
     -o-filter value
     filter value
 
-img_grayscale(hover = true) // TODO try to simplify with applying to `img` globally
+img_grayscale(hover = true)
     opacity 0.5
     transition all .3s
     filter(grayscale(.8))
@@ -75,6 +75,9 @@ link(color = link-default)
                     &.current
                         color link-hover
 
+                &_inner a[href^="http://bit.ly"]
+                    color: darken(link-default, 30) !important
+
     body
         background-color #111
         color #bbb
@@ -85,25 +88,25 @@ link(color = link-default)
     #layout #navbar, #layout .inner
         background main-bg
 
-    .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts
+    .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts, #footer
         z-index 1
         position relative
-
-    #footer
-        position relative
-        z-index 1
-
 
     h1, h2, h3, h4, h5, h6
         color heading
 
-    .top_banner img, .announce img, .author-info__image-pic, .icon_briefcase2:before, .post .hubs:before
+    .top_banner img, .announce img, .author-info__image-pic,
+    .html_banner, .float_yandex_ad
         img_grayscale()
 
-    .checkbox__label:before
+    .icon_briefcase2, .post .hubs
+        &::before
+            img_grayscale(false)
+
+    .checkbox__label::before
         background-color third-bg
 
-    .checkbox_custom input[type=checkbox]:checked+.checkbox__label:before
+    .checkbox_custom input[type=checkbox]:checked + .checkbox__label::before
         background third-bg
         color link-default
 
@@ -123,12 +126,14 @@ link(color = link-default)
             &[type=text], &[type=email], &[type=password]
                 @extends input[type=text]
 
-
     .notes table tr td
         border-bottom-color third-bg
 
     #people-tags li a
         color white
+
+    .columns-group__column + .columns-group__column
+        border-color transparent
 
     // Access denied page TODO
     #logo, #reg-wrapper
@@ -159,6 +164,13 @@ link(color = link-default)
     .hubs_list ul li.hidden
         display none
 
+    .social_accounts a
+        opacity .5
+        transition all .3s ease-in-out
+
+        &:hover
+            opacity 1
+
     // Navbar
     $count_with_data
         .count:not(:empty)
@@ -168,9 +180,6 @@ link(color = link-default)
         .nav_panel, .nav_tabs_content
             &.open .nav_tab
                 background sec-bg
-
-            .navtab .title
-                color #ddd
 
         .nav_panel
             background-color transparent
@@ -213,7 +222,7 @@ link(color = link-default)
                     background main-bg
 
                 .title
-                    &, &.a
+                    &, a
                         color #bbb
 
                 .global_search_form input[type=text]
@@ -305,7 +314,7 @@ link(color = link-default)
                     color #bbb
 
                 &:hover
-                    color #ccc
+                    background rgba(255, 255, 255 .1)
 
                 &_current
                     background rgba(0, 0, 0, .2)
@@ -314,7 +323,7 @@ link(color = link-default)
     .sidebar_right // TODO merge with bottom promo?
         .block
             background #222
-            opacity .5 !important
+            opacity .5
             transition all .3s
 
             .posts_list, a.post_name, &.best_company .company_info p a,
@@ -322,7 +331,7 @@ link(color = link-default)
                 link()
 
             &:hover
-                opacity 1 !important
+                opacity 1
 
             &.for_authors_help
                 .row .text
@@ -344,7 +353,7 @@ link(color = link-default)
             > .line-r
                 background #504E4E
 
-                &:after
+                &::after
                     border-color #646464
 
             &.twitter_stream .tweets .tweet .text
@@ -441,20 +450,22 @@ link(color = link-default)
                         opacity 1
                         filter(grayscale(0))
 
-            .voting-wjt, .post-comments, .post-type
+            .voting-wjt, .post-comments
                 border-color sec-bg
+
+            .post-share a
+                opacity .5
+                transition opacity .3s ease-in-out
+
+                &:hover
+                    opacity 1
 
         .post-type
             background-color transparent
-
-        .post-type
-                border-color sec-bg
+            border-color sec-bg
 
         .author-info
             background-color transparent
-
-            .author-info__image-pic
-                img_grayscale()
 
             .author-info__name, .author-info__nickname
                 color #6a6a6a
@@ -468,7 +479,7 @@ link(color = link-default)
             link()
 
             &.unchecked_link
-                color #b17474;
+                color #b17474
 
         .spoiler .spoiler_text
             background sec-bg
@@ -491,7 +502,7 @@ link(color = link-default)
             font-size 13px
 
         font
-            &[color="black0FF"]
+            &[color="#0000FF"]
                 color font-blue
 
             &[color="#FF0000"]
@@ -706,7 +717,7 @@ link(color = link-default)
 
         &.disabled, &[disabled]
             &, &:active
-                background-color sec-bg;
+                background-color sec-bg
                 text-shadow none
 
             &:hover
@@ -782,6 +793,14 @@ link(color = link-default)
         .company_info, .company_links, .corporate_news, .corporate_blog,
         .mobile_applications, .hantim_vacanies, .twitter_stream
             padding 5px
+
+    .company_widgets
+        background #222
+        opacity .5
+        transition all .3s
+
+        :hover
+            opacity 1
 
     // Bottom promo TODO
     .bottom_promo_blocks .block
