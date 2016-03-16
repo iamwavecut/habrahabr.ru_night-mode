@@ -1,0 +1,854 @@
+main-bg = #333
+sec-bg = #444
+
+heading = #b9c5cf
+
+link-default = #93b2d0
+link-hover = #738290
+
+dark-green = #294436
+dark-blue = #385570
+dark-gray = #484a4a
+
+hljs-default = #a9b7c6
+hljs-comment = gray
+hljs-string  = #390
+hljs-keyword = #cc7833
+hljs-literal = #9876aa
+hljs-tag   = #63a35c
+hljs-name  = #d0d0ff
+hljs-title = #ffc66d
+hljs-reserved = #1d3e81
+
+font-blue  = #49f
+font-red   = #f66
+font-green = #0d0
+
+comment-new = #445
+comment-ts = #454
+comment-author = #554
+
+filter(value)
+    -webkit-filter: value
+    -moz-filter: value
+    -ms-filter: value
+    -o-filter: value
+    filter: value
+
+img_grayscale(hover = true) // TODO try to simplify with applying to `img` globally
+    opacity: 0.5
+    transition: all .3s
+    filter(grayscale(.8))
+
+    if hover
+        &:hover
+            opacity: 1
+            filter(grayscale(0))
+
+button_hover(color = sec-bg)
+    background-color: color
+
+    &:hover
+        background-color: lighten(color, 14)
+
+link(color = link-default)
+    color: color
+
+    &:visited:not(.button)
+        color: link-hover
+
+
+@media screen
+
+    // Common Styles
+    #TMpanel
+        z-index: 2
+        background: #111
+        border: none
+
+        .container
+            .menu, .bmenu
+                a
+                    color: link-default
+
+                    &.current
+                        color: link-hover
+
+    body
+        background-color: #111
+        color: #bbb
+
+    #layout, #xpanel, .to_top
+        z-index: 1
+
+    #layout #navbar, #layout .inner
+        background: main-bg
+
+    .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts
+        z-index: 1
+        position: relative
+
+    #footer
+        position: relative
+        z-index: 1
+
+
+    h1, h2, h3, h4, h5, h6
+        color: heading
+
+    .top_banner, .announce
+        img
+            img_grayscale()
+
+
+    .grey a, a.grey
+        color: link-hover
+
+    input[type=text]
+        background: sec-bg
+        color: white
+        border-color: #555
+
+    form .item, .inner_search_form
+        label
+            color: #838383
+
+        input
+            &[type=text], &[type=email], &[type=password]
+                @extends input[type=text]
+
+
+    .notes table tr td
+        border-bottom-color: #555
+
+    #people-tags li a
+        color: white
+
+    // Access denied page TODO
+    #logo, #reg-wrapper
+        z-index: 1
+        position: relative
+
+    #reg-wrapper
+        border-color: transparent
+    // end
+
+    .rotated_posts
+        border: none
+
+    .page_head
+        z-index: 200
+
+    .page-nav #nav-pages li em // possibly outdated
+        background: #6da3bd
+        color: #333
+
+    .page_head h2.title
+        color: heading
+
+    .user_header h2.username a,
+    .page_head h2.title
+        color: link-default
+
+    .hubs_list ul li.hidden
+        display: none
+
+    // Navbar
+    $count_with_data
+        .count:not(:empty)
+            background: #79b
+            color: black
+    #navbar
+        .nav_panel, .nav_tabs_content
+            &.open .nav_tab
+                background: sec-bg
+
+            .navtab .title
+                color: #ddd
+
+        .nav_panel
+            background-color: transparent
+
+            .logo
+                opacity: 0.3
+
+            .tab
+                @extends $count_with_data
+
+                &, &.tab_settings
+                    border: none
+
+                &.open, &:hover
+                    background: sec-bg
+
+                &:hover, &.tab_settings:hover
+                    background-position: 0 0
+
+                &.tab_login, &.tab_print
+                    border: none
+
+                &.tab_user
+                    img_grayscale()
+
+                .g-icon
+                    vertical-align: middle
+                    font-size: 32px
+                    color: #777
+
+        .nav_tabs_content
+            .nav_tab
+                background-color: transparent
+
+                .menu a
+                    @extends $count_with_data
+                    color: white
+
+                .line
+                    background: main-bg
+
+                .title
+                    &, &.a
+                        color: #bbb
+
+                .global_search_form input[type=text]
+                    @extends input[type=text]
+
+
+    // Comments list
+    .comments_list
+        .comment_item_plain .post_info .count // TODO possibly outdated
+            color: #a44 !important
+
+
+        .comment_item
+            .message[class*=bad]
+                background transparent
+
+            .info
+                &.is_new
+                    background: comment-new
+
+                &.is_topic_starter
+                    background: comment-ts
+
+                &.is_author
+                    background: comment-author
+
+                .folding-dot
+                    background-image: url(http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png)
+
+                time
+                    color: #aaa
+
+                a.username
+                    color: #ddd
+
+                a.avatar img, .comment-item__avatar, .comment-item__avatar-img_default
+                    img_grayscale()
+
+                    &::before
+                        background-color: transparent
+
+                a.favorite
+                    height 15px
+                    margin-top 3px
+
+                .comment-item__username:hover
+                    color #aaa
+
+                .voting .mark
+                    .negative span
+                        color: #a44
+
+                    .positive span
+                        color: #4a4
+
+    // Content
+    .content_left
+        .submenu, table.menu tr td a
+            background: #555
+            border: 0
+            color: white
+
+        .submenu .item.active, table.menu tr td.active a
+            background: sec-bg
+            border: 0
+            color: #d3e2f0
+
+        .submenu .item
+            a
+                color: link-default
+
+            &.active a
+                color: link-hover
+
+        table.menu tr td
+            &, &.active
+                border-color: transparent
+
+            span.count_new
+                color: #4a4
+
+        .tabs
+            .tabs-menu, .menu_sub
+                background: rgba(0, 0, 0, .1)
+            .tabs-menu .tab-item
+                border-right-color: rgba(0, 0, 0, .3)
+
+                span
+                    color: #bbb
+
+                &:hover
+                    color: #ccc
+
+                &_current
+                    background: rgba(0, 0, 0, .2)
+
+    // Sidebar
+    .sidebar_right // TODO merge with bottom promo?
+        .block
+            background: #222
+            opacity: .5 !important
+            transition: all .3s
+
+            .posts_list, a.post_name, &.best_company .company_info p a,
+            &.new_vacancies .vacanies .job_item a, &.freelansim .tasks .task a
+                link()
+
+            &:hover
+                opacity 1 !important
+
+            &.for_authors_help
+                .row .text
+                    color: #858585
+
+                .row .g-icon
+                    color: rgba(255, 255, 255, .2)
+
+                .line
+                    background: #555 !important
+                    border-top: 1px solid main-bg
+
+            &.about_exchange .row .g-icon
+                color: rgba(255, 255, 255, .2)
+
+            > .show_more
+                background: #383838
+
+            > .line-r
+                background: #504E4E
+
+                &:after
+                    border-color: #646464
+
+            &.twitter_stream .tweets .tweet .text
+                color: #aaa
+
+            a
+                color: #8392a0 // TODO
+
+            &.mobile_applications
+                .app_widget
+                    .app_title
+                        color: #5f5f5f
+
+                    .description
+                        color: #6c6362
+
+                img
+                    img_grayscale()
+
+            .posts_list .post_item .count // TODO possibly outdated
+                color: #a44 !important
+
+
+
+    // Conversation page
+    .conversation_page
+        > .title, .all_dialogs
+            color: #ccc
+
+        .messages .message
+            border-top: 1px solid #555
+
+            .info
+                .time
+                    color: white
+
+                a.avatar img
+                    img_grayscale()
+
+                .login a
+                    color: #ddd
+
+                    &:hover
+                        color: #aaa
+
+            &.new .info
+                background: comment-new
+
+            &.my .info
+                background: comment-author
+
+
+    .conversations .conversation
+        &.new, &:hover
+            background: sec-bg
+            border-color: sec-bg
+            border-bottom-color: #555
+
+        a.conversation_link
+            link()
+
+    // Post
+    .post
+        h1.title
+            &, a.post_title
+                link(heading)
+
+            .flag
+                cursor: default
+                img_grayscale()
+
+        .hubs a.subscribed
+            color: #4a4
+
+        .content .poll .poll_title
+            color: #999
+
+        ul.tags li a
+            link()
+
+        .postinfo-panel
+            background-color: transparent
+            border-color: sec-bg
+
+            .postinfo-panel__item
+                .post-author__pic, .post-author__pic_default
+                    img_grayscale(false)
+
+                    &::before
+                        background-color: transparent
+
+                &:hover
+                    .post-author__pic, .post-author__pic_default
+                        opacity: 1
+                        filter(grayscale(0))
+
+            .post-type
+                background-color: transparent
+
+            .voting-wjt, .post-comments, .post-type
+                border-color: sec-bg
+
+
+        .author-info
+            background-color: transparent
+
+            .author-info__image-pic
+                img_grayscale()
+
+            .author-info__name, .author-info__nickname
+                color: #6a6a6a
+
+    // HTML form (post, comment, pm)
+    .html_format
+        h1, h2, h3, h4, h5, h6
+            color: heading
+
+        a
+            link()
+
+            &.unchecked_link
+                color: #b17474;
+
+        .spoiler .spoiler_text
+            background: sec-bg
+            border: 0
+
+        code
+            display: inline-block
+            padding: 0 3px
+
+        pre code
+            background: #bbb
+            border: 0
+            padding: 0.5em
+            display: block
+
+        code, pre code.hljs
+            color: hljs-default
+            background: #2b2b2b
+            font-family: Consolas, Menlo, Monaco, 'Courier New', monospace
+            font-size: 13px
+
+        font
+            &[color="black0FF"]
+                color: font-blue
+
+            &[color="#FF0000"]
+                color: font-red
+
+            &[color="#00FF00"]
+                color: font-green
+
+        iframe, object, img
+            img_grayscale()
+
+    // Code highlight
+    code.hljs
+        .hljs
+            &-comment, &-javadoc, &-shebang, &-quote
+                color: hljs-comment
+
+            &-string, &-doctag, &-sqbracket, &-regexp, &-attribute, &-emphasis, &-blockquote,
+            &-link_label, &-strong &-preprocessor, &-preprocessor &-title
+                color: hljs-string
+
+            &-keyword, &-javadoctag, &-at_rule, &-type, &-typename, &-important,
+            &-subst, &-selector-tag, &-phpdoc, &-setting, &-request
+                color: hljs-keyword
+
+            &-literal, &-number, &-variable, &-hexcolor, &-built_in, &-function,
+            &-attribute, &-tag &-attr, &-template-variable, &-common, &-cbracket,
+            &-link_reference, &-prompt, &-symbol, &-params, &-bullet, &-builtin-name
+                color: hljs-literal
+
+            &-tag, &-xmlDocTag
+                color: hljs-tag
+
+            &-name, &-attr_selector, &-constant, &-value, &-tag &-title
+                color: hljs-name
+
+            &-title, &-class &-title, &-parent, &-id, &-class, &-pseudo, &-pragma,
+            &-sub, &-decorator, &-selector-id, &-section
+                color: hljs-title
+
+            &-reserved
+                color: hljs-reserved
+
+            &-link_url
+                text-decoration: underline
+
+        .javascript .hljs-tag
+            color: hljs-keyword
+
+        .rust .hljs-preprocessor
+            color: hljs-comment
+
+        .coffeescript .hljs
+            &-subst
+                color: hljs-string
+
+            &-attribute
+                color: hljs-reserved
+
+        .makefile .hljs
+            &-variable
+                color: hljs-string
+
+            &-keyword
+                color: hljs-literal
+
+        .markdown .hljs-value
+            color: hljs-string
+
+        .nginx .hljs
+            &-number
+                color: hljs-string
+
+            &-title
+                color: hljs-keyword
+
+            &-variable
+                color: hljs-name
+
+        .objectivec .hljs-preprocessor
+            color: hljs-keyword
+
+        .xml .hljs
+            &-value
+                color: hljs-string
+
+            &-title
+                color: hljs-tag
+
+            &-tag
+                color: hljs-name
+
+            &-attribute
+                color: hljs-title
+
+        .less .hljs
+            &-built_in
+                color: hljs-string
+
+            &-tag
+                color: hljs-keyword
+
+        .scss .hljs
+            &-built_in
+                color: hljs-string
+
+            &-tag
+                color: hljs-keyword
+
+            &-preprocessor
+                color: hljs-literal
+
+            &-variable
+                color: hljs-name
+
+        .sql .hljs-built_in
+            color: hljs-keyword
+
+        .swift .hljs-preprocessor
+            color: hljs-keyword
+
+        .apache .hljs-keyword
+            color: hljs-literal
+
+        .ruby .hljs
+            &-constant, &-subst &-keyword
+                color: hljs-literal
+
+        .go .hljs-constant
+            color: hljs-literal
+
+        .bash .hljs-variable
+            color: hljs-name
+
+        .cs .hljs-preprocessor
+            &, .hljs-keyword
+                color: hljs-name
+
+        .ini .hljs-keyword
+            color: hljs-name
+
+    // Diff code
+    .diff
+        .hljs-addition, .hljs-deletion, .hljs-change
+            display: block
+            margin-bottom: -1.6em
+
+        .hljs-chunk
+            color: #ffc66d
+            font-weight: bold
+
+        .hljs-addition
+            background-color: dark-green
+
+        .hljs-deletion
+            background-color: dark-gray
+
+        .hljs-change
+            background-color: dark-blue
+
+    // Editor
+    .editor
+        .text-holder
+            background: sec-bg
+            border-color: sec-bg
+
+            textarea
+                background: sec-bg
+                color: white
+                border-color: #555
+
+        .panel
+            background: transparent
+
+            .wysiwyg_wrapper
+                background: inherit
+
+                .can_use_html, .btn
+                    border: 0
+
+                .btn
+                    .g-icon
+                        color: #777
+
+                    select
+                        cursor: pointer
+
+                .help_holder
+                    h4
+                        color: #999
+
+                    dl
+                        dt
+                            color: #ccc
+
+                        dd
+                            color: #999
+
+    // Buttons
+    $button
+        &
+            button_hover()
+
+        &, &:focus, &:active, &.disabled, &:visited, &.loading, &[disabled]
+            box-shadow: inset 0 1px 0 #2a2a2a
+            text-shadow: 0 1px 0 #2a2a2a
+            border: none
+            color: white
+
+        &:hover
+            color: white
+
+        &.disabled, &[disabled]
+            &, &:active
+                background-color: sec-bg;
+                text-shadow: none
+
+            &:hover
+                color: white
+                background-color: #666
+
+    .buttons
+        button, a.button, input[type=button], input[type=submit]
+            &, &.blue, &.green
+                @extends $button
+
+            &.blue
+                button_hover(dark-blue)
+
+            &.green
+                button_hover(dark-green)
+
+    [class$=__buttons]
+        button, a.btn, input[type=button], input[type=submit]
+            &, &.btn_blue, &.btn_green
+                @extends $button
+
+            &.btn_blue
+                button_hover(dark-blue)
+
+            &.btn_green
+                button_hover(dark-green)
+
+
+    .blue_buttons_panel
+        background: #6c747a
+
+    // Trackers page
+    .tracker_page table
+        &.tracker_comments tr td.comment_count a
+            color: #cf5555
+
+        &[class^=tracker] tr
+            &.new
+                background: sec-bg
+
+            th
+                border-bottom-color: #777
+
+            td
+                border-bottom-color: #555
+
+    // Corporate blogs
+    #header_mouse_activity
+        #header
+            background: main-bg
+
+        .main_menu a.active
+            color: #949494
+
+        .user_panel a
+            color: #888
+
+            &.username
+                color: #8d8d8d
+
+    .company // TODO root
+        .company_top_banner img
+            img_grayscale()
+
+        .company_header
+            .company_icon img
+                img_grayscale()
+
+            .name a
+                color: #888
+
+        .company_info, .company_links, .corporate_news, .corporate_blog,
+        .mobile_applications, .hantim_vacanies, .twitter_stream
+            padding: 5px
+
+    // Bottom promo TODO
+    .bottom_promo_blocks .block
+        background: sec-bg
+
+        &.new_vacanies .vacancies .job_item,
+        &.freelansim .tasks .task
+            a
+                link()
+
+    .similar-posts
+        background: sec-bg
+
+        .content-list .post-preview__link
+            link()
+
+    .live-broadcast[class*=live-broadcast_], .promo-block
+        background-color: transparent
+        border-color: transparent
+
+        .tabs__menu
+            background: rgba(0, 0, 0, .1)
+
+        .content-list__item
+            &::before
+                img_grayscale(false)
+
+            &:hover::before
+                opacity: 1
+                filter(grayscale(0))
+
+    // CHZN
+    .chzn-container
+        .chzn-results
+            .highlighted
+                color black
+
+                .subscribers
+                    color: black
+
+        .chzn-drop
+            background: sec-bg
+            color: white
+            border-color: #555
+
+        &-multi
+            .chzn-choices
+                background: sec-bg
+                color: white
+                border-color: #555
+
+                .search-choice
+                    color: black
+
+                .search-field input
+                    @extends input[type=text]
+
+    .webui-popover .popover
+        border-color: #777
+
+        .user-popover
+            background-color: main-bg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
