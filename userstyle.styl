@@ -30,70 +30,70 @@ comment-ts = #454
 comment-author = #554
 
 filter(value)
-    -webkit-filter value
-    -moz-filter value
-    -ms-filter value
-    -o-filter value
-    filter value
+    -webkit-filter: value
+    -moz-filter: value
+    -ms-filter: value
+    -o-filter: value
+    filter: value
 
-img_grayscale(hover = true)
-    opacity 0.5
-    transition all .3s
+img_grayscale(hover = true) // TODO try to simplify with applying to `img` globally
+    opacity: 0.5
+    transition: all .3s
     filter(grayscale(.8))
 
     if hover
         &:hover
-            opacity 1
+            opacity: 1
             filter(grayscale(0))
 
 button_hover(color = sec-bg)
-    background-color color
+    background-color: color
 
     &:hover
-        background-color lighten(color, 14)
+        background-color: lighten(color, 14)
 
 link(color = link-default)
-    color color
+    color: color
 
     &:visited:not(.button)
-        color link-hover
+        color: link-hover
 
 
 @media screen
 
     // Common Styles
     #TMpanel
-        z-index 2
-        background #111
-        border none
+        z-index: 2
+        background: #111
+        border: none
 
         .container
             .menu, .bmenu
                 a
-                    color link-default
+                    color: link-default
 
                     &.current
-                        color link-hover
+                        color: link-hover
 
                 &_inner a[href^="http://bit.ly"]
                     color: darken(link-default, 30) !important
 
     body
-        background-color #111
-        color #bbb
+        background-color: #111
+        color: #bbb
 
     #layout, #xpanel, .to_top
-        z-index 1
+        z-index: 1
 
     #layout #navbar, #layout .inner
-        background main-bg
+        background: main-bg
 
     .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts, #footer
-        z-index 1
-        position relative
+        z-index: 1
+        position: relative
 
     h1, h2, h3, h4, h5, h6
-        color heading
+        color: heading
 
     .top_banner img, .announce img, .author-info__image-pic,
     .html_banner, .float_yandex_ad
@@ -104,65 +104,65 @@ link(color = link-default)
             img_grayscale(false)
 
     .checkbox__label::before
-        background-color third-bg
+        background-color: third-bg
 
     .checkbox_custom input[type=checkbox]:checked + .checkbox__label::before
         background third-bg
-        color link-default
+        color: link-default
 
     .grey a, a.grey
-        color link-hover
+        color: link-hover
 
     input[type=text]
-        background sec-bg
-        color white
-        border-color third-bg
+        background: sec-bg
+        color: white
+        border-color: third-bg
 
     form .item, .inner_search_form
         label
-            color #838383
+            color: #838383
 
         input
             &[type=text], &[type=email], &[type=password]
                 @extends input[type=text]
 
     .notes table tr td
-        border-bottom-color third-bg
+        border-bottom-color: third-bg
 
     #people-tags li a
-        color white
+        color: white
 
     .columns-group__column + .columns-group__column
         border-color transparent
 
     // Access denied page TODO
     #logo, #reg-wrapper
-        z-index 1
-        position relative
+        z-index: 1
+        position: relative
 
     #reg-wrapper
-        border-color transparent
+        border-color: transparent
     // end
 
     .rotated_posts
-        border none
+        border: none
 
     .page_head
-        z-index 200
+        z-index: 200
 
     .page-nav #nav-pages li em // possibly outdated
-        background #6da3bd
-        color #333
+        background: #6da3bd
+        color: #333
 
     .page_head h2.title
-        color heading
+        color: heading
 
     .user_header h2.username a,
     .page_head h2.title
-        color link-default
+        color: link-default
 
     .hubs_list ul li.hidden
-        display none
+        display: none
 
     .social_accounts a
         opacity .5
@@ -174,56 +174,56 @@ link(color = link-default)
     // Navbar
     $count_with_data
         .count:not(:empty)
-            background #79b
-            color black
+            background: #79b
+            color: black
     #navbar
         .nav_panel, .nav_tabs_content
             &.open .nav_tab
-                background sec-bg
+                background: sec-bg
 
         .nav_panel
-            background-color transparent
+            background-color: transparent
 
             .logo
-                opacity 0.3
+                opacity: 0.3
 
             .tab
                 @extends $count_with_data
 
                 &, &.tab_settings
-                    border none
+                    border: none
 
                 &.open, &:hover
-                    background sec-bg
+                    background: sec-bg
 
                 &:hover, &.tab_settings:hover
-                    background-position 0 0
+                    background-position: 0 0
 
                 &.tab_login, &.tab_print
-                    border none
+                    border: none
 
                 &.tab_user
                     img_grayscale()
 
                 .g-icon
-                    vertical-align middle
-                    font-size 32px
-                    color #777
+                    vertical-align: middle
+                    font-size: 32px
+                    color: #777
 
         .nav_tabs_content
             .nav_tab
-                background-color transparent
+                background-color: transparent
 
                 .menu a
                     @extends $count_with_data
-                    color white
+                    color: white
 
                 .line
-                    background main-bg
+                    background: main-bg
 
                 .title
                     &, a
-                        color #bbb
+                        color: #bbb
 
                 .global_search_form input[type=text]
                     @extends input[type=text]
@@ -232,7 +232,7 @@ link(color = link-default)
     // Comments list
     .comments_list
         .comment_item_plain .post_info .count // TODO possibly outdated
-            color #a44 !important
+            color: #a44 !important
 
 
         .comment_item
@@ -241,90 +241,90 @@ link(color = link-default)
 
             .info
                 &.is_new
-                    background comment-new
+                    background: comment-new
 
                 &.is_topic_starter
-                    background comment-ts
+                    background: comment-ts
 
                 &.is_author
-                    background comment-author
+                    background: comment-author
 
                 .folding-dot
-                    background-image url(http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png)
+                    background-image: url(http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png)
 
                 time
-                    color #aaa
+                    color: #aaa
 
                 a.username
-                    color #ddd
+                    color: #ddd
 
                 a.avatar img, .comment-item__avatar, .comment-item__avatar-img_default
                     img_grayscale()
 
                     &::before
-                        background-color transparent
+                        background-color: transparent
 
                 a.favorite
                     height 15px
                     margin-top 3px
 
                 .comment-item__username:hover
-                    color #aaa
+                    color: #aaa
 
                 .voting .mark
                     .negative span
-                        color #a44
+                        color: #a44
 
                     .positive span
-                        color #4a4
+                        color: #4a4
 
     // Content
     .content_left
         .submenu, table.menu tr td a
-            background third-bg
-            border 0
-            color white
+            background: third-bg
+            border: 0
+            color: white
 
         .submenu .item.active, table.menu tr td.active a
-            background sec-bg
-            border 0
-            color #d3e2f0
+            background: sec-bg
+            border: 0
+            color: #d3e2f0
 
         .submenu .item
             a
-                color link-default
+                color: link-default
 
             &.active a
-                color link-hover
+                color: link-hover
 
         table.menu tr td
             &, &.active
-                border-color transparent
+                border-color: transparent
 
             span.count_new
-                color #4a4
+                color: #4a4
 
         .tabs
             .tabs-menu, .menu_sub
-                background rgba(0, 0, 0, .1)
+                background: rgba(0, 0, 0, .1)
             .tabs-menu .tab-item
-                border-right-color rgba(0, 0, 0, .3)
+                border-right-color: rgba(0, 0, 0, .3)
 
                 span
-                    color #bbb
+                    color: #bbb
 
                 &:hover
-                    background rgba(255, 255, 255 .1)
+                    background: rgba(255, 255, 255 .1)
 
                 &_current
-                    background rgba(0, 0, 0, .2)
+                    background: rgba(0, 0, 0, .2)
 
     // Sidebar
     .sidebar_right // TODO merge with bottom promo?
         .block
-            background #222
-            opacity .5
-            transition all .3s
+            background: #222
+            opacity: .5
+            transition: all .3s
 
             .posts_list, a.post_name, &.best_company .company_info p a,
             &.new_vacancies .vacanies .job_item a, &.freelansim .tasks .task a
@@ -335,82 +335,82 @@ link(color = link-default)
 
             &.for_authors_help
                 .row .text
-                    color #858585
+                    color: #858585
 
                 .row .g-icon
-                    color rgba(255, 255, 255, .2)
+                    color: rgba(255, 255, 255, .2)
 
                 .line
-                    background third-bg !important
-                    border-top 1px solid main-bg
+                    background: third-bg !important
+                    border-top: 1px solid main-bg
 
             &.about_exchange .row .g-icon
-                color rgba(255, 255, 255, .2)
+                color: rgba(255, 255, 255, .2)
 
             > .show_more
-                background #383838
+                background: #383838
 
             > .line-r
-                background #504E4E
+                background: #504E4E
 
                 &::after
-                    border-color #646464
+                    border-color: #646464
 
             &.twitter_stream .tweets .tweet .text
-                color #aaa
+                color: #aaa
 
             a
-                color #8392a0 // TODO
+                color: #8392a0 // TODO
 
             &.mobile_applications
                 .app_widget
                     .app_title
-                        color #5f5f5f
+                        color: #5f5f5f
 
                     .description
-                        color #6c6362
+                        color: #6c6362
 
                 img
                     img_grayscale()
 
             .posts_list .post_item .count // TODO possibly outdated
-                color #a44 !important
+                color: #a44 !important
 
 
 
     // Conversation page
     .conversation_page
         > .title, .all_dialogs
-            color #ccc
+            color: #ccc
 
         .messages .message
-            border-top 1px solid third-bg
+            border-top: 1px solid third-bg
 
             .info
                 .time
-                    color white
+                    color: white
 
                 a.avatar img
                     img_grayscale()
 
                 .login a
-                    color #ddd
+                    color: #ddd
 
                     &:hover
-                        color #aaa
+                        color: #aaa
 
             &.new .info
-                background comment-new
+                background: comment-new
 
             &.my .info
-                background comment-author
+                background: comment-author
 
 
     .conversations .conversation
         &.new, &:hover
-            background sec-bg
-            border-color sec-bg
-            border-bottom-color third-bg
+            background: sec-bg
+            border-color: sec-bg
+            border-bottom-color: third-bg
 
         a.conversation_link
             link()
@@ -422,32 +422,32 @@ link(color = link-default)
                 link(heading)
 
             .flag
-                cursor default
+                cursor: default
                 img_grayscale()
 
         .hubs a.subscribed
-            color #4a4
+            color: #4a4
 
         .content .poll .poll_title
-            color #999
+            color: #999
 
         ul.tags li a
             link()
 
         .postinfo-panel
-            background-color transparent
-            border-color sec-bg
+            background-color: transparent
+            border-color: sec-bg
 
             .postinfo-panel__item
                 .post-author__pic, .post-author__pic_default
                     img_grayscale(false)
 
                     &::before
-                        background-color transparent
+                        background-color: transparent
 
                 &:hover
                     .post-author__pic, .post-author__pic_default
-                        opacity 1
+                        opacity: 1
                         filter(grayscale(0))
 
             .voting-wjt, .post-comments
@@ -461,55 +461,55 @@ link(color = link-default)
                     opacity 1
 
         .post-type
-            background-color transparent
-            border-color sec-bg
+            background-color: transparent
+            border-color: sec-bg
 
         .author-info
-            background-color transparent
+            background-color: transparent
 
             .author-info__name, .author-info__nickname
-                color #6a6a6a
+                color: #6a6a6a
 
     // HTML form (post, comment, pm)
     .html_format
         h1, h2, h3, h4, h5, h6
-            color heading
+            color: heading
 
         a
             link()
 
             &.unchecked_link
-                color #b17474
+                color: #b17474
 
         .spoiler .spoiler_text
-            background sec-bg
-            border 0
+            background: sec-bg
+            border: 0
 
         code
-            display inline-block
-            padding 0 3px
+            display: inline-block
+            padding: 0 3px
 
         pre code
-            background #bbb
-            border 0
-            padding 0.5em
-            display block
+            background: #bbb
+            border: 0
+            padding: 0.5em
+            display: block
 
         code, pre code.hljs
-            color hljs-default
-            background #2b2b2b
-            font-family Consolas, Menlo, Monaco, 'Courier New', monospace
-            font-size 13px
+            color: hljs-default
+            background: #2b2b2b
+            font-family: Consolas, Menlo, Monaco, 'Courier New', monospace
+            font-size: 13px
 
         font
             &[color="#0000FF"]
                 color font-blue
 
             &[color="#FF0000"]
-                color font-red
+                color: font-red
 
             &[color="#00FF00"]
-                color font-green
+                color: font-green
 
         iframe, object, img
             img_grayscale()
@@ -518,188 +518,188 @@ link(color = link-default)
     code.hljs
         .hljs
             &-comment, &-javadoc, &-shebang, &-quote
-                color hljs-comment
+                color: hljs-comment
 
             &-string, &-doctag, &-sqbracket, &-regexp, &-attribute, &-emphasis, &-blockquote,
             &-link_label, &-strong &-preprocessor, &-preprocessor &-title
-                color hljs-string
+                color: hljs-string
 
             &-keyword, &-javadoctag, &-at_rule, &-type, &-typename, &-important,
             &-subst, &-selector-tag, &-phpdoc, &-setting, &-request
-                color hljs-keyword
+                color: hljs-keyword
 
             &-literal, &-number, &-variable, &-hexcolor, &-built_in, &-function,
             &-attribute, &-tag &-attr, &-template-variable, &-common, &-cbracket,
             &-link_reference, &-prompt, &-symbol, &-params, &-bullet, &-builtin-name
-                color hljs-literal
+                color: hljs-literal
 
             &-tag, &-xmlDocTag
-                color hljs-tag
+                color: hljs-tag
 
             &-name, &-attr_selector, &-constant, &-value, &-tag &-title
-                color hljs-name
+                color: hljs-name
 
             &-title, &-class &-title, &-parent, &-id, &-class, &-pseudo, &-pragma,
             &-sub, &-decorator, &-selector-id, &-section
-                color hljs-title
+                color: hljs-title
 
             &-reserved
-                color hljs-reserved
+                color: hljs-reserved
 
             &-link_url
-                text-decoration underline
+                text-decoration: underline
 
         .javascript .hljs-tag
-            color hljs-keyword
+            color: hljs-keyword
 
         .rust .hljs-preprocessor
-            color hljs-comment
+            color: hljs-comment
 
         .coffeescript .hljs
             &-subst
-                color hljs-string
+                color: hljs-string
 
             &-attribute
-                color hljs-reserved
+                color: hljs-reserved
 
         .makefile .hljs
             &-variable
-                color hljs-string
+                color: hljs-string
 
             &-keyword
-                color hljs-literal
+                color: hljs-literal
 
         .markdown .hljs-value
-            color hljs-string
+            color: hljs-string
 
         .nginx .hljs
             &-number
-                color hljs-string
+                color: hljs-string
 
             &-title
-                color hljs-keyword
+                color: hljs-keyword
 
             &-variable
-                color hljs-name
+                color: hljs-name
 
         .objectivec .hljs-preprocessor
-            color hljs-keyword
+            color: hljs-keyword
 
         .xml .hljs
             &-value
-                color hljs-string
+                color: hljs-string
 
             &-title
-                color hljs-tag
+                color: hljs-tag
 
             &-tag
-                color hljs-name
+                color: hljs-name
 
             &-attribute
-                color hljs-title
+                color: hljs-title
 
         .less .hljs
             &-built_in
-                color hljs-string
+                color: hljs-string
 
             &-tag
-                color hljs-keyword
+                color: hljs-keyword
 
         .scss .hljs
             &-built_in
-                color hljs-string
+                color: hljs-string
 
             &-tag
-                color hljs-keyword
+                color: hljs-keyword
 
             &-preprocessor
-                color hljs-literal
+                color: hljs-literal
 
             &-variable
-                color hljs-name
+                color: hljs-name
 
         .sql .hljs-built_in
-            color hljs-keyword
+            color: hljs-keyword
 
         .swift .hljs-preprocessor
-            color hljs-keyword
+            color: hljs-keyword
 
         .apache .hljs-keyword
-            color hljs-literal
+            color: hljs-literal
 
         .ruby .hljs
             &-constant, &-subst &-keyword
-                color hljs-literal
+                color: hljs-literal
 
         .go .hljs-constant
-            color hljs-literal
+            color: hljs-literal
 
         .bash .hljs-variable
-            color hljs-name
+            color: hljs-name
 
         .cs .hljs-preprocessor
             &, .hljs-keyword
-                color hljs-name
+                color: hljs-name
 
         .ini .hljs-keyword
-            color hljs-name
+            color: hljs-name
 
     // Diff code
     .diff
         .hljs-addition, .hljs-deletion, .hljs-change
-            display block
-            margin-bottom -1.6em
+            display: block
+            margin-bottom: -1.6em
 
         .hljs-chunk
-            color #ffc66d
-            font-weight bold
+            color: #ffc66d
+            font-weight: bold
 
         .hljs-addition
-            background-color dark-green
+            background-color: dark-green
 
         .hljs-deletion
-            background-color dark-gray
+            background-color: dark-gray
 
         .hljs-change
-            background-color dark-blue
+            background-color: dark-blue
 
     // Editor
     .editor
         .text-holder
-            background sec-bg
-            border-color sec-bg
+            background: sec-bg
+            border-color: sec-bg
 
             textarea
-                background sec-bg
-                color white
-                border-color third-bg
+                background: sec-bg
+                color: white
+                border-color: third-bg
 
         .panel
-            background transparent
+            background: transparent
 
             .wysiwyg_wrapper
-                background inherit
+                background: inherit
 
                 .can_use_html, .btn
-                    border 0
+                    border: 0
 
                 .btn
                     .g-icon
-                        color #777
+                        color: #777
 
                     select
-                        cursor pointer
+                        cursor: pointer
 
                 .help_holder
                     h4
-                        color #999
+                        color: #999
 
                     dl
                         dt
-                            color #ccc
+                            color: #ccc
 
                         dd
-                            color #999
+                            color: #999
 
     // Buttons
     $button
@@ -707,22 +707,22 @@ link(color = link-default)
             button_hover()
 
         &, &:focus, &:active, &.disabled, &:visited, &.loading, &[disabled]
-            box-shadow inset 0 1px 0 #2a2a2a
-            text-shadow 0 1px 0 #2a2a2a
-            border none
-            color white
+            box-shadow: inset 0 1px 0 #2a2a2a
+            text-shadow: 0 1px 0 #2a2a2a
+            border: none
+            color: white
 
         &:hover
-            color white
+            color: white
 
         &.disabled, &[disabled]
             &, &:active
-                background-color sec-bg
-                text-shadow none
+                background-color: sec-bg
+                text-shadow: none
 
             &:hover
-                color white
-                background-color #666
+                color: white
+                background-color: #666
 
     .buttons
         button, a.button, input[type=button], input[type=submit]
@@ -748,36 +748,36 @@ link(color = link-default)
 
 
     .blue_buttons_panel
-        background #6c747a
+        background: #6c747a
 
     // Trackers page
     .tracker_page table
         &.tracker_comments tr td.comment_count a
-            color #cf5555
+            color: #cf5555
 
         &[class^=tracker] tr
             &.new
-                background sec-bg
+                background: sec-bg
 
             th
-                border-bottom-color #777
+                border-bottom-color: #777
 
             td
-                border-bottom-color third-bg
+                border-bottom-color: third-bg
 
     // Corporate blogs
     #header_mouse_activity
         #header
-            background main-bg
+            background: main-bg
 
         .main_menu a.active
-            color #949494
+            color: #949494
 
         .user_panel a
-            color #888
+            color: #888
 
             &.username
-                color #8d8d8d
+                color: #8d8d8d
 
     .company // TODO root
         .company_top_banner img
@@ -788,11 +788,11 @@ link(color = link-default)
                 img_grayscale()
 
             .name a
-                color #888
+                color: #888
 
         .company_info, .company_links, .corporate_news, .corporate_blog,
         .mobile_applications, .hantim_vacanies, .twitter_stream
-            padding 5px
+            padding: 5px
 
     .company_widgets
         background #222
@@ -804,7 +804,7 @@ link(color = link-default)
 
     // Bottom promo TODO
     .bottom_promo_blocks .block
-        background sec-bg
+        background: sec-bg
 
         &.new_vacanies .vacancies .job_item,
         &.freelansim .tasks .task
@@ -812,61 +812,61 @@ link(color = link-default)
                 link()
 
     .similar-posts
-        background sec-bg
+        background: sec-bg
 
         .content-list
             .post-preview__link
                 link()
         .content-list_posts
             .content-list__item
-                border-color third-bg
+                border-color: third-bg
 
     .live-broadcast[class*=live-broadcast_], .promo-block
-        background-color transparent
-        border-color transparent
+        background-color: transparent
+        border-color: transparent
 
         .tabs__menu
-            background rgba(0, 0, 0, .1)
+            background: rgba(0, 0, 0, .1)
 
         .content-list__item
             &::before
                 img_grayscale(false)
 
             &:hover::before
-                opacity 1
+                opacity: 1
                 filter(grayscale(0))
 
     // CHZN
     .chzn-container
         .chzn-results
             .highlighted
-                color black
+                color: black
 
                 .subscribers
-                    color black
+                    color: black
 
         .chzn-drop
-            background sec-bg
-            color white
-            border-color third-bg
+            background: sec-bg
+            color: white
+            border-color: third-bg
 
         &-multi
             .chzn-choices
-                background sec-bg
-                color white
-                border-color third-bg
+                background: sec-bg
+                color: white
+                border-color: third-bg
 
                 .search-choice
-                    color black
+                    color: black
 
                 .search-field input
                     @extends input[type=text]
 
     .webui-popover .popover
-        border-color #777
+        border-color: #777
 
         .user-popover
-            background-color main-bg
+            background-color: main-bg
 
     .column-wrapper_bordered, .live-broadcast__content
-        border-color third-bg
+        border-color: third-bg
