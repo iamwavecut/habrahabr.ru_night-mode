@@ -478,9 +478,6 @@ link(color = link-default)
         a
             link()
 
-            &.unchecked_link
-                color: #b17474
-
         .spoiler .spoiler_text
             background: sec-bg
             border: 0
@@ -513,6 +510,10 @@ link(color = link-default)
 
         iframe, object, img
             img_grayscale()
+
+        &.message a.unchecked_link
+            &, &:visited
+                color: #b17474
 
     // Code highlight
     code.hljs

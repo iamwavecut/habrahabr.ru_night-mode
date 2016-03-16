@@ -551,9 +551,6 @@
   .html_format a:visited:not(.button) {
     color: #738290;
   }
-  .html_format a.unchecked_link {
-    color: #b17474;
-  }
   .html_format .spoiler .spoiler_text {
     background: #444;
     border: 0;
@@ -604,6 +601,10 @@
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0);
+  }
+  .html_format.message a.unchecked_link,
+  .html_format.message a.unchecked_link:visited {
+    color: #b17474;
   }
   code.hljs .hljs-comment,
   code.hljs .hljs-javadoc,
