@@ -332,8 +332,9 @@ link(color = link-default)
             opacity: .5
             transition: all .3s
 
-            .posts_list, a.post_name, &.best_company .company_info p a,
-            &.new_vacancies .vacanies .job_item a, &.freelansim .tasks .task a
+            &.best_company .company_info p a,
+            &.new_vacancies .vacanies .job_item a,
+            &.freelansim .tasks .task a
                 link()
 
             &:hover
@@ -379,8 +380,15 @@ link(color = link-default)
                 img
                     img_grayscale()
 
-            .posts_list .post_item .count // TODO possibly outdated
-                color: #a44 !important
+            .posts_list .post_item
+                a.post_name
+                    color: #b5b5b5
+
+                    &:visited
+                        color: #666
+
+                .count
+                    color: #a44
 
 
 

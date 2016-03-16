@@ -335,15 +335,11 @@
     opacity: 0.5;
     transition: all 0.3s;
   }
-  .sidebar_right .block .posts_list,
-  .sidebar_right .block a.post_name,
   .sidebar_right .block.best_company .company_info p a,
   .sidebar_right .block.new_vacancies .vacanies .job_item a,
   .sidebar_right .block.freelansim .tasks .task a {
     color: #93b2d0;
   }
-  .sidebar_right .block .posts_list:visited:not(.button),
-  .sidebar_right .block a.post_name:visited:not(.button),
   .sidebar_right .block.best_company .company_info p a:visited:not(.button),
   .sidebar_right .block.new_vacancies .vacanies .job_item a:visited:not(.button),
   .sidebar_right .block.freelansim .tasks .task a:visited:not(.button) {
@@ -403,8 +399,14 @@
     -o-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .sidebar_right .block .posts_list .post_item a.post_name {
+    color: #b5b5b5;
+  }
+  .sidebar_right .block .posts_list .post_item a.post_name:visited {
+    color: #666;
+  }
   .sidebar_right .block .posts_list .post_item .count {
-    color: #a44 !important;
+    color: #a44;
   }
   .conversation_page > .title,
   .conversation_page .all_dialogs {
