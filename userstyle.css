@@ -432,8 +432,8 @@
   .sidebar_right .sidebar-block .posts_list .post_item .count {
     color: #a44;
   }
-  .sidebar_right .block .xyz-wrapper,
-  .sidebar_right .sidebar-block .xyz-wrapper {
+  .sidebar_right .block .xyz_wrapper,
+  .sidebar_right .sidebar-block .xyz_wrapper {
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
@@ -442,8 +442,8 @@
     -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
-  .sidebar_right .block .xyz-wrapper:hover,
-  .sidebar_right .sidebar-block .xyz-wrapper:hover {
+  .sidebar_right .block .xyz_wrapper:hover,
+  .sidebar_right .sidebar-block .xyz_wrapper:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
@@ -1410,18 +1410,18 @@
   .similar-posts .content-list_posts .content-list__item {
     border-color: #555;
   }
-  .live-broadcast,
+  .live-broadcast[class*=live-broadcast_],
   [class*=live-broadcast_],
   .promo-block {
     background-color: transparent;
     border-color: transparent;
   }
-  .live-broadcast .tabs__menu,
+  .live-broadcast[class*=live-broadcast_] .tabs__menu,
   [class*=live-broadcast_] .tabs__menu,
   .promo-block .tabs__menu {
     background: rgba(0,0,0,0.1);
   }
-  .live-broadcast .content-list__item::before,
+  .live-broadcast[class*=live-broadcast_] .content-list__item::before,
   [class*=live-broadcast_] .content-list__item::before,
   .promo-block .content-list__item::before {
     opacity: 0.5;
@@ -1432,7 +1432,7 @@
     -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
-  .live-broadcast .content-list__item:hover::before,
+  .live-broadcast[class*=live-broadcast_] .content-list__item:hover::before,
   [class*=live-broadcast_] .content-list__item:hover::before,
   .promo-block .content-list__item:hover::before {
     opacity: 1;
@@ -1442,12 +1442,12 @@
     -o-filter: grayscale(0);
     filter: grayscale(0);
   }
-  .live-broadcast .content-list__item-link,
+  .live-broadcast[class*=live-broadcast_] .content-list__item-link,
   [class*=live-broadcast_] .content-list__item-link,
   .promo-block .content-list__item-link {
     color: #b5b5b5;
   }
-  .live-broadcast .content-list__item-link:visited,
+  .live-broadcast[class*=live-broadcast_] .content-list__item-link:visited,
   [class*=live-broadcast_] .content-list__item-link:visited,
   .promo-block .content-list__item-link:visited {
     color: #666;
