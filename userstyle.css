@@ -364,6 +364,23 @@
   .content_left .tabs .tabs-menu .tab-item_current {
     background: rgba(0,0,0,0.2);
   }
+  .sidebar_right img {
+    opacity: 0.5;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(0.8);
+    -moz-filter: grayscale(0.8);
+    -ms-filter: grayscale(0.8);
+    -o-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  .sidebar_right img:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+  }
   .sidebar_right .block,
   .sidebar_right .sidebar-block {
     background: #222;
@@ -434,25 +451,6 @@
   .sidebar_right .block.mobile_applications .app_widget .description,
   .sidebar_right .sidebar-block.mobile_applications .app_widget .description {
     color: #6c6362;
-  }
-  .sidebar_right .block.mobile_applications img,
-  .sidebar_right .sidebar-block.mobile_applications img {
-    opacity: 0.5;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
-    filter: grayscale(0.8);
-  }
-  .sidebar_right .block.mobile_applications img:hover,
-  .sidebar_right .sidebar-block.mobile_applications img:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    filter: grayscale(0);
   }
   .sidebar_right .block .posts_list .post_item a.post_name,
   .sidebar_right .sidebar-block .posts_list .post_item a.post_name {
