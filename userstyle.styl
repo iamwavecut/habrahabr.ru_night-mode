@@ -29,6 +29,9 @@ comment-new = #445
 comment-ts = #454
 comment-author = #554
 
+negative = #a44
+positive = #4a4
+
 code-font = Consolas, Menlo, Monaco, 'Courier New', monospace
 
 filter(value)
@@ -240,6 +243,9 @@ link(color = link-default)
 
     // Comments list
     .comments_list
+        .comment_item_plain .post_info .count
+            color: negative
+
         .comment_item
             .comment_body.is_selected::after
                 content: "˃"
@@ -288,10 +294,10 @@ link(color = link-default)
 
                 .voting .mark
                     .negative span
-                        color: #a44
+                        color: negative
 
                     .positive span
-                        color: #4a4
+                        color: positive
 
     // Content
     .content_left
@@ -317,7 +323,7 @@ link(color = link-default)
                 border-color: transparent
 
             span.count_new
-                color: #4a4
+                color: positive
 
         .tabs
             .tabs-menu, .menu_sub
@@ -397,7 +403,7 @@ link(color = link-default)
                         color: #666
 
                 .count
-                    color: #a44
+                    color: negative
 
         .xyz_wrapper
             img_grayscale()
@@ -452,7 +458,7 @@ link(color = link-default)
                 img_grayscale()
 
         .hubs a.subscribed
-            color: #4a4
+            color: positive
 
         .content .poll .poll_title
             color: #999
