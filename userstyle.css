@@ -432,8 +432,7 @@
   .sidebar_right .sidebar-block .posts_list .post_item .count {
     color: #a44;
   }
-  .sidebar_right .block .xyz_wrapper,
-  .sidebar_right .sidebar-block .xyz_wrapper {
+  .sidebar_right .xyz_wrapper {
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
@@ -442,8 +441,7 @@
     -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
-  .sidebar_right .block .xyz_wrapper:hover,
-  .sidebar_right .sidebar-block .xyz_wrapper:hover {
+  .sidebar_right .xyz_wrapper:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
