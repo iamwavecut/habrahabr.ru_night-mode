@@ -150,6 +150,9 @@
   .hubs_list ul li.hidden {
     display: none;
   }
+  .hubs_list ul li.hidden[style="display: list-item;"] {
+    display: inline-block !important;
+  }
   .social_accounts a {
     opacity: 0.5;
     transition: all 0.3s;
