@@ -89,7 +89,7 @@ link(color = link-default)
         background: main-bg
 
     .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts, #footer
-        z-index: 1
+        z-index: 0
         position: relative
 
     h1, h2, h3, h4, h5, h6
@@ -327,7 +327,7 @@ link(color = link-default)
 
     // Sidebar
     .sidebar_right // TODO merge with bottom promo?
-        .block
+        .block, .sidebar-block
             background: #222
             opacity: .5
             transition: all .3s
@@ -390,6 +390,9 @@ link(color = link-default)
                 .count
                     color: #a44
 
+            .xyz-wrapper
+                img_grayscale()
+
 
 
     // Conversation page
@@ -448,35 +451,36 @@ link(color = link-default)
         ul.tags li a
             link()
 
-        .postinfo-panel
-            background-color: transparent
-            border-color: sec-bg
+    // Infopanel
+    .postinfo-panel
+        background-color: transparent
+        border-color: sec-bg
 
-            .postinfo-panel__item
+        .postinfo-panel__item
+            .post-author__pic, .post-author__pic_default
+                img_grayscale(false)
+
+                &::before
+                    background-color: transparent
+
+            &:hover
                 .post-author__pic, .post-author__pic_default
-                    img_grayscale(false)
-
-                    &::before
-                        background-color: transparent
-
-                &:hover
-                    .post-author__pic, .post-author__pic_default
-                        opacity: 1
-                        filter(grayscale(0))
-
-            .voting-wjt, .post-comments
-                border-color: sec-bg
-
-            .post-share a
-                opacity: .5
-                transition: opacity .3s ease-in-out
-
-                &:hover
                     opacity: 1
+                    filter(grayscale(0))
 
-        .post-type
-            background-color: transparent
+        .voting-wjt, .post-comments
             border-color: sec-bg
+
+        .post-share a
+            opacity: .5
+            transition: opacity .3s ease-in-out
+
+            &:hover
+                opacity: 1
+
+    .post-type
+        background-color: transparent
+        border-color: sec-bg
 
     // HTML form (post, comment, pm)
     .html_format
@@ -521,7 +525,7 @@ link(color = link-default)
 
         &.message a.unchecked_link
             &, &:visited
-                color: #b17474
+                color: #b17474 !important
 
     // Code highlight
     code.hljs
@@ -812,6 +816,10 @@ link(color = link-default)
             a
                 link()
 
+    .promo-block
+        &__footer, &__service
+            background: transparent
+
     .similar-posts
         background: sec-bg
 
@@ -822,7 +830,7 @@ link(color = link-default)
             .content-list__item
                 border-color: third-bg
 
-    .live-broadcast[class*=live-broadcast_], .promo-block
+    .live-broadcast, [class*=live-broadcast_], .promo-block
         background-color: transparent
         border-color: transparent
 
