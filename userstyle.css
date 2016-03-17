@@ -597,11 +597,11 @@
     -o-filter: grayscale(0);
     filter: grayscale(0);
   }
-  .article__body .t-cover__wrapper {
+  .article__body [class^=t-container_] {
     background-color: rgba(0,0,0,0.6);
     transition: all 0.3s;
   }
-  .article__body .t-cover__wrapper:hover {
+  .article__body [class^=t-container_]:hover {
     background-color: transparent;
   }
   .article .postinfo-panel {
