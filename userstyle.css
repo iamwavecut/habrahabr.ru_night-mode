@@ -276,7 +276,17 @@
     background: #554;
   }
   .comments_list .comment_item .info .folding-dot {
-    background-image: url("http://habrastorage.org/files/52f/683/1d1/52f6831d16784d71b3dcf72b003851fc.png");
+    background-image: none;
+  }
+  .comments_list .comment_item .info .folding-dot::before {
+    content: '・・・・・・・・・・・・・・・・';
+    display: block;
+    position: absolute;
+    top: -9px;
+    right: -2.5px;
+    font-size: 1.2em;
+    color: #d3d3d3;
+    letter-spacing: 6.8px;
   }
   .comments_list .comment_item .info time {
     color: #aaa;
