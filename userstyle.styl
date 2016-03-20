@@ -780,7 +780,8 @@ link(color = link-default)
         &
             button_hover()
 
-        &, &:focus, &:active, &.disabled, &:visited, &.loading, &[disabled]
+        &, &:focus, &:active, &.btn_active, &.disabled, &:visited, &.loading, &[disabled]
+            background-color: sec-bg
             box-shadow: inset 0 1px 0 #2a2a2a
             text-shadow: 0 1px 0 #2a2a2a
             border: none
@@ -789,13 +790,10 @@ link(color = link-default)
         &:hover
             color: white
 
-        &:active, &:focus, &.btn_active
-            background-color: sec-bg
-
-            &.disabled, &[disabled]
-                text-shadow: none
-
         &.disabled, &[disabled]
+            background-color: sec-bg
+            text-shadow: none
+
             &:hover
                 color: white
                 background-color: #666
