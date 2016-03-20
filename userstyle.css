@@ -580,6 +580,9 @@
   .post ul.tags li a:visited:not(.button) {
     color: #738290;
   }
+  .post div.tags {
+    color: #808080;
+  }
   .article .megapost-cover__img {
     opacity: 0.5;
     transition: all 0.3s;
