@@ -789,11 +789,13 @@ link(color = link-default)
         &:hover
             color: white
 
-        &.disabled, &[disabled]
-            &, &:active
-                background-color: sec-bg
+        &:active, &:focus, &.btn_active
+            background-color: sec-bg
+
+            &.disabled, &[disabled]
                 text-shadow: none
 
+        &.disabled, &[disabled]
             &:hover
                 color: white
                 background-color: #666
