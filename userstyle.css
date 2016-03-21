@@ -155,7 +155,7 @@
   }
   .social_accounts a {
     opacity: 0.5;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
   }
   .social_accounts a:hover {
     opacity: 1;
@@ -739,6 +739,9 @@
   }
   .html_format font[color="#00FF00"] {
     color: #0d0;
+  }
+  .html_format font[color="#000000"] {
+    color: #bbb;
   }
   .html_format iframe,
   .html_format object,

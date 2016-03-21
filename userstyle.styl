@@ -2,6 +2,8 @@ main-bg = #333
 sec-bg = #444
 third-bg = #555
 
+main-font-color = #bbb
+
 heading = #b9c5cf
 
 link-default = #93b2d0
@@ -85,7 +87,7 @@ link(color = link-default)
 
     body
         background-color: #111
-        color: #bbb
+        color: main-font-color
 
     #layout, #xpanel, .to_top
         z-index: 1
@@ -241,7 +243,7 @@ link(color = link-default)
 
                 .title
                     &, a
-                        color: #bbb
+                        color: main-font-color
 
                 .global_search_form input[type=text]
                     @extends input[type=text]
@@ -347,7 +349,7 @@ link(color = link-default)
                 border-right-color: rgba(0, 0, 0, .3)
 
                 span
-                    color: #bbb
+                    color: main-font-color
 
                 &:hover
                     background: rgba(255, 255, 255 .1)
@@ -572,7 +574,7 @@ link(color = link-default)
             padding: 0 3px
 
         pre code
-            background: #bbb
+            background: main-font-color
             border: 0
             padding: 0.5em
             display: block
@@ -592,6 +594,9 @@ link(color = link-default)
 
             &[color="#00FF00"]
                 color: font-green
+
+            &[color="#000000"]
+                color: main-font-color
 
         iframe, object, img
             img_grayscale()
