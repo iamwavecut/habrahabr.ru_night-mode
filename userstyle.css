@@ -736,11 +736,13 @@
     font-family: Consolas, Menlo, Monaco, 'Courier New', monospace;
     font-size: 13px;
   }
-  .html_format .mjx-chtml {
+  .html_format .MJXc-display {
+    overflow: auto;
+  }
+  .html_format .mjx-math {
     color: #a9b7c6;
-    background: #2b2b2b;
-    padding: 0.5em;
-    margin: -0.5em 0;
+    padding: 0.2em;
+    margin: -0.2em 0;
   }
   .html_format font[color="#0000FF"] {
     color: #49f;
