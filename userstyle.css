@@ -250,6 +250,9 @@
   #navbar .nav_tabs_content .nav_tab .title a {
     color: #bbb;
   }
+  .comments_list .comments-placeholder__text {
+    color: inherit;
+  }
   .comments_list .comment_item_plain .post_info .count {
     color: #a44;
   }
