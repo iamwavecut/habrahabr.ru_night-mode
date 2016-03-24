@@ -377,7 +377,9 @@
   .content_left .tabs .tabs-menu .tab-item_current {
     background: rgba(0,0,0,0.2);
   }
-  .sidebar_right img {
+  .sidebar_right img,
+  .sidebar_right iframe,
+  .sidebar_right embed {
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
@@ -386,7 +388,9 @@
     -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
-  .sidebar_right img:hover {
+  .sidebar_right img:hover,
+  .sidebar_right iframe:hover,
+  .sidebar_right embed:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
     -moz-filter: grayscale(0);
