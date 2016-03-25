@@ -187,6 +187,7 @@
   #navbar .nav_panel .tab .count:not(:empty),
   #navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty) {
     background: #79b;
+    box-sizing: content-box;
     color: #000;
   }
   #navbar .nav_panel.open .nav_tab,
