@@ -616,6 +616,11 @@ link(color = link-default)
         iframe, object, img
             img_grayscale()
 
+        img
+            filter(invert(0))
+            &.image-inverted
+                filter(invert(1))
+
         &.message a.unchecked_link
             &, &:visited
                 color: #b17474 !important
