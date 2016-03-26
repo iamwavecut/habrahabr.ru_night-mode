@@ -58,9 +58,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .top_banner img:hover,
@@ -70,9 +67,6 @@
   .float_yandex_ad:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .icon_briefcase2::before,
@@ -80,9 +74,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .checkbox__label::before {
@@ -171,17 +162,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .user_profile .summary img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   #navbar .nav_panel .tab .count:not(:empty),
@@ -220,17 +205,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   #navbar .nav_panel .tab.tab_user:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   #navbar .nav_panel .tab .g-icon {
@@ -304,9 +283,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .comments_list .comment_item .info a.avatar img:hover,
@@ -314,9 +290,6 @@
   .comments_list .comment_item .info .comment-item__avatar-img_default:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .comments_list .comment_item .info a.avatar img::before,
@@ -384,9 +357,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .sidebar_right img:hover,
@@ -394,9 +364,6 @@
   .sidebar_right embed:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .sidebar_right .block,
@@ -486,17 +453,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .sidebar_right .xyz_wrapper:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .conversation_page > .title,
@@ -513,17 +474,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .conversation_page .messages .message .info a.avatar img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .conversation_page .messages .message .info .login a {
@@ -563,17 +518,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .post h1.title .flag:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .post .hubs a.subscribed {
@@ -595,17 +544,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .article .megapost-cover__img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .article__body {
@@ -624,9 +567,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .article__body iframe:hover,
@@ -634,9 +574,6 @@
   .article__body img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .article__body [class^=t-container_] {
@@ -671,9 +608,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .postinfo-panel .postinfo-panel__item .post-author__pic::before,
@@ -684,9 +618,6 @@
   .postinfo-panel .postinfo-panel__item:hover .post-author__pic_default {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .postinfo-panel .voting-wjt,
@@ -767,9 +698,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .html_format iframe:hover,
@@ -777,23 +705,14 @@
   .html_format img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .html_format img {
     -webkit-filter: invert(0);
-    -moz-filter: invert(0);
-    -ms-filter: invert(0);
-    -o-filter: invert(0);
     filter: invert(0);
   }
   .html_format img.image-inverted {
     -webkit-filter: invert(1);
-    -moz-filter: invert(1);
-    -ms-filter: invert(1);
-    -o-filter: invert(1);
     filter: invert(1);
   }
   .html_format.message a.unchecked_link,
@@ -1479,17 +1398,11 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .company_top_banner img:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .company_info,
@@ -1553,9 +1466,6 @@
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
-    -moz-filter: grayscale(0.8);
-    -ms-filter: grayscale(0.8);
-    -o-filter: grayscale(0.8);
     filter: grayscale(0.8);
   }
   .live-broadcast[class*=live-broadcast_] .content-list__item:hover::before,
@@ -1563,9 +1473,6 @@
   .promo-block .content-list__item:hover::before {
     opacity: 1;
     -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
     filter: grayscale(0);
   }
   .live-broadcast[class*=live-broadcast_] .content-list__item-link,
