@@ -295,31 +295,24 @@ link(color = link-default)
                         color: lightgray;
                         letter-spacing: 6.8px;
 
-                time
-                    color: #aaa
-
-                a.username
-                    color: #ddd
-
-                a.avatar img, .comment-item__avatar, .comment-item__avatar-img_default
-                    img_grayscale()
-
-                    &::before
-                        background-color: transparent
-
-                a.favorite
-                    height: 15px
-                    margin-top: 3px
-
-                .comment-item__username:hover
-                    color: #aaa
-
                 .voting .mark
                     .negative span
                         color: negative
 
                     .positive span
                         color: positive
+
+            time
+                color: #aaa
+
+            a.comment-item__username:hover
+                    color: #aaa
+
+            a.avatar img, .comment-item__avatar
+                img_grayscale()
+
+            .comment-item__avatar-img_default::before
+                background-color: transparent
 
     // Content
     .content_left

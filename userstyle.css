@@ -268,44 +268,33 @@
     color: #d3d3d3;
     letter-spacing: 6.8px;
   }
-  .comments_list .comment_item .info time {
-    color: #aaa;
-  }
-  .comments_list .comment_item .info a.username {
-    color: #ddd;
-  }
-  .comments_list .comment_item .info a.avatar img,
-  .comments_list .comment_item .info .comment-item__avatar,
-  .comments_list .comment_item .info .comment-item__avatar-img_default {
-    opacity: 0.5;
-    transition: all 0.3s;
-    -webkit-filter: grayscale(0.8);
-    filter: grayscale(0.8);
-  }
-  .comments_list .comment_item .info a.avatar img:hover,
-  .comments_list .comment_item .info .comment-item__avatar:hover,
-  .comments_list .comment_item .info .comment-item__avatar-img_default:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    filter: grayscale(0);
-  }
-  .comments_list .comment_item .info a.avatar img::before,
-  .comments_list .comment_item .info .comment-item__avatar::before,
-  .comments_list .comment_item .info .comment-item__avatar-img_default::before {
-    background-color: transparent;
-  }
-  .comments_list .comment_item .info a.favorite {
-    height: 15px;
-    margin-top: 3px;
-  }
-  .comments_list .comment_item .info .comment-item__username:hover {
-    color: #aaa;
-  }
   .comments_list .comment_item .info .voting .mark .negative span {
     color: #a44;
   }
   .comments_list .comment_item .info .voting .mark .positive span {
     color: #4a4;
+  }
+  .comments_list .comment_item time {
+    color: #aaa;
+  }
+  .comments_list .comment_item a.comment-item__username:hover {
+    color: #aaa;
+  }
+  .comments_list .comment_item a.avatar img,
+  .comments_list .comment_item .comment-item__avatar {
+    opacity: 0.5;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  .comments_list .comment_item a.avatar img:hover,
+  .comments_list .comment_item .comment-item__avatar:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  .comments_list .comment_item .comment-item__avatar-img_default::before {
+    background-color: transparent;
   }
   .content_left .submenu,
   .content_left table.menu tr td a {
