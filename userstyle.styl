@@ -260,15 +260,20 @@ link(color = link-default)
             color: negative
 
         .comment_item
-            .comment_body.is_selected::after
-                content: "˃"
-                font-family: code-font
-                background: none
-                font-weight: 600
-                font-size: 1.2em
-                line-height: 1.7em
-                text-align: center
-                color: lighten(comment-new, 30)
+            .comment_body.is_selected
+
+                &::after
+                    content: "˃"
+                    font-family: code-font
+                    background: none
+                    font-weight: 600
+                    font-size: 1.2em
+                    line-height: 1.7em
+                    text-align: center
+                    color: lighten(comment-new, 30)
+
+                .info .folding-dot
+                    right: 21px
 
             .message[class*=bad]
                 background: transparent

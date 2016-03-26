@@ -243,6 +243,9 @@
     text-align: center;
     color: #8e8ea4;
   }
+  .comments_list .comment_item .comment_body.is_selected .info .folding-dot {
+    right: 21px;
+  }
   .comments_list .comment_item .message[class*=bad] {
     background: transparent;
   }
