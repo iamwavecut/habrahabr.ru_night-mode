@@ -4,15 +4,12 @@
     background: #111;
     border: none;
   }
-  #TMpanel .container .menu a,
   #TMpanel .container .bmenu a {
     color: #93b2d0;
   }
-  #TMpanel .container .menu a.current,
   #TMpanel .container .bmenu a.current {
     color: #738290;
   }
-  #TMpanel .container .menu_inner a[href^="http://bit.ly"],
   #TMpanel .container .bmenu_inner a[href^="http://bit.ly"] {
     color: #3d668d !important;
   }
