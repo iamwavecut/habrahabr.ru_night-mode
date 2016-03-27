@@ -95,12 +95,18 @@ link(color = link-default)
         &, #navbar, .inner
             background: main-bg
 
+    #layout
+        border: 1px solid transparent
+
     .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts, #footer
         z-index: 0
         position: relative
 
     h1, h2, h3, h4, h5, h6
         color: heading
+
+    a
+        link()
 
     .top_banner img, .announce img, .author-info__image-pic,
     .html_banner, .float_yandex_ad
@@ -149,6 +155,10 @@ link(color = link-default)
 
     #reg-wrapper
         border-color: transparent
+
+    .main
+        h1, h2, h3, h4, h5, h6
+            color: heading
     // end
 
     .rotated_posts

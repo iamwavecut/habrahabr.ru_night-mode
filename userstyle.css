@@ -30,6 +30,9 @@
   .layout .inner {
     background: #333;
   }
+  #layout {
+    border: 1px solid transparent;
+  }
   .company_header,
   .user_header,
   .content_left,
@@ -46,6 +49,12 @@
   h5,
   h6 {
     color: #b9c5cf;
+  }
+  a {
+    color: #93b2d0;
+  }
+  a:visited:not(.button) {
+    color: #738290;
   }
   .top_banner img,
   .announce img,
@@ -117,6 +126,14 @@
   }
   #reg-wrapper {
     border-color: transparent;
+  }
+  .main h1,
+  .main h2,
+  .main h3,
+  .main h4,
+  .main h5,
+  .main h6 {
+    color: #b9c5cf;
   }
   .rotated_posts {
     border: none;
