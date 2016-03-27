@@ -663,7 +663,8 @@
     font-size: 13px;
   }
   .html_format .MJXc-display {
-    overflow: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
   }
   .html_format .mjx-math {
     color: #a9b7c6;
