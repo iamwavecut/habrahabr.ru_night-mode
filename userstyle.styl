@@ -376,6 +376,47 @@ link(color = link-default)
                 &_current
                     background: rgba(0, 0, 0, .2)
 
+    // Wtrfall
+    .wtf_bc
+        &--skin
+            &--bg-primary&--bg-primary
+                background: inherit !important
+
+            &--sec-text&--sec-text
+                color: rgba(255, 255, 255, .3) !important
+
+            &--main-text&--main-text
+                color: inherit !important
+
+            &--bg-gray&--bg-gray
+                background: sec-bg !important
+                border: 0 !important
+
+        .wtf_broadcast &-feed &--feed-item&--hot &--feed-item--bg&--feed-item--bg
+            background: inherit !important
+
+        .wtf_broadcast &--header&--header--updates&--header&--header--updates
+            background: darken(#25A971, 10)
+
+            &:hover
+                background: darken(#28B579, 9)
+
+
+        .wtf_broadcast &--need-more-items &--need-more-items--button&--need-more-items--button
+            background: darken(#407BDC, 10)
+
+            &:hover
+                background: darken(#3C72CC, 9)
+
+        &--skin--link&--skin--link
+            color: link-default !important
+
+            &:hover
+                color: link-hover !important
+
+        &--userpic, &--og--pic
+            img_grayscale()
+
     // Sidebar
     .sidebar_right // TODO merge with bottom promo?
         img, iframe, embed
