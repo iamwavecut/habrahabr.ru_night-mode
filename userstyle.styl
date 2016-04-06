@@ -206,6 +206,10 @@ link(color = link-default)
     .user_profile .summary img
         img_grayscale()
 
+    .info_page
+        h1, h2, h3, h4, h5, h6
+            color: darken(#ff6000, 10)
+
     // Navbar
     $count_with_data
         .count:not(:empty)
@@ -629,25 +633,6 @@ link(color = link-default)
             background: sec-bg
             border: 0
 
-        code
-            border: 0
-            display: inline-block
-            padding: .2em
-            margin: -.2em 0
-
-        pre code
-            background: code-bg
-            border: 0
-            padding: .5em
-            margin: -.5em 0
-            display: block
-
-        code, pre code.hljs
-            color: hljs-default
-            background: code-bg
-            font-family: code-font
-            font-size: 13px
-
         .MJXc-display
             overflow-y: hidden
             overflow-x: auto
@@ -683,6 +668,27 @@ link(color = link-default)
                 color: #b17474 !important
 
     // Code highlight
+    .html_format, .madskillz_page
+        code
+            border: 0
+            display: inline-block
+            padding: .2em
+            margin: -.2em 0
+
+        pre code
+            background: code-bg
+            border: 0
+            display: block
+
+            &.nohighlight
+                color: hljs-default
+
+        code, pre code.hljs
+            color: hljs-default
+            background: code-bg
+            font-family: code-font
+            font-size: 13px
+
     code.hljs
         .hljs
             &-comment, &-javadoc, &-shebang, &-quote

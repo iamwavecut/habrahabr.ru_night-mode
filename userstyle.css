@@ -189,6 +189,14 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .info_page h1,
+  .info_page h2,
+  .info_page h3,
+  .info_page h4,
+  .info_page h5,
+  .info_page h6 {
+    color: #cc4d00;
+  }
   #navbar .nav_panel .tab .count:not(:empty),
   #navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty) {
     background: #79b;
@@ -712,26 +720,6 @@
     background: #444;
     border: 0;
   }
-  .html_format code {
-    border: 0;
-    display: inline-block;
-    padding: 0.2em;
-    margin: -0.2em 0;
-  }
-  .html_format pre code {
-    background: #2b2b2b;
-    border: 0;
-    padding: 0.5em;
-    margin: -0.5em 0;
-    display: block;
-  }
-  .html_format code,
-  .html_format pre code.hljs {
-    color: #a9b7c6;
-    background: #2b2b2b;
-    font-family: Consolas, Menlo, Monaco, 'Courier New', monospace;
-    font-size: 13px;
-  }
   .html_format .MJXc-display {
     overflow-y: hidden;
     overflow-x: auto;
@@ -779,6 +767,32 @@
   .html_format.message a.unchecked_link,
   .html_format.message a.unchecked_link:visited {
     color: #b17474 !important;
+  }
+  .html_format code,
+  .madskillz_page code {
+    border: 0;
+    display: inline-block;
+    padding: 0.2em;
+    margin: -0.2em 0;
+  }
+  .html_format pre code,
+  .madskillz_page pre code {
+    background: #2b2b2b;
+    border: 0;
+    display: block;
+  }
+  .html_format pre code.nohighlight,
+  .madskillz_page pre code.nohighlight {
+    color: #a9b7c6;
+  }
+  .html_format code,
+  .madskillz_page code,
+  .html_format pre code.hljs,
+  .madskillz_page pre code.hljs {
+    color: #a9b7c6;
+    background: #2b2b2b;
+    font-family: Consolas, Menlo, Monaco, 'Courier New', monospace;
+    font-size: 13px;
   }
   code.hljs .hljs-comment,
   code.hljs .hljs-javadoc,
