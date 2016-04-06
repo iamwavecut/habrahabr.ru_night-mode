@@ -979,6 +979,7 @@
   }
   .editor .panel {
     background: transparent;
+    border-color: transparent;
   }
   .editor .panel .wysiwyg_wrapper {
     background: inherit;
@@ -1001,6 +1002,13 @@
   }
   .editor .panel .wysiwyg_wrapper .help_holder dl dd {
     color: #999;
+  }
+  .editor__footer {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  .editor__footer .markdown_checkbox {
+    color: inherit;
   }
   .buttons button,
   .buttons a.button,
