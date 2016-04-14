@@ -729,16 +729,20 @@
     padding: 0.2em;
     margin: -0.2em 0;
   }
-  .html_format font[color="#0000FF"] {
+  .html_format font[color="#0000FF"],
+  .html_format font[color="blue"] {
     color: #49f;
   }
-  .html_format font[color="#FF0000"] {
+  .html_format font[color="#FF0000"],
+  .html_format font[color="red"] {
     color: #f66;
   }
-  .html_format font[color="#00FF00"] {
+  .html_format font[color="#00FF00"],
+  .html_format font[color="green"] {
     color: #0d0;
   }
-  .html_format font[color="#000000"] {
+  .html_format font[color="#000000"],
+  .html_format font[color="black"] {
     color: #bbb;
   }
   .html_format iframe,
