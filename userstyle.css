@@ -625,7 +625,8 @@
   .article__body .t-text {
     color: inherit;
   }
-  .article__body .t-heading {
+  .article__body .t-heading,
+  .article__body .t-title {
     color: #b9c5cf;
   }
   .article__body iframe,
