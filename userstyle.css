@@ -3,6 +3,7 @@
     z-index: 2;
     background: #111;
     border: none;
+    position: relative;
   }
   #TMpanel .container .bmenu a {
     color: #93b2d0;
@@ -34,7 +35,6 @@
     border: 1px solid transparent;
     border-left: 0;
     border-right: 0;
-    margin-top: 28px;
   }
   #layout .inner {
     margin-top: 0;
