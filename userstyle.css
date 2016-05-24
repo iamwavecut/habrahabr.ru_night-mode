@@ -65,8 +65,7 @@
   .top_banner img,
   .announce img,
   .author-info__image-pic,
-  .html_banner,
-  .wrapper-sticky {
+  .html_banner {
     opacity: 0.5;
     transition: all 0.3s;
     -webkit-filter: grayscale(0.8);
@@ -75,14 +74,10 @@
   .top_banner img:hover,
   .announce img:hover,
   .author-info__image-pic:hover,
-  .html_banner:hover,
-  .wrapper-sticky:hover {
+  .html_banner:hover {
     opacity: 1;
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
-  }
-  .js-ad_sticky.sticky {
-    left: 0 !important;
   }
   .icon_briefcase2::before,
   .post .hubs::before {
