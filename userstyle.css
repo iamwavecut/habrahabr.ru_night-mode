@@ -81,6 +81,9 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .js-ad_sticky.sticky {
+    left: 0 !important;
+  }
   .icon_briefcase2::before,
   .post .hubs::before {
     opacity: 0.5;
