@@ -525,6 +525,10 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .sidebar_right .xyz_wrapper_inner {
+    background: none;
+    border: 1px solid #738290;
+  }
   .conversation_page > .title,
   .conversation_page .all_dialogs {
     color: #ccc;
