@@ -79,6 +79,10 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .html_banner {
+    background: none;
+    border: 1px solid #838383;
+  }
   .icon_briefcase2::before,
   .post .hubs::before {
     opacity: 0.5;
@@ -527,7 +531,7 @@
   }
   .sidebar_right .xyz_wrapper_inner {
     background: none;
-    border: 1px solid #738290;
+    border: 1px solid #838383;
   }
   .conversation_page > .title,
   .conversation_page .all_dialogs {
