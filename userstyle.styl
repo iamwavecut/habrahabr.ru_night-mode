@@ -928,15 +928,21 @@ link(color = link-default)
                 color: white
                 background-color: #666
 
-    button, a.button, input[type=button], input[type=submit]
-        &, &.blue, &.green
-            @extends $button
+    basic-buttons()
+        button, a.button, input[type=button], input[type=submit]
+            &, &.blue, &.green
+                @extends $button
 
-        &.blue
-            button_hover(dark-blue)
+            &.blue
+                button_hover(dark-blue)
 
-        &.green
-            button_hover(dark-green)
+            &.green
+                button_hover(dark-green)
+
+    basic-buttons()
+
+    .buttons
+        basic-buttons()
 
     button, a.btn, input[type=button], input[type=submit]
         &, &.btn_blue, &.btn_green, &.btn_grey
