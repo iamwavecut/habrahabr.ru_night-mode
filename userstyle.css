@@ -276,6 +276,16 @@
   .form-placeholder__text {
     color: inherit;
   }
+  .comments_list .comments-form__placeholder {
+    background: transparent;
+    border-color: #808080;
+  }
+  .comments_list .form-placeholder__title {
+    color: #b9c5cf;
+  }
+  .comments_list .form-placeholder__text {
+    color: inherit;
+  }
   .comments_list .comment_item_plain .post_info .count {
     color: #a44;
   }
