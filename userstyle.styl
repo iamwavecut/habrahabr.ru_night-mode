@@ -104,6 +104,9 @@ link(color = link-default)
         .inner
             margin-top: 0
 
+    #edit_tags_form
+        background: transparent
+
     .company_header, .user_header, .content_left, .sidebar_right, .rotated_posts, #footer
         z-index: 0
         position: relative
@@ -275,7 +278,18 @@ link(color = link-default)
     // Comments list
     .comments_list
 
-        .comments-placeholder
+        .comments
+            &-placeholder__text
+                color: inherit
+
+            &-form__placeholder
+                background: transparent
+                border-color: gray
+
+        .form-placeholder
+            &__title
+                color: heading
+
             &__text
                 color: inherit
 
@@ -914,27 +928,28 @@ link(color = link-default)
                 color: white
                 background-color: #666
 
-    .buttons
-        button, a.button, input[type=button], input[type=submit]
-            &, &.blue, &.green
-                @extends $button
+    button, a.button, input[type=button], input[type=submit]
+        &, &.blue, &.green
+            @extends $button
 
-            &.blue
-                button_hover(dark-blue)
+        &.blue
+            button_hover(dark-blue)
 
-            &.green
-                button_hover(dark-green)
+        &.green
+            button_hover(dark-green)
 
-    [class$=__buttons]
-        button, a.btn, input[type=button], input[type=submit]
-            &, &.btn_blue, &.btn_green
-                @extends $button
+    button, a.btn, input[type=button], input[type=submit]
+        &, &.btn_blue, &.btn_green, &.btn_grey
+            @extends $button
 
-            &.btn_blue
-                button_hover(dark-blue)
+        &.btn_blue
+            button_hover(dark-blue)
 
-            &.btn_green
-                button_hover(dark-green)
+        &.btn_green
+            button_hover(dark-green)
+
+        &.btn_grey
+            button_hover(dark-gray)
 
 
     .blue_buttons_panel
