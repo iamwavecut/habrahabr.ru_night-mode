@@ -939,23 +939,24 @@ link(color = link-default)
             &.green
                 button_hover(dark-green)
 
-    basic-buttons()
-
-    .buttons
+    :not(.wysiwyg_wrapper):not(.voting-wjt):not(.favorite-wjt)
         basic-buttons()
 
-    button, a.btn, input[type=button], input[type=submit]
-        &, &.btn_blue, &.btn_green, &.btn_grey
-            @extends $button
+        .buttons
+            basic-buttons()
 
-        &.btn_blue
-            button_hover(dark-blue)
+        button, a.btn, input[type=button], input[type=submit]
+            &, &.btn_blue, &.btn_green, &.btn_grey
+                @extends $button
 
-        &.btn_green
-            button_hover(dark-green)
+            &.btn_blue
+                button_hover(dark-blue)
 
-        &.btn_grey
-            button_hover(dark-gray)
+            &.btn_green
+                button_hover(dark-green)
+
+            &.btn_grey
+                button_hover(dark-gray)
 
 
     .blue_buttons_panel
