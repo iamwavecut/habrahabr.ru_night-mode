@@ -624,7 +624,7 @@
   .post .hubs a.subscribed {
     color: #4a4;
   }
-  .post .content .poll .poll_title {
+  .post .poll .poll_title {
     color: #999;
   }
   .post ul.tags li a {
