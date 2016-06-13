@@ -202,6 +202,27 @@
   .info_page h6 {
     color: #cc4d00;
   }
+  #yandex_ad {
+    background: #333 !important;
+  }
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-logo-block__text {
+    color: #93b2d0;
+  }
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-logo-block__text:visited:not(.button) {
+    color: #738290;
+  }
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__title,
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__slider,
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__warning {
+    background: rgba(255,255,255,0.5) !important;
+  }
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-layout__item {
+    border-color: inherit !important;
+  }
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-layout__item_abused,
+  #yandex_ad .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__item_abused {
+    background: transparent !important;
+  }
   #navbar .nav_panel .tab .count:not(:empty),
   #navbar .nav_tabs_content .nav_tab .menu a .count:not(:empty) {
     background: #79b;

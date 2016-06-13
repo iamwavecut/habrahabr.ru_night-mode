@@ -216,6 +216,24 @@ link(color = link-default)
         h1, h2, h3, h4, h5, h6
             color: darken(#ff6000, 10)
 
+    #yandex_ad
+        background: main-bg !important
+
+        .yap-yandex_ad-posterVertical .yap-logo-block__text
+            link()
+
+        .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__title,
+        .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__slider,
+        .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__warning
+            background: rgba(255, 255, 255, .5) !important
+
+        .yap-yandex_ad-posterVertical .yap-layout__item
+            border-color: inherit !important
+
+        .yap-yandex_ad-posterVertical .yap-layout__item_abused,
+        .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__item_abused
+            background: transparent !important
+
     // Navbar
     $count_with_data
         .count:not(:empty)
