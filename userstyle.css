@@ -666,6 +666,9 @@
   .post div.tags {
     color: #808080;
   }
+  .post .fb_iframe_widget {
+    background: #bbb;
+  }
   .article .megapost-cover__img {
     opacity: 0.5;
     transition: all 0.3s;
