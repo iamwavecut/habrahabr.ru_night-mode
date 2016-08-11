@@ -111,6 +111,7 @@
   .inner_search_form input[type=email],
   form .item input[type=password],
   .inner_search_form input[type=password],
+  .search-field__input[type=text],
   #navbar .nav_tabs_content .nav_tab .global_search_form input[type=text],
   .chzn-container-multi .chzn-choices .search-field input {
     background: #444;
