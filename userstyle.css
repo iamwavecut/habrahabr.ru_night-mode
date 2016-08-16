@@ -153,6 +153,9 @@
   .page_head {
     z-index: 200;
   }
+  .page-nav #nav-pages li a {
+    color: #93b2d0;
+  }
   .page-nav #nav-pages li em {
     background: #6da3bd;
     color: #333;
@@ -356,6 +359,9 @@
   }
   .comments_list .comment_item time {
     color: #aaa;
+  }
+  .comments_list .comment_item a.comment-item__username {
+    color: #666;
   }
   .comments_list .comment_item a.comment-item__username:hover {
     color: #aaa;

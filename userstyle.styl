@@ -179,9 +179,12 @@ link(color = link-default)
     .page_head
         z-index: 200
 
-    .page-nav #nav-pages li em // possibly outdated
-        background: #6da3bd
-        color: #333
+    .page-nav #nav-pages li
+        a
+            color: link-default
+        em
+            background: #6da3bd
+            color: #333
 
     .page_head h2.title
         color: heading
@@ -372,7 +375,10 @@ link(color = link-default)
             time
                 color: #aaa
 
-            a.comment-item__username:hover
+            a.comment-item__username
+                color: #666
+
+                &:hover
                     color: #aaa
 
             a.avatar img, .comment-item__avatar
