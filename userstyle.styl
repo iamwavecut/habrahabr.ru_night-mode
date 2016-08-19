@@ -973,7 +973,7 @@ link(color = link-default)
             &.green
                 button_hover(dark-green)
 
-    :not(.wysiwyg_wrapper):not(.voting-wjt):not(.favorite-wjt) >
+    :not(.wysiwyg_wrapper):not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) >
         basic-buttons()
 
         .buttons
@@ -1039,6 +1039,10 @@ link(color = link-default)
 
         :hover
             opacity: 1
+
+    .comments_form h2.title
+        background: none
+        padding-left: 0
 
     // Bottom promo TODO
     .bottom_promo_blocks .block
