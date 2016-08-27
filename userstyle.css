@@ -153,7 +153,8 @@
   .page_head {
     z-index: 200;
   }
-  .page-nav #nav-pages li a {
+  .page-nav a,
+  .page-nav a:visited:not(.button) {
     color: #93b2d0;
   }
   .page-nav #nav-pages li em {
