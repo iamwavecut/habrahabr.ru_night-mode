@@ -125,7 +125,8 @@
   .notes table tr td {
     border-bottom-color: #555;
   }
-  #people-tags li a {
+  #people-tags li a,
+  .habr-badge {
     color: #fff;
   }
   .columns-group__column + .columns-group__column {
