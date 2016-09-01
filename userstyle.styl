@@ -593,8 +593,12 @@ link(color = link-default)
         .hubs a.subscribed
             color: positive
 
-        .poll .poll_title
-            color: #999
+        .poll
+            .poll_title
+                color: #999
+
+            table.result tr td strong
+                color: #999
 
         ul.tags li a
             link()
@@ -723,7 +727,7 @@ link(color = link-default)
                 color: #b17474 !important
 
     // Code highlight
-    .html_format, .madskillz_page
+    .html_format, .madskillz_page, .help_holder
         code
             border: 0
             display: inline-block
@@ -1122,3 +1126,62 @@ link(color = link-default)
 
     .column-wrapper_bordered, .live-broadcast__content
         border-color: third-bg
+
+    // Users statistics
+    .user_statistics
+        .graph
+            text
+                fill: white !important
+
+            path[stroke="#000000"]
+                stroke: white
+
+        table.table
+            tr
+                th
+                    background: third-bg
+                    color: #999
+
+                td
+                    color: #aaa
+
+                    &.comments, &.favorites, &.score, &.views
+                        background-image: url('https://habrastorage.org/files/f7a/5ce/055/f7a5ce055a8d47a79f39412a6989d51a.gif')
+
+                    &.epic_fail
+                        background-color: #785555
+
+                    &.fail
+                        background-color: #827454
+
+                    &.normal
+                        background-color: #657380
+
+                    &.successful
+                        background-color: #707855
+
+                    &.score
+                        &[style^="color:green"]
+                            color: font-green !important
+                            text-shadow: 0 0 1px #040
+
+                &:hover
+                    background: #3c3d34
+
+                    td
+                        &.comments, &.favorites, &.score, &.views
+                            background-image: url('https://habrastorage.org/files/6b2/6a2/bb3/6b26a2bb30d148b082aee4f8d0b21446.gif')
+
+        .legend
+            .text
+                color: inherit
+
+            .color
+                &.yellow
+                    background-color: #827454
+
+                &.blue
+                    background-color: #657380
+
+                &.green
+                    background-color: #707855
