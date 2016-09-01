@@ -33,6 +33,11 @@ comment-new = #445
 comment-ts = #454
 comment-author = #554
 
+epic_fail =  #785555
+fail =       #827454
+normal =     #657380
+successful = #707855
+
 negative = #a44
 positive = #4a4
 
@@ -1149,16 +1154,16 @@ link(color = link-default)
                         background-image: url('https://habrastorage.org/files/f7a/5ce/055/f7a5ce055a8d47a79f39412a6989d51a.gif')
 
                     &.epic_fail
-                        background-color: #785555
+                        background-color: epic_fail
 
                     &.fail
-                        background-color: #827454
+                        background-color: fail
 
                     &.normal
-                        background-color: #657380
+                        background-color: normal
 
                     &.successful
-                        background-color: #707855
+                        background-color: successful
 
                     &.score
                         &[style^="color:green"]
@@ -1178,10 +1183,10 @@ link(color = link-default)
 
             .color
                 &.yellow
-                    background-color: #827454
+                    background-color: fail
 
                 &.blue
-                    background-color: #657380
+                    background-color: normal
 
                 &.green
-                    background-color: #707855
+                    background-color: successful
