@@ -492,19 +492,17 @@ link(color = link-default)
             &:hover
                 opacity: 1
 
-            &.for_authors_help
+            .for_authors_help
                 .row .text
                     color: #858585
-
-                .row .g-icon
-                    color: rgba(255, 255, 255, .2)
 
                 .line
                     background: third-bg !important
                     border-top: 1px solid main-bg
 
-            &.about_exchange .row .g-icon
-                color: rgba(255, 255, 255, .2)
+            .about_exchange, .for_authors_help
+                .row .g-icon
+                    color: rgba(255, 255, 255, .2)
 
             > .show_more
                 background: #383838
