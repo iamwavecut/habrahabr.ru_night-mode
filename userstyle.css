@@ -679,6 +679,26 @@
   .post .fb_iframe_widget {
     background: #bbb;
   }
+  .post twitterwidget::shadow .SandboxRoot {
+    color: inherit;
+  }
+  .post twitterwidget::shadow .EmbeddedTweet {
+    background: none;
+  }
+  .post twitterwidget::shadow .FollowButton {
+    opacity: 0.5;
+  }
+  .post twitterwidget::shadow .TweetAuthor-avatar {
+    opacity: 0.5;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  .post twitterwidget::shadow .TweetAuthor-avatar:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
   .article .megapost-cover__img {
     opacity: 0.5;
     transition: all 0.3s;
