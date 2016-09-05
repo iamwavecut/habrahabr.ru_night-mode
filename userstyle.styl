@@ -631,6 +631,9 @@ link(color = link-default)
         .content a:not(.habracut)
             link()
 
+        &__tags
+            color: inherit
+
     .article
         .megapost-cover__img
             img_grayscale()
@@ -687,6 +690,9 @@ link(color = link-default)
                 .post-author__pic, .post-author__pic_default
                     opacity: 1
                     filter(grayscale(0))
+
+            .post-author__name
+                color: main-font-color
 
         .voting-wjt, .post-comments
             border-color: sec-bg
@@ -965,7 +971,7 @@ link(color = link-default)
                 color: inherit
 
 
-    // Buttons
+    // Buttons TODO refactor
     $button
         &
             button_hover()
@@ -989,7 +995,7 @@ link(color = link-default)
                 background-color: #666
 
     basic-buttons()
-        button, a.button, input[type=button], input[type=submit]
+        button, a.button, input[type=button], input[type=submit], a.habracut
             &, &.blue, &.green
                 @extends $button
 
