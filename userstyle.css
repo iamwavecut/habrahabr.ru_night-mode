@@ -710,6 +710,12 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
   }
+  .post .content a:not(.habracut) {
+    color: #93b2d0;
+  }
+  .post .content a:not(.habracut):visited:not(.button) {
+    color: #738290;
+  }
   .article .megapost-cover__img {
     opacity: 0.5;
     transition: all 0.3s;
