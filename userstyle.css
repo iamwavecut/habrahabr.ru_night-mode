@@ -105,6 +105,8 @@
     color: #738290;
   }
   input[type=text],
+  .hubs_list .hubs_suggest input,
+  .companies_list .companies_suggest input,
   form .item input[type=text],
   .inner_search_form input[type=text],
   form .item input[type=email],
