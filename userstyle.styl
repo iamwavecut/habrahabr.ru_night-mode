@@ -148,8 +148,8 @@ link(color = link-default)
         color: white
         border-color: third-bg
 
-    form .item, .inner_search_form
-        label
+    form .item, form .digest, .inner_search_form
+        label, span
             color: #838383
 
         input
@@ -583,9 +583,12 @@ link(color = link-default)
         a.conversation_link
             link()
 
+        a.delete
+            filter(invert(1))
+
     // Post
     .post
-        h1.title, h2.post__title
+        .post__title
             &, a.post_title, a.post__title_link
                 link(heading)
 
@@ -1241,3 +1244,8 @@ link(color = link-default)
 
                 &.green
                     background-color: successful
+
+
+    .user_settings .notification_table tr
+        th, td
+            color: inherit
