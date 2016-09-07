@@ -499,7 +499,7 @@
   .sidebar_right .block,
   .sidebar_right .sidebar-block {
     background: #222;
-    opacity: 0.5;
+    opacity: 0.5 !important;
     transition: all 0.3s;
   }
   .sidebar_right .block.best_company .company_info p a,
@@ -520,7 +520,7 @@
   }
   .sidebar_right .block:hover,
   .sidebar_right .sidebar-block:hover {
-    opacity: 1;
+    opacity: 1 !important;
   }
   .sidebar_right .block .for_authors_help .row .text,
   .sidebar_right .sidebar-block .for_authors_help .row .text {
@@ -1317,14 +1317,6 @@
   .hantim_vacanies,
   .twitter_stream {
     padding: 5px;
-  }
-  .company_widgets {
-    background: #222;
-    opacity: 0.5;
-    transition: all 0.3s;
-  }
-  .company_widgets :hover {
-    opacity: 1;
   }
   .comments_form h2.title {
     background: none;

@@ -481,7 +481,7 @@ link(color = link-default)
 
         .block, .sidebar-block
             background: #222
-            opacity: .5
+            opacity: .5 !important
             transition: all .3s
 
             &.best_company .company_info p a,
@@ -490,7 +490,7 @@ link(color = link-default)
                 link()
 
             &:hover
-                opacity: 1
+                opacity: 1 !important
 
             .for_authors_help
                 .row .text
@@ -1094,14 +1094,6 @@ link(color = link-default)
     .company_info, .company_links, .corporate_news, .corporate_blog,
     .mobile_applications, .hantim_vacanies, .twitter_stream
         padding: 5px
-
-    .company_widgets
-        background: #222
-        opacity: .5
-        transition: all .3s
-
-        :hover
-            opacity: 1
 
     .comments_form h2.title
         background: none
