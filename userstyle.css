@@ -784,6 +784,23 @@
   .article span.g-icon.g-icon-twitter::before {
     content: '';
   }
+  .article .t-carousel__item__img {
+    opacity: 0.5;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(0.8);
+    filter: grayscale(0.8);
+  }
+  .article .t-carousel__item__img:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  .article .t-carousel__indicator {
+    background-color: #ddd !important;
+  }
+  .article .t-carousel__arrow {
+    border-color: #ddd !important;
+  }
   .postinfo-panel {
     background-color: transparent;
     border-color: #444;
