@@ -925,6 +925,9 @@
     border: 0;
     display: block;
   }
+  .html_format pre code,
+  .madskillz_page pre code,
+  .help_holder pre code,
   .html_format pre code.nohighlight,
   .madskillz_page pre code.nohighlight,
   .help_holder pre code.nohighlight {
