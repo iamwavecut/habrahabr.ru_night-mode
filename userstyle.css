@@ -18,6 +18,9 @@
     background-color: #111;
     color: #bbb;
   }
+  body.nl .layout {
+    background-color: transparent;
+  }
   #layout,
   #xpanel,
   .to_top {
