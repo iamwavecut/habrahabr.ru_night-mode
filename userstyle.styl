@@ -253,63 +253,26 @@ link(color = link-default)
         @extends input[type=text]
 
     // Navbar
-    $count_with_data
-        .count:not(:empty)
+    .main-navbar
+
+        .badge:not(:empty)
             background: #79b
             box-sizing: content-box
             color: black
-    #navbar
-        .nav_panel, .nav_tabs_content
-            &.open .nav_tab
-                background: sec-bg
+            text-shadow: none
 
-        .nav_panel
-            background-color: transparent
+        .dropdown-container
+            background-color: main-bg
 
-            .logo
-                opacity: 0.3
+            .dropdown__user-stast
+                background-color: sec-bg
+                color: inherit
 
-            .tab
-                @extends $count_with_data
-
-                &, &.tab_settings
-                    border: none
-
-                &.open, &:hover
-                    background: sec-bg
-
-                &:hover, &.tab_settings:hover
-                    background-position: 0 0
-
-                &.tab_login, &.tab_print
-                    border: none
-
-                &.tab_user
-                    img_grayscale()
-
-                .g-icon
-                    vertical-align: middle
-                    font-size: 32px
-                    color: #777
-
-        .nav_tabs_content
-            .nav_tab
+            .n-dropdown-menu
                 background-color: transparent
 
-                .menu a
-                    @extends $count_with_data
-                    color: white
-
-                .line
-                    background: main-bg
-
-                .title
-                    &, a
-                        color: main-font-color
-
-                .global_search_form input[type=text]
-                    @extends input[type=text]
-
+                &__item-link
+                    color: inherit
 
     // Comments list
     .comments
