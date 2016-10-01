@@ -101,7 +101,7 @@ link(color = link-default)
         z-index: 1
 
     #layout, .layout
-        &, #navbar, .inner
+        &, .inner
             background: main-bg
 
     #layout
@@ -251,6 +251,15 @@ link(color = link-default)
 
     .search-field__input[type=text]
         @extends input[type=text]
+
+
+    .post-type-selector
+        background-color: sec-bg
+
+    #global_notify, .global_notify
+        .inner_notice
+            background: #454
+            color: inherit
 
     // Navbar
     .main-navbar
@@ -1119,22 +1128,22 @@ link(color = link-default)
                 &:visited
                     color: #666
 
-    // CHZN
-    .chzn-container
-        .chzn-results
+    // Chosen
+    .chosen-container
+        .chosen-results
             .highlighted
                 color: black
 
                 .subscribers
                     color: black
 
-        .chzn-drop
+        .chosen-drop
             background: sec-bg
             color: white
             border-color: third-bg
 
         &-multi
-            .chzn-choices
+            .chosen-choices
                 background: sec-bg
                 color: white
                 border-color: third-bg
@@ -1144,6 +1153,10 @@ link(color = link-default)
 
                 .search-field input
                     @extends input[type=text]
+
+        &-single, &-active.chosen-with-drop
+            .chosen-single
+                background-color: sec-bg
 
     .webui-popover .popover
         border-color: #777

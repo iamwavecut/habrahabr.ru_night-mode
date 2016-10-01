@@ -28,8 +28,6 @@
   }
   #layout,
   .layout,
-  #layout #navbar,
-  .layout #navbar,
   #layout .inner,
   .layout .inner {
     background: #333;
@@ -120,7 +118,7 @@
   form .digest input[type=password],
   .inner_search_form input[type=password],
   .search-field__input[type=text],
-  .chzn-container-multi .chzn-choices .search-field input {
+  .chosen-container-multi .chosen-choices .search-field input {
     background: #444;
     color: #fff;
     border-color: #555;
@@ -248,6 +246,14 @@
   #yandex_ad .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__item_abused,
   #yandex_ad_bottom .yap-yandex_ad-posterVertical .yap-layout_block_poster .yap-layout__item_abused {
     background: transparent !important;
+  }
+  .post-type-selector {
+    background-color: #444;
+  }
+  #global_notify .inner_notice,
+  .global_notify .inner_notice {
+    background: #454;
+    color: inherit;
   }
   .main-navbar .badge:not(:empty) {
     background: #79b;
@@ -1365,24 +1371,28 @@
   .promo-block .content-list__item-link:visited {
     color: #666;
   }
-  .chzn-container .chzn-results .highlighted {
+  .chosen-container .chosen-results .highlighted {
     color: #000;
   }
-  .chzn-container .chzn-results .highlighted .subscribers {
+  .chosen-container .chosen-results .highlighted .subscribers {
     color: #000;
   }
-  .chzn-container .chzn-drop {
+  .chosen-container .chosen-drop {
     background: #444;
     color: #fff;
     border-color: #555;
   }
-  .chzn-container-multi .chzn-choices {
+  .chosen-container-multi .chosen-choices {
     background: #444;
     color: #fff;
     border-color: #555;
   }
-  .chzn-container-multi .chzn-choices .search-choice {
+  .chosen-container-multi .chosen-choices .search-choice {
     color: #000;
+  }
+  .chosen-container-single .chosen-single,
+  .chosen-container-active.chosen-with-drop .chosen-single {
+    background-color: #444;
   }
   .webui-popover .popover {
     border-color: #777;
