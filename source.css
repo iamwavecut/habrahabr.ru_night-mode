@@ -1152,13 +1152,19 @@ code.hljs .ini .hljs-keyword {
 :not(.wysiwyg_wrapper) > a.btn:visited,
 :not(.wysiwyg_wrapper) > .btn-dropdown:visited,
 a.habracut,
-.buttons a.button,
 a.habracut:focus,
-.buttons a.button:focus,
 a.habracut:active,
-.buttons a.button:active,
 a.habracut:visited,
+.buttons a.button,
+.buttons a.button:active,
+.buttons a.button:focus,
+.buttons a.button:active:focus,
+.buttons a.button:focus:focus,
+.buttons a.button:active:active,
+.buttons a.button:focus:active,
 .buttons a.button:visited,
+.buttons a.button:active:visited,
+.buttons a.button:focus:visited,
 .buttons input[type=button],
 .buttons input[type=submit],
 .buttons input[type=button]:focus,
@@ -1193,21 +1199,27 @@ a.habracut:visited,
 :not(.wysiwyg_wrapper) > a.btn,
 :not(.wysiwyg_wrapper) > .btn-dropdown,
 a.habracut,
-.buttons a.button {
+.buttons a.button,
+.buttons a.button:active,
+.buttons a.button:focus {
   background-color: #444;
 }
 :not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:hover,
 :not(.wysiwyg_wrapper) > a.btn:hover,
 :not(.wysiwyg_wrapper) > .btn-dropdown:hover,
 a.habracut:hover,
-.buttons a.button:hover {
+.buttons a.button:hover,
+.buttons a.button:active:hover,
+.buttons a.button:focus:hover {
   background-color: #686868;
 }
 :not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:hover,
 :not(.wysiwyg_wrapper) > a.btn:hover,
 :not(.wysiwyg_wrapper) > .btn-dropdown:hover,
 a.habracut:hover,
-.buttons a.button:hover {
+.buttons a.button:hover,
+.buttons a.button:active:hover,
+.buttons a.button:focus:hover {
   color: #fff;
 }
 .buttons input[type=submit].green,

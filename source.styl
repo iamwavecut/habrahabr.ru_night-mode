@@ -1005,8 +1005,12 @@ $button-basic
     > a.btn,  > .btn-dropdown
         @extend $button-basic
 
-a.habracut, .buttons a.button
+a.habracut
     @extend $button-basic
+
+.buttons a.button
+    &, &:active, &:focus
+        @extend $button-basic
 
 $button-green
     button-hover(dark-green)
