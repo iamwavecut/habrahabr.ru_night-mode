@@ -241,11 +241,11 @@ form .digest span,
   color: inherit;
 }
 body.nl .layout__navbar {
-  background-color: transparent;
+  background-color: #2e2e2e;
   border-color: #222;
 }
 body.nl .layout__navbar .main-navbar {
-  background-color: rgba(0,0,0,0.1);
+  background-color: inherit;
 }
 body.nl .layout__navbar .badge:not(:empty) {
   background: #79b;
