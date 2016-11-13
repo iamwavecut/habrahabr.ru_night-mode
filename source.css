@@ -126,6 +126,9 @@ form .digest span,
 .columns-group__column + .columns-group__column {
   border-color: transparent;
 }
+.icon-svg_logo-habrahabr {
+  color: inherit;
+}
 #logo,
 #reg-wrapper {
   z-index: 1;
@@ -1250,6 +1253,9 @@ a.btn.btn_grey:hover {
 }
 .blue_buttons_panel {
   background: #6c747a;
+}
+.dropdown.dropdown_flows button {
+  margin: 1px 0 0 1px;
 }
 .dropdown-container {
   background-color: #333;
