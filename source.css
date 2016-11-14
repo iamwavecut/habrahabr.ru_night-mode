@@ -256,6 +256,9 @@ body.nl .layout__navbar .badge:not(:empty) {
   color: #000;
   text-shadow: none;
 }
+body.nl .layout__elevator:hover {
+  background: #555;
+}
 .comments-placeholder__text {
   color: inherit;
 }
