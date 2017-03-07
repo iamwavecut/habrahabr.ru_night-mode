@@ -154,8 +154,9 @@ form .item, form .digest, .inner_search_form
 .columns-group__column + .columns-group__column
     border-color: transparent
 
-.icon-svg_logo-habrahabr
+.icon-svg
     color: inherit
+    fill: gray
 
 // Access denied page TODO
 #logo, #reg-wrapper
@@ -251,7 +252,7 @@ form .item, form .digest, .inner_search_form
         color: inherit
 
 // Navbar
-body.nl .layout__navbar
+body.nl .layout__row_navbar
     background-color: #2e2e2e
     border-color: #222
 
@@ -437,6 +438,21 @@ body.nl .layout__elevator
 
     &--userpic, &--og--pic
         img_grayscale()
+
+
+
+.default-block
+    background: #222
+    opacity: .5 !important
+    transition: all .3s
+
+    &:hover
+        opacity: 1 !important
+
+
+.toggle-menu__most-read,
+.toggle-menu_most-comments
+    background-color: transparent
 
 // Sidebar
 .sidebar_right // TODO merge with bottom promo?

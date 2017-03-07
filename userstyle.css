@@ -128,8 +128,9 @@
     .columns-group__column + .columns-group__column {
       border-color: transparent;
     }
-    .icon-svg_logo-habrahabr {
+    .icon-svg {
       color: inherit;
+      fill: #808080;
     }
     #logo,
     #reg-wrapper {
@@ -245,14 +246,14 @@
       background: #454;
       color: inherit;
     }
-    body.nl .layout__navbar {
+    body.nl .layout__row_navbar {
       background-color: #2e2e2e;
       border-color: #222;
     }
-    body.nl .layout__navbar .main-navbar {
+    body.nl .layout__row_navbar .main-navbar {
       background-color: inherit;
     }
-    body.nl .layout__navbar .badge:not(:empty) {
+    body.nl .layout__row_navbar .badge:not(:empty) {
       background: #79b;
       box-sizing: content-box;
       color: #000;
@@ -436,6 +437,18 @@
       opacity: 1;
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
+    }
+    .default-block {
+      background: #222;
+      opacity: 0.5 !important;
+      transition: all 0.3s;
+    }
+    .default-block:hover {
+      opacity: 1 !important;
+    }
+    .toggle-menu__most-read,
+    .toggle-menu_most-comments {
+      background-color: transparent;
     }
     .sidebar_right img,
     .sidebar_right iframe,
