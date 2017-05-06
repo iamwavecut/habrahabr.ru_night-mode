@@ -198,6 +198,10 @@ form .digest span,
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
+
+.profile-section__about-text {
+  color: #bbb;
+}
 .info_page h1,
 .info_page h2,
 .info_page h3,
