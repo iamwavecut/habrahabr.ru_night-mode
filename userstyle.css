@@ -615,7 +615,8 @@
     }
     .post .post__title,
     .post .post__title a.post_title,
-    .post .post__title a.post__title_link {
+    .post .post__title a.post__title_link, 
+    .post__title-text {
       color: #b9c5cf;
     }
     .post .post__title:visited:not(.button),
