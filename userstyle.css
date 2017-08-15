@@ -719,6 +719,9 @@
     .post__text-html {
       color: #b9c5cf;
     }
+    .post__text-html blockquote {
+      color: #222;
+    }
     .article__body iframe,
     .article__body object,
     .article__body img {
