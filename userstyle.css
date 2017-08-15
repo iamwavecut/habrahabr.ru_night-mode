@@ -720,7 +720,7 @@
       color: #b9c5cf;
     }
     .post__text-html blockquote {
-      color: #222;
+      background-color: rgba(67, 67, 67, 0.60);
     }
     .article__body iframe,
     .article__body object,
