@@ -715,7 +715,8 @@
       color: inherit;
     }
     .article__body .t-heading,
-    .article__body .t-title {
+    .article__body .t-title,
+    .post__text-html {
       color: #b9c5cf;
     }
     .article__body iframe,
