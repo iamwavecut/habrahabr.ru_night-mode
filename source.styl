@@ -572,7 +572,7 @@ body.nl .layout__elevator
 // Post
 .post
     .post__title
-        &, a.post_title, a.post__title_link
+        &, a.post_title, a.post__title_link, post__title-text
             link(heading)
 
         .flag
@@ -632,6 +632,9 @@ body.nl .layout__elevator
 
         .t-heading, .t-title, .post__text-html
             color: heading
+        
+            blockquote
+                background-color: rgba(67, 67, 67, .6);
 
         iframe, object, img
             img_grayscale()
