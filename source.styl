@@ -13,7 +13,7 @@ link-hover = #738290
 
 dark-green = #294436
 dark-blue = #385570
-dark-gray = #484a4a
+dark-grey = #484a4a
 
 hljs-default = #a9b7c6
 hljs-comment = gray
@@ -210,6 +210,12 @@ form .item, form .digest, .inner_search_form
     &__name, &__nickname
         color: #6a6a6a
 
+.author-panel
+    border:none
+
+.btn_navbar_user-dropdown>img
+    img_grayscale()
+
 .user_profile .summary img
     img_grayscale()
 
@@ -292,6 +298,9 @@ body.nl .layout__elevator
     &__text
         color: inherit
 
+.comment__message, .comment-form__preview
+    color: main-font-color
+
 .comments_list
 
     .comment_item_plain .post_info .count
@@ -348,9 +357,6 @@ body.nl .layout__elevator
         time
             color: #aaa
 
-        a.comment-item__username
-            color: #666
-
             &:hover
                 color: #aaa
 
@@ -359,6 +365,15 @@ body.nl .layout__elevator
 
         .comment-item__avatar-img_default::before
             background-color: transparent
+
+.comment__head_topic-author
+    background-color: dark-green
+.comment__date-time
+    color: main-font-color
+.user-info__nickname_comment
+    color: link-default
+.user-info__nickname:hover, .user-info__nickname:active
+    color: link-hover
 
 // Content
 .content_left
@@ -452,10 +467,33 @@ body.nl .layout__elevator
     &:hover
         opacity: 1 !important
 
+    &__header
+        border-bottom: 1px solid dark-grey
+
+        &-title
+            color:  link-default !important
+            &:hover
+                color: link-hover !important
+
+.stacked-menu
+    &__item-text
+        color: link-default
+
+.toggle-menu
+    border: none
+    background: sec-bg
 
 .toggle-menu__most-read,
 .toggle-menu_most-comments
     background-color: transparent
+
+.toggle-menu__item-link
+    color: main-font-color
+    border: none
+
+.toggle-menu__item-link_active
+    color: heading
+    background: third-bg
 
 // Sidebar
 .sidebar_right // TODO merge with bottom promo?
@@ -527,7 +565,12 @@ body.nl .layout__elevator
             background: none
             border: 1px solid #838383
 
+.post__type-label
+    background-color: third-bg
+    border: none
 
+.post-info__title
+    color: heading
 
 // Conversation page
 .conversation_page
@@ -568,6 +611,9 @@ body.nl .layout__elevator
 
     a.delete
         filter(invert(1))
+
+.post-stats
+    border: none
 
 // Post
 .post
@@ -619,10 +665,16 @@ body.nl .layout__elevator
 
     &__tags
         color: inherit
+.post__text-html
+    color: main-font-color
+    blockquote
+        background-color: rgba(67, 67, 67, .6);
 
 .article
     .megapost-cover__img
         img_grayscale()
+
+
 
     &__body
         border-color: transparent
@@ -630,11 +682,8 @@ body.nl .layout__elevator
         &-text, .t-text
             color: inherit
 
-        .t-heading, .t-title, .post__text-html
+        .t-heading, .t-title
             color: heading
-        
-            blockquote
-                background-color: rgba(67, 67, 67, .6);
 
         iframe, object, img
             img_grayscale()
@@ -752,6 +801,9 @@ body.nl .layout__elevator
     &.message a.unchecked_link
         &, &:visited
             color: #b17474 !important
+
+.post__text-html img
+  img_grayscale()
 
 // Code highlight
 .html_format, .madskillz_page, .help_holder
@@ -918,7 +970,7 @@ code.hljs
         background-color: dark-green
 
     .hljs-deletion
-        background-color: dark-gray
+        background-color: dark-grey
 
     .hljs-change
         background-color: dark-blue
@@ -1053,7 +1105,7 @@ button, a.btn
         @extend $button-green
 
     &.btn_grey
-        button-hover(dark-gray)
+        button-hover(dark-grey)
 
 
 .blue_buttons_panel
@@ -1128,8 +1180,14 @@ button, a.btn
             link()
 
 .promo-block
-    &__footer, &__service
+    &__header, &__footer, &__service, &__content
         background: transparent
+
+    &__header
+        border-bottom: 1px solid dark-grey
+
+    &__footer
+        border-top: 1px solid dark-grey
 
 .similar-posts
     background: sec-bg
@@ -1148,19 +1206,27 @@ button, a.btn
     .tabs__menu
         background: rgba(0, 0, 0, .1)
 
-    .content-list__item
-        &::before
-            img_grayscale(false)
+.content-list__item
+    &::before
+        img_grayscale(false)
 
-        &:hover::before
-            opacity: 1
-            filter(grayscale(0))
+    &:hover::before
+        opacity: 1
+        filter(grayscale(0))
 
-        &-link
-            color: #b5b5b5
+    &-link
+        color: #b5b5b5
 
-            &:visited
-                color: #666
+        &:visited
+            color: #666
+    &_devided
+        border-bottom: 1px solid dark-grey
+
+.task__title, .vacancy__title
+    color: heading
+
+.task__aside, .vacancy__aside
+    color: dark-grey
 
 // Chosen
 .chosen-container

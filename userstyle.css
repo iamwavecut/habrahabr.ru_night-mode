@@ -189,6 +189,20 @@
     .author-info__nickname {
       color: #6a6a6a;
     }
+    .author-panel {
+      border: none;
+    }
+    .btn_navbar_user-dropdown>img {
+      opacity: 0.5;
+      transition: all 0.3s;
+      -webkit-filter: grayscale(0.8);
+      filter: grayscale(0.8);
+    }
+    .btn_navbar_user-dropdown>img:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+    }
     .user_profile .summary img {
       opacity: 0.5;
       transition: all 0.3s;
@@ -281,6 +295,10 @@
     .form-placeholder__text {
       color: inherit;
     }
+    .comment__message,
+    .comment-form__preview {
+      color: #bbb;
+    }
     .comments_list .comment_item_plain .post_info .count {
       color: #a44;
     }
@@ -331,10 +349,7 @@
     .comments_list .comment_item time {
       color: #aaa;
     }
-    .comments_list .comment_item a.comment-item__username {
-      color: #666;
-    }
-    .comments_list .comment_item a.comment-item__username:hover {
+    .comments_list .comment_item time:hover {
       color: #aaa;
     }
     .comments_list .comment_item a.avatar img,
@@ -352,6 +367,19 @@
     }
     .comments_list .comment_item .comment-item__avatar-img_default::before {
       background-color: transparent;
+    }
+    .comment__head_topic-author {
+      background-color: #294436;
+    }
+    .comment__date-time {
+      color: #bbb;
+    }
+    .user-info__nickname_comment {
+      color: #93b2d0;
+    }
+    .user-info__nickname:hover,
+    .user-info__nickname:active {
+      color: #738290;
     }
     .content_left .submenu,
     .content_left table.menu tr td a {
@@ -449,9 +477,33 @@
     .default-block:hover {
       opacity: 1 !important;
     }
+    .default-block__header {
+      border-bottom: 1px solid #484a4a;
+    }
+    .default-block__header-title {
+      color: #93b2d0 !important;
+    }
+    .default-block__header-title:hover {
+      color: #738290 !important;
+    }
+    .stacked-menu__item-text {
+      color: #93b2d0;
+    }
+    .toggle-menu {
+      border: none;
+      background: #444;
+    }
     .toggle-menu__most-read,
     .toggle-menu_most-comments {
       background-color: transparent;
+    }
+    .toggle-menu__item-link {
+      color: #bbb;
+      border: none;
+    }
+    .toggle-menu__item-link_active {
+      color: #b9c5cf;
+      background: #555;
     }
     .sidebar_right img,
     .sidebar_right iframe,
@@ -564,6 +616,13 @@
       background: none;
       border: 1px solid #838383;
     }
+    .post__type-label {
+      background-color: #555;
+      border: none;
+    }
+    .post-info__title {
+      color: #b9c5cf;
+    }
     .conversation_page > .title,
     .conversation_page .all_dialogs {
       color: #ccc;
@@ -612,6 +671,9 @@
     .conversations .conversation a.delete {
       -webkit-filter: invert(1);
       filter: invert(1);
+    }
+    .post-stats {
+      border: none;
     }
     .post .post__title,
     .post .post__title a.post_title,
@@ -698,6 +760,12 @@
     .post__tags {
       color: inherit;
     }
+    .post__text-html {
+      color: #bbb;
+    }
+    .post__text-html blockquote {
+      background-color: rgba(67,67,67,0.6);
+    }
     .article .megapost-cover__img {
       opacity: 0.5;
       transition: all 0.3s;
@@ -717,14 +785,8 @@
       color: inherit;
     }
     .article__body .t-heading,
-    .article__body .t-title,
-    .article__body .post__text-html {
+    .article__body .t-title {
       color: #b9c5cf;
-    }
-    .article__body .t-heading blockquote,
-    .article__body .t-title blockquote,
-    .article__body .post__text-html blockquote {
-      background-color: rgba(67,67,67,0.6);
     }
     .article__body iframe,
     .article__body object,
@@ -889,6 +951,17 @@
     .html_format.message a.unchecked_link,
     .html_format.message a.unchecked_link:visited {
       color: #b17474 !important;
+    }
+    .post__text-html img {
+      opacity: 0.5;
+      transition: all 0.3s;
+      -webkit-filter: grayscale(0.8);
+      filter: grayscale(0.8);
+    }
+    .post__text-html img:hover {
+      opacity: 1;
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
     }
     .html_format code,
     .madskillz_page code,
@@ -1362,9 +1435,17 @@
     .bottom_promo_blocks .block.freelansim .tasks .task a:visited:not(.button) {
       color: #738290;
     }
+    .promo-block__header,
     .promo-block__footer,
-    .promo-block__service {
+    .promo-block__service,
+    .promo-block__content {
       background: transparent;
+    }
+    .promo-block__header {
+      border-bottom: 1px solid #484a4a;
+    }
+    .promo-block__footer {
+      border-top: 1px solid #484a4a;
     }
     .similar-posts {
       background: #444;
@@ -1389,30 +1470,33 @@
     .promo-block .tabs__menu {
       background: rgba(0,0,0,0.1);
     }
-    .live-broadcast[class*=live-broadcast_] .content-list__item::before,
-    [class*=live-broadcast_] .content-list__item::before,
-    .promo-block .content-list__item::before {
+    .content-list__item::before {
       opacity: 0.5;
       transition: all 0.3s;
       -webkit-filter: grayscale(0.8);
       filter: grayscale(0.8);
     }
-    .live-broadcast[class*=live-broadcast_] .content-list__item:hover::before,
-    [class*=live-broadcast_] .content-list__item:hover::before,
-    .promo-block .content-list__item:hover::before {
+    .content-list__item:hover::before {
       opacity: 1;
       -webkit-filter: grayscale(0);
       filter: grayscale(0);
     }
-    .live-broadcast[class*=live-broadcast_] .content-list__item-link,
-    [class*=live-broadcast_] .content-list__item-link,
-    .promo-block .content-list__item-link {
+    .content-list__item-link {
       color: #b5b5b5;
     }
-    .live-broadcast[class*=live-broadcast_] .content-list__item-link:visited,
-    [class*=live-broadcast_] .content-list__item-link:visited,
-    .promo-block .content-list__item-link:visited {
+    .content-list__item-link:visited {
       color: #666;
+    }
+    .content-list__item_devided {
+      border-bottom: 1px solid #484a4a;
+    }
+    .task__title,
+    .vacancy__title {
+      color: #b9c5cf;
+    }
+    .task__aside,
+    .vacancy__aside {
+      color: #484a4a;
     }
     .chosen-container .chosen-results .highlighted {
       color: #000;
