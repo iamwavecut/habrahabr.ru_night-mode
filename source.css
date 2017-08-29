@@ -880,74 +880,103 @@ body.nl .layout__elevator:active {
   background-color: transparent;
   border-color: #444;
 }
-.html_format h1,
-.html_format h2,
-.html_format h3,
-.html_format h4,
-.html_format h5,
-.html_format h6 {
+.post__text-html h1,
+.comment__message h1,
+.post__text-html h2,
+.comment__message h2,
+.post__text-html h3,
+.comment__message h3,
+.post__text-html h4,
+.comment__message h4,
+.post__text-html h5,
+.comment__message h5,
+.post__text-html h6,
+.comment__message h6 {
   color: #b9c5cf;
 }
-.html_format a {
+.post__text-html a,
+.comment__message a {
   color: #93b2d0;
 }
-.html_format a:visited:not(.button) {
+.post__text-html a:visited:not(.button),
+.comment__message a:visited:not(.button) {
   color: #738290;
 }
-.html_format .spoiler .spoiler_text {
+.post__text-html .spoiler .spoiler_text,
+.comment__message .spoiler .spoiler_text {
   background: #444;
   border: 0;
 }
-.html_format .MJXc-display {
+.post__text-html .MJXc-display,
+.comment__message .MJXc-display {
   overflow-y: hidden;
   overflow-x: auto;
 }
-.html_format .mjx-math {
+.post__text-html .mjx-math,
+.comment__message .mjx-math {
   color: #a9b7c6;
   padding: 0.2em;
   margin: -0.2em 0;
 }
-.html_format font[color="#0000FF"],
-.html_format font[color="blue"] {
+.post__text-html font[color="#0000FF"],
+.comment__message font[color="#0000FF"],
+.post__text-html font[color="blue"],
+.comment__message font[color="blue"] {
   color: #49f;
 }
-.html_format font[color="#FF0000"],
-.html_format font[color="red"] {
+.post__text-html font[color="#FF0000"],
+.comment__message font[color="#FF0000"],
+.post__text-html font[color="red"],
+.comment__message font[color="red"] {
   color: #f66;
 }
-.html_format font[color="#00FF00"],
-.html_format font[color="green"] {
+.post__text-html font[color="#00FF00"],
+.comment__message font[color="#00FF00"],
+.post__text-html font[color="green"],
+.comment__message font[color="green"] {
   color: #0d0;
 }
-.html_format font[color="#000000"],
-.html_format font[color="black"] {
+.post__text-html font[color="#000000"],
+.comment__message font[color="#000000"],
+.post__text-html font[color="black"],
+.comment__message font[color="black"] {
   color: #bbb;
 }
-.html_format iframe,
-.html_format object,
-.html_format img {
+.post__text-html iframe,
+.comment__message iframe,
+.post__text-html object,
+.comment__message object,
+.post__text-html img,
+.comment__message img {
   opacity: 0.5;
   transition: all 0.3s;
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
-.html_format iframe:hover,
-.html_format object:hover,
-.html_format img:hover {
+.post__text-html iframe:hover,
+.comment__message iframe:hover,
+.post__text-html object:hover,
+.comment__message object:hover,
+.post__text-html img:hover,
+.comment__message img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-.html_format img {
+.post__text-html img,
+.comment__message img {
   -webkit-filter: invert(0);
   filter: invert(0);
 }
-.html_format img.image-inverted {
+.post__text-html img.image-inverted,
+.comment__message img.image-inverted {
   -webkit-filter: invert(1);
   filter: invert(1);
 }
-.html_format.message a.unchecked_link,
-.html_format.message a.unchecked_link:visited {
+.post__text-html.message a.unchecked_link,
+.comment__message.message a.unchecked_link,
+.post__text-html.message a.unchecked_link:visited,
+.comment__message.message a.unchecked_link:visited {
   color: #b17474 !important;
 }
 .post__text-html img {
