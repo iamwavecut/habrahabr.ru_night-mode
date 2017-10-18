@@ -52,10 +52,16 @@ img_grayscale(hover = true)
     transition: all .3s
     filter(grayscale(.8))
 
+    &.image-inverted
+        filter(grayscale(.8) invert(1))
+
     if hover
         &:hover
             opacity: 1
             filter(grayscale(0))
+
+        &.image-inverted:hover
+            filter(grayscale(0) invert(1))
 
 button-hover(color = sec-bg)
     background-color: color

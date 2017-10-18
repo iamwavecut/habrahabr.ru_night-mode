@@ -60,6 +60,13 @@ a:visited:not(.button) {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.top_banner img.image-inverted,
+.announce img.image-inverted,
+.author-info__image-pic.image-inverted,
+.html_banner.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .top_banner img:hover,
 .announce img:hover,
 .author-info__image-pic:hover,
@@ -67,6 +74,13 @@ a:visited:not(.button) {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.top_banner img.image-inverted:hover,
+.announce img.image-inverted:hover,
+.author-info__image-pic.image-inverted:hover,
+.html_banner.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .html_banner {
   background: none;
@@ -78,6 +92,11 @@ a:visited:not(.button) {
   transition: all 0.3s;
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
+}
+.icon_briefcase2::before.image-inverted,
+.post .hubs::before.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
 }
 .checkbox__label::before {
   background-color: #555;
@@ -196,10 +215,18 @@ form .digest span,
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.btn_navbar_user-dropdown>img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .btn_navbar_user-dropdown>img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.btn_navbar_user-dropdown>img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .user_profile .summary img {
   opacity: 0.5;
@@ -207,10 +234,18 @@ form .digest span,
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.user_profile .summary img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .user_profile .summary img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.user_profile .summary img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .profile-section__about-text {
   color: #bbb;
@@ -357,11 +392,21 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.comments_list .comment_item a.avatar img.image-inverted,
+.comments_list .comment_item .comment-item__avatar.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .comments_list .comment_item a.avatar img:hover,
 .comments_list .comment_item .comment-item__avatar:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.comments_list .comment_item a.avatar img.image-inverted:hover,
+.comments_list .comment_item .comment-item__avatar.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .comments_list .comment_item .comment-item__avatar-img_default::before {
   background-color: transparent;
@@ -461,11 +506,21 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.wtf_bc--userpic.image-inverted,
+.wtf_bc--og--pic.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .wtf_bc--userpic:hover,
 .wtf_bc--og--pic:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.wtf_bc--userpic.image-inverted:hover,
+.wtf_bc--og--pic.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .default-block {
   background: #222;
@@ -511,12 +566,24 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.sidebar_right img.image-inverted,
+.sidebar_right iframe.image-inverted,
+.sidebar_right embed.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .sidebar_right img:hover,
 .sidebar_right iframe:hover,
 .sidebar_right embed:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.sidebar_right img.image-inverted:hover,
+.sidebar_right iframe.image-inverted:hover,
+.sidebar_right embed.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .sidebar_right .block,
 .sidebar_right .sidebar-block {
@@ -605,10 +672,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.sidebar_right .xyz_wrapper.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .sidebar_right .xyz_wrapper:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.sidebar_right .xyz_wrapper.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .sidebar_right .xyz_wrapper_inner {
   background: none;
@@ -637,10 +712,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.conversation_page .messages .message .info a.avatar img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .conversation_page .messages .message .info a.avatar img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.conversation_page .messages .message .info a.avatar img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .conversation_page .messages .message .info .login a {
   color: #ddd;
@@ -692,10 +775,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.post .post__title .flag.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .post .post__title .flag:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.post .post__title .flag.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .post .hubs a.subscribed {
   color: #4a4;
@@ -733,10 +824,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.post twitterwidget::shadow .TweetAuthor-avatar.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .post twitterwidget::shadow .TweetAuthor-avatar:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.post twitterwidget::shadow .TweetAuthor-avatar.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .post twitterwidget::shadow .MediaCard-media {
   opacity: 0.5;
@@ -744,10 +843,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.post twitterwidget::shadow .MediaCard-media.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .post twitterwidget::shadow .MediaCard-media:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.post twitterwidget::shadow .MediaCard-media.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .post .content a:not(.habracut) {
   color: #93b2d0;
@@ -770,10 +877,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.article .megapost-cover__img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .article .megapost-cover__img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.article .megapost-cover__img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .article__body {
   border-color: transparent;
@@ -794,12 +909,24 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.article__body iframe.image-inverted,
+.article__body object.image-inverted,
+.article__body img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .article__body iframe:hover,
 .article__body object:hover,
 .article__body img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.article__body iframe.image-inverted:hover,
+.article__body object.image-inverted:hover,
+.article__body img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .article__body [class^=t-container_] {
   background-color: rgba(0,0,0,0.6);
@@ -830,10 +957,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.article .t-carousel__item__img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .article .t-carousel__item__img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.article .t-carousel__item__img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .article .t-carousel__indicator {
   background-color: #ddd !important;
@@ -851,6 +986,11 @@ body.nl .layout__elevator:active {
   transition: all 0.3s;
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
+}
+.postinfo-panel .postinfo-panel__item .post-author__pic.image-inverted,
+.postinfo-panel .postinfo-panel__item .post-author__pic_default.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
 }
 .postinfo-panel .postinfo-panel__item .post-author__pic::before,
 .postinfo-panel .postinfo-panel__item .post-author__pic_default::before {
@@ -953,6 +1093,15 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.post__text-html iframe.image-inverted,
+.comment__message iframe.image-inverted,
+.post__text-html object.image-inverted,
+.comment__message object.image-inverted,
+.post__text-html img.image-inverted,
+.comment__message img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .post__text-html iframe:hover,
 .comment__message iframe:hover,
 .post__text-html object:hover,
@@ -962,6 +1111,15 @@ body.nl .layout__elevator:active {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.post__text-html iframe.image-inverted:hover,
+.comment__message iframe.image-inverted:hover,
+.post__text-html object.image-inverted:hover,
+.comment__message object.image-inverted:hover,
+.post__text-html img.image-inverted:hover,
+.comment__message img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .post__text-html img,
 .comment__message img {
@@ -985,10 +1143,18 @@ body.nl .layout__elevator:active {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.post__text-html img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .post__text-html img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.post__text-html img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .html_format code,
 .madskillz_page code,
@@ -1433,10 +1599,18 @@ a.btn.btn_grey:hover {
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
+.company_top_banner img.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
 .company_top_banner img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
+}
+.company_top_banner img.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
 }
 .company_info,
 .company_links,
@@ -1502,6 +1676,10 @@ a.btn.btn_grey:hover {
   transition: all 0.3s;
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
+}
+.content-list__item::before.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
 }
 .content-list__item:hover::before {
   opacity: 1;
