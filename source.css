@@ -1182,13 +1182,14 @@ body.nl .layout__elevator:active {
 .html_format code,
 .madskillz_page code,
 .help_holder code,
+.post__text-html pre code.hljs,
 .html_format pre code.hljs,
 .madskillz_page pre code.hljs,
 .help_holder pre code.hljs {
   color: #a9b7c6;
   background: #2b2b2b;
   font-family: Consolas, Menlo, Monaco, 'Courier New', monospace;
-  font-size: 13px;
+  font-size: 14px;
 }
 code.hljs .hljs-comment,
 code.hljs .hljs-javadoc,
