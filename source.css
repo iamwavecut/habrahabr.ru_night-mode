@@ -539,6 +539,13 @@ body.nl .layout__elevator:active {
 .default-block__header-title:hover {
   color: #738290 !important;
 }
+.default-block__polling-title {
+  color: #bbb;
+}
+.default-block .checkbox__label_poll,
+.default-block .radio__label_poll {
+  color: #bbb;
+}
 .stacked-menu__item-text {
   color: #93b2d0;
 }
