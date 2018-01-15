@@ -98,12 +98,12 @@ a:visited:not(.button) {
   -webkit-filter: grayscale(0.8) invert(1);
   filter: grayscale(0.8) invert(1);
 }
+.checkbox__label,
+.radio__label {
+  color: #bbb;
+}
 .checkbox__label::before {
   background-color: #555;
-}
-.checkbox_custom input[type=checkbox]:checked + .checkbox__label::before {
-  background: #555;
-  color: #93b2d0;
 }
 .grey a,
 a.grey {

@@ -128,12 +128,12 @@ a
     &::before
         img_grayscale(false)
 
+.checkbox, .radio
+    &__label
+        color: main-font-color
+
 .checkbox__label::before
     background-color: third-bg
-
-.checkbox_custom input[type=checkbox]:checked + .checkbox__label::before
-    background: third-bg
-    color: link-default
 
 .grey a, a.grey
     color: link-hover
