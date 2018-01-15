@@ -149,6 +149,12 @@ form .digest span,
   color: inherit;
   fill: #808080;
 }
+.layout__row_footer {
+  background: #555;
+}
+.layout__row_footer-links {
+  background: #444;
+}
 #logo,
 #reg-wrapper {
   z-index: 1;
@@ -1385,46 +1391,45 @@ code.hljs .ini .hljs-keyword {
 .diff .hljs-change {
   background-color: #385570;
 }
-.editor .text-holder {
-  background: #444;
-  border-color: #444;
+.tm-editor {
+  background: #555;
 }
-.editor .text-holder textarea {
+.tm-editor textarea {
   background: #444;
   color: #fff;
   border-color: #555;
 }
-.editor .panel {
+.tm-editor .panel {
   background: transparent;
   border-color: transparent;
 }
-.editor .panel .wysiwyg_wrapper {
+.tm-editor .panel .wysiwyg_wrapper {
   background: inherit;
 }
-.editor .panel .wysiwyg_wrapper .can_use_html,
-.editor .panel .wysiwyg_wrapper .btn {
+.tm-editor .panel .wysiwyg_wrapper .can_use_html,
+.tm-editor .panel .wysiwyg_wrapper .btn {
   border: 0;
 }
-.editor .panel .wysiwyg_wrapper .btn .g-icon {
+.tm-editor .panel .wysiwyg_wrapper .btn .g-icon {
   color: #777;
 }
-.editor .panel .wysiwyg_wrapper .btn select {
+.tm-editor .panel .wysiwyg_wrapper .btn select {
   cursor: pointer;
 }
-.editor .panel .wysiwyg_wrapper .help_holder h4 {
+.tm-editor .panel .wysiwyg_wrapper .help_holder h4 {
   color: #999;
 }
-.editor .panel .wysiwyg_wrapper .help_holder dl dt {
+.tm-editor .panel .wysiwyg_wrapper .help_holder dl dt {
   color: #ccc;
 }
-.editor .panel .wysiwyg_wrapper .help_holder dl dd {
+.tm-editor .panel .wysiwyg_wrapper .help_holder dl dd {
   color: #999;
 }
-.editor .editor__footer {
+.tm-editor .tm-editor__footer {
   background-color: transparent;
   border-color: transparent;
 }
-.editor .editor__footer .markdown_checkbox {
+.tm-editor .tm-editor__footer .markdown_checkbox {
   color: inherit;
 }
 :not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button,

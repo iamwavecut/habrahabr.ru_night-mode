@@ -164,6 +164,12 @@ form .item, form .digest, .inner_search_form
     color: inherit
     fill: gray
 
+.layout__row_footer
+    background: third-bg
+
+    &-links
+        background: sec-bg
+
 // Access denied page TODO
 #logo, #reg-wrapper
     z-index: 1
@@ -990,15 +996,13 @@ code.hljs
         background-color: dark-blue
 
 // Editor
-.editor
-    .text-holder
-        background: sec-bg
-        border-color: sec-bg
+.tm-editor
+    background: third-bg
 
-        textarea
-            background: sec-bg
-            color: white
-            border-color: third-bg
+    textarea
+        background: sec-bg
+        color: white
+        border-color: third-bg
 
     .panel
         background: transparent
@@ -1344,3 +1348,5 @@ button, a.btn
 .user_settings .notification_table tr
     th, td
         color: inherit
+
+
