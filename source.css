@@ -709,45 +709,94 @@ body.nl .layout__elevator:active {
 .post-info__title {
   color: #b9c5cf;
 }
-.conversation_page > .title,
-.conversation_page .all_dialogs {
+.page__body_conversation .content-list__item_bordered {
+  border-color: #555;
+}
+.page__body_conversation .content-list__item_conversation:hover {
+  background-color: #555;
+}
+.page__body_conversation .user-message__username {
+  color: #aaa;
+}
+.page__body_conversation .user-message__body {
   color: #ccc;
 }
-.conversation_page .messages .message {
-  border-top: 1px solid #555;
-}
-.conversation_page .messages .message .info .time {
-  color: #fff;
-}
-.conversation_page .messages .message .info a.avatar img {
+.page__body_conversation .user-message__body img {
   opacity: 0.5;
   transition: all 0.3s;
   -webkit-filter: grayscale(0.8);
   filter: grayscale(0.8);
 }
-.conversation_page .messages .message .info a.avatar img.image-inverted {
+.page__body_conversation .user-message__body img.image-inverted {
   -webkit-filter: grayscale(0.8) invert(1);
   filter: grayscale(0.8) invert(1);
 }
-.conversation_page .messages .message .info a.avatar img:hover {
+.page__body_conversation .user-message__body img:hover {
   opacity: 1;
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
-.conversation_page .messages .message .info a.avatar img.image-inverted:hover {
+.page__body_conversation .user-message__body img.image-inverted:hover {
   -webkit-filter: grayscale(0) invert(1);
   filter: grayscale(0) invert(1);
 }
-.conversation_page .messages .message .info .login a {
+.page__body_conversation .user-message_my .user-message__body {
+  color: #bc8;
+}
+.page__body_conversation .user-message .media-obj__image {
+  opacity: 0.5;
+  transition: all 0.3s;
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.8);
+}
+.page__body_conversation .user-message .media-obj__image.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
+.page__body_conversation .user-message .media-obj__image:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.page__body_conversation .user-message .media-obj__image.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
+}
+.page__body_conversation .messages .message {
+  border-top: 1px solid #555;
+}
+.page__body_conversation .messages .message .info .time {
+  color: #fff;
+}
+.page__body_conversation .messages .message .info .media-obj__image {
+  opacity: 0.5;
+  transition: all 0.3s;
+  -webkit-filter: grayscale(0.8);
+  filter: grayscale(0.8);
+}
+.page__body_conversation .messages .message .info .media-obj__image.image-inverted {
+  -webkit-filter: grayscale(0.8) invert(1);
+  filter: grayscale(0.8) invert(1);
+}
+.page__body_conversation .messages .message .info .media-obj__image:hover {
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+.page__body_conversation .messages .message .info .media-obj__image.image-inverted:hover {
+  -webkit-filter: grayscale(0) invert(1);
+  filter: grayscale(0) invert(1);
+}
+.page__body_conversation .messages .message .info .login a {
   color: #ddd;
 }
-.conversation_page .messages .message .info .login a:hover {
+.page__body_conversation .messages .message .info .login a:hover {
   color: #aaa;
 }
-.conversation_page .messages .message.new .info {
+.page__body_conversation .messages .message.new .info {
   background: #445;
 }
-.conversation_page .messages .message.my .info {
+.page__body_conversation .messages .message.my .info {
   background: #554;
 }
 .conversations .conversation.new,
@@ -1432,18 +1481,10 @@ code.hljs .ini .hljs-keyword {
 .tm-editor .tm-editor__footer .markdown_checkbox {
   color: inherit;
 }
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button,
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:focus,
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:active,
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:visited,
-:not(.wysiwyg_wrapper) > a.btn,
-:not(.wysiwyg_wrapper) > .btn-dropdown,
-:not(.wysiwyg_wrapper) > a.btn:focus,
-:not(.wysiwyg_wrapper) > .btn-dropdown:focus,
-:not(.wysiwyg_wrapper) > a.btn:active,
-:not(.wysiwyg_wrapper) > .btn-dropdown:active,
-:not(.wysiwyg_wrapper) > a.btn:visited,
-:not(.wysiwyg_wrapper) > .btn-dropdown:visited,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:focus,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:active,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:visited,
 a.habracut,
 a.habracut:focus,
 a.habracut:active,
@@ -1488,27 +1529,21 @@ a.habracut:visited,
   color: #fff;
   background-color: #666;
 }
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button,
-:not(.wysiwyg_wrapper) > a.btn,
-:not(.wysiwyg_wrapper) > .btn-dropdown,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button,
 a.habracut,
 .buttons a.button,
 .buttons a.button:active,
 .buttons a.button:focus {
   background-color: #444;
 }
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:hover,
-:not(.wysiwyg_wrapper) > a.btn:hover,
-:not(.wysiwyg_wrapper) > .btn-dropdown:hover,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:hover,
 a.habracut:hover,
 .buttons a.button:hover,
 .buttons a.button:active:hover,
 .buttons a.button:focus:hover {
   background-color: #686868;
 }
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button:hover,
-:not(.wysiwyg_wrapper) > a.btn:hover,
-:not(.wysiwyg_wrapper) > .btn-dropdown:hover,
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:hover,
 a.habracut:hover,
 .buttons a.button:hover,
 .buttons a.button:active:hover,
@@ -1807,4 +1842,7 @@ a.btn.btn_grey:hover {
 .user_settings .notification_table tr th,
 .user_settings .notification_table tr td {
   color: inherit;
+}
+.beta-anounce__text {
+  color: #bbb;
 }

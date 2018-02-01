@@ -592,9 +592,30 @@ body.nl .layout__elevator
     color: heading
 
 // Conversation page
-.conversation_page
-    > .title, .all_dialogs
-        color: #ccc
+.page__body_conversation
+    .content-list__item
+        &_bordered
+            border-color: third-bg
+
+        &_conversation:hover
+            background-color: third-bg
+
+
+    .user-message
+        &__username
+            color: #aaa
+
+        &__body
+            color: #ccc
+
+            img
+                img_grayscale()
+
+        &_my .user-message__body
+            color: #bc8
+
+        .media-obj__image
+            img_grayscale()
 
     .messages .message
         border-top: 1px solid third-bg
@@ -603,7 +624,7 @@ body.nl .layout__elevator
             .time
                 color: white
 
-            a.avatar img
+            .media-obj__image
                 img_grayscale()
 
             .login a
@@ -1081,12 +1102,8 @@ button(basic = true, input = false)
 $button-basic
     button()
 
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button
     @extend $button-basic
-
-:not(.wysiwyg_wrapper)
-    > a.btn,  > .btn-dropdown
-        @extend $button-basic
 
 a.habracut
     @extend $button-basic
@@ -1348,5 +1365,8 @@ button, a.btn
 .user_settings .notification_table tr
     th, td
         color: inherit
+
+.beta-anounce__text
+    color: main-font-color
 
 
