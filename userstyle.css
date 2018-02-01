@@ -147,10 +147,6 @@
     .columns-group__column + .columns-group__column {
       border-color: transparent;
     }
-    .icon-svg {
-      color: inherit;
-      fill: #808080;
-    }
     .layout__row_footer {
       background: #555;
     }
