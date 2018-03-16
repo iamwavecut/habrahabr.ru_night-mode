@@ -132,12 +132,12 @@ a
     &::before
         img_grayscale(false)
 
+.checkbox, .radio
+    &__label
+        color: main-font-color
+
 .checkbox__label::before
     background-color: third-bg
-
-.checkbox_custom input[type=checkbox]:checked + .checkbox__label::before
-    background: third-bg
-    color: link-default
 
 .grey a, a.grey
     color: link-hover
@@ -164,9 +164,11 @@ form .item, form .digest, .inner_search_form
 .columns-group__column + .columns-group__column
     border-color: transparent
 
-.icon-svg
-    color: inherit
-    fill: gray
+.layout__row_footer
+    background: third-bg
+
+    &-links
+        background: sec-bg
 
 // Access denied page TODO
 #logo, #reg-wrapper
@@ -485,6 +487,13 @@ body.nl .layout__elevator
             &:hover
                 color: link-hover !important
 
+    &__polling-title
+        color: main-font-color
+
+    .checkbox__label_poll,
+    .radio__label_poll
+        color: main-font-color
+
 .stacked-menu
     &__item-text
         color: link-default
@@ -583,9 +592,30 @@ body.nl .layout__elevator
     color: heading
 
 // Conversation page
-.conversation_page
-    > .title, .all_dialogs
-        color: #ccc
+.page__body_conversation
+    .content-list__item
+        &_bordered
+            border-color: third-bg
+
+        &_conversation:hover
+            background-color: third-bg
+
+
+    .user-message
+        &__username
+            color: #aaa
+
+        &__body
+            color: #ccc
+
+            img
+                img_grayscale()
+
+        &_my .user-message__body
+            color: #bc8
+
+        .media-obj__image
+            img_grayscale()
 
     .messages .message
         border-top: 1px solid third-bg
@@ -594,7 +624,7 @@ body.nl .layout__elevator
             .time
                 color: white
 
-            a.avatar img
+            .media-obj__image
                 img_grayscale()
 
             .login a
@@ -675,6 +705,7 @@ body.nl .layout__elevator
 
     &__tags
         color: inherit
+
 .post__text-html
     color: main-font-color
     blockquote
@@ -986,15 +1017,13 @@ code.hljs
         background-color: dark-blue
 
 // Editor
-.editor
-    .text-holder
-        background: sec-bg
-        border-color: sec-bg
+.tm-editor
+    background: third-bg
 
-        textarea
-            background: sec-bg
-            color: white
-            border-color: third-bg
+    textarea
+        background: sec-bg
+        color: white
+        border-color: third-bg
 
     .panel
         background: transparent
@@ -1073,12 +1102,8 @@ button(basic = true, input = false)
 $button-basic
     button()
 
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt) > button
+:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button
     @extend $button-basic
-
-:not(.wysiwyg_wrapper)
-    > a.btn,  > .btn-dropdown
-        @extend $button-basic
 
 a.habracut
     @extend $button-basic
@@ -1340,3 +1365,8 @@ button, a.btn
 .user_settings .notification_table tr
     th, td
         color: inherit
+
+.beta-anounce__text
+    color: main-font-color
+
+
