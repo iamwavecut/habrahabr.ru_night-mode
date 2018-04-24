@@ -1,4 +1,4 @@
-@-moz-document regexp("https?://(webcache\.googleusercontent.com\/search\\?q=cache:http://|m\.)?(habrahabr|geektimes|h).ru/(?!special/|api).*") {
+@-moz-document regexp("https?://(webcache\.googleusercontent.com\/search\\?q=cache:http://|m\.)?(habrahabr|geektimes|h).(ru|com)/(?!special/|api).*") {
 @media screen {
     #TMpanel {
       z-index: 2;
