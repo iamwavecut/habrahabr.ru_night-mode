@@ -1,4 +1,4 @@
-@-moz-document regexp("https?://(webcache\.googleusercontent.com\/search\\?q=cache:http://|m\.)?(habrahabr|habr|geektimes).(ru|com)/(?!special/|api).*") {
+@-moz-document regexp("https?://(webcache\.googleusercontent.com\/search\\?q=cache:http://|m\.)?(habrahabr|habr|geektimes|h).(ru|com)/(?!special/|api).*") {
 @media screen {
     #TMpanel {
       z-index: 2;
@@ -468,6 +468,10 @@
     }
     .content_left .tabs .tabs-menu .tab-item_current {
       background: rgba(0,0,0,0.2);
+    }
+    .content_left .h-info li,
+    .content_left .h-info p {
+      color: #bbb;
     }
     .wtf_bc--skin--bg-primary.wtf_bc--skin--bg-primary {
       background: inherit !important;

@@ -467,6 +467,10 @@ body.nl .layout__elevator:active {
 .content_left .tabs .tabs-menu .tab-item_current {
   background: rgba(0,0,0,0.2);
 }
+.content_left .h-info li,
+.content_left .h-info p {
+  color: #bbb;
+}
 .wtf_bc--skin--bg-primary.wtf_bc--skin--bg-primary {
   background: inherit !important;
 }
