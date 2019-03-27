@@ -153,6 +153,9 @@
     .layout__row_footer-links {
       background: #444;
     }
+    .icon-svg_logo-habrahabr {
+      color: inherit;
+    }
     #logo,
     #reg-wrapper {
       z-index: 1;
@@ -318,6 +321,15 @@
     }
     body.nl .layout__elevator:active {
       background: #444;
+    }
+    .posts_list .news-block__title {
+      color: #b9c5cf;
+    }
+    .posts_list .news-topic__title {
+      color: #93b2d0;
+    }
+    .posts_list .news-topic__title:visited:not(.button) {
+      color: #738290;
     }
     .comments-placeholder__text {
       color: inherit;
