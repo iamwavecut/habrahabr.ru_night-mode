@@ -33,14 +33,10 @@
     .company_header,
     .user_header,
     .content_left,
-    .sidebar_right,
     .rotated_posts,
     #footer {
       z-index: 0;
       position: relative;
-    }
-    .column-wrapper_post .content_left {
-      z-index: 1;
     }
     h1,
     h2,
