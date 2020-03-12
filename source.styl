@@ -859,7 +859,7 @@ body.nl .layout__elevator
   img_grayscale()
 
 // Code highlight
-.html_format, .madskillz_page, .help_holder
+.madskillz_page, .help_holder, .post__text-html, .comment__message
     code
         border: 0
         display: inline-block
@@ -883,7 +883,7 @@ body.nl .layout__elevator
 code.hljs
     .hljs
         &-comment, &-javadoc, &-shebang, &-quote
-            color: hljs-comment
+            color: hljИсправлs-comment
 
         &-string, &-doctag, &-sqbracket, &-regexp, &-attribute, &-emphasis, &-blockquote,
         &-link_label, &-strong &-preprocessor, &-preprocessor &-title
@@ -914,30 +914,30 @@ code.hljs
         &-link_url
             text-decoration: underline
 
-    .javascript .hljs-tag
+    &.javascript .hljs-tag
         color: hljs-keyword
 
-    .rust .hljs-preprocessor
+    &.rust .hljs-preprocessor
         color: hljs-comment
 
-    .coffeescript .hljs
+    &.coffeescript .hljs
         &-subst
             color: hljs-string
 
         &-attribute
             color: hljs-reserved
 
-    .makefile .hljs
+    &.makefile .hljs
         &-variable
             color: hljs-string
 
         &-keyword
             color: hljs-literal
 
-    .markdown .hljs-value
+    &.markdown .hljs-value
         color: hljs-string
 
-    .nginx .hljs
+    &.nginx .hljs
         &-number
             color: hljs-string
 
@@ -947,10 +947,10 @@ code.hljs
         &-variable
             color: hljs-name
 
-    .objectivec .hljs-preprocessor
+    &.objectivec .hljs-preprocessor
         color: hljs-keyword
 
-    .xml .hljs
+    &.xml .hljs
         &-value
             color: hljs-string
 
@@ -963,14 +963,14 @@ code.hljs
         &-attribute
             color: hljs-title
 
-    .less .hljs
+    &.less .hljs
         &-built_in
             color: hljs-string
 
         &-tag
             color: hljs-keyword
 
-    .scss .hljs
+    &.scss .hljs
         &-built_in
             color: hljs-string
 
@@ -983,30 +983,30 @@ code.hljs
         &-variable
             color: hljs-name
 
-    .sql .hljs-built_in
+    &.sql .hljs-built_in
         color: hljs-keyword
 
-    .swift .hljs-preprocessor
+    &.swift .hljs-preprocessor
         color: hljs-keyword
 
-    .apache .hljs-keyword
+    &.apache .hljs-keyword
         color: hljs-literal
 
-    .ruby .hljs
+    &.ruby .hljs
         &-constant, &-subst &-keyword
             color: hljs-literal
 
-    .go .hljs-constant
+    &.go .hljs-constant
         color: hljs-literal
 
-    .bash .hljs-variable
+    &.bash .hljs-variable
         color: hljs-name
 
-    .cs .hljs-preprocessor
+    &.cs .hljs-preprocessor
         &, .hljs-keyword
             color: hljs-name
 
-    .ini .hljs-keyword
+    &.ini .hljs-keyword
         color: hljs-name
 
 // Diff code
