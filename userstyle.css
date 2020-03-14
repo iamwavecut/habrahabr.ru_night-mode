@@ -540,6 +540,9 @@
       -webkit-filter: grayscale(0) invert(1);
       filter: grayscale(0) invert(1);
     }
+    .timeline__item {
+      color: inherit;
+    }
     .default-block {
       background: #222;
       opacity: 0.5 !important;
