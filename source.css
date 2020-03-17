@@ -539,7 +539,7 @@ body.nl .layout__elevator:active {
   filter: grayscale(0) invert(1);
 }
 .timeline__item {
-  color: inherit;
+  color: inherit !important;
 }
 .default-block {
   background: #222;
