@@ -20,6 +20,9 @@ body {
 body.nl .layout {
   background-color: #333;
 }
+.h-info p {
+  color: #bbb;
+}
 #layout,
 #xpanel,
 .to_top {
@@ -1501,23 +1504,10 @@ code.hljs.ini .hljs-keyword {
   color: inherit;
 }
 :not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button,
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:focus,
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:active,
-:not(.voting-wjt):not(.voting-wjt__counter):not(.favorite-wjt):not(.user-message):not(.wysiwyg-toolbar__item) > button:visited,
 a.habracut,
-a.habracut:focus,
-a.habracut:active,
-a.habracut:visited,
 .buttons a.button,
 .buttons a.button:active,
 .buttons a.button:focus,
-.buttons a.button:active:focus,
-.buttons a.button:focus:focus,
-.buttons a.button:active:active,
-.buttons a.button:focus:active,
-.buttons a.button:visited,
-.buttons a.button:active:visited,
-.buttons a.button:focus:visited,
 .buttons input[type=button],
 .buttons input[type=submit],
 .buttons input[type=button]:focus,
